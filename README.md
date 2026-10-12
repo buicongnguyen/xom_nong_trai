@@ -4,7 +4,7 @@ A local single-player recreation of [nongtrai.jackle.dev](https://nongtrai.jackl
 
 ## Browser test on GitHub Pages
 
-Play at **https://buicongnguyen.github.io/xom_nong_trai/** and choose **Chơi ngay**. The Pages edition runs the same farming engine in your browser, with automatic saves in this browser's localStorage. Progress stays on this device/browser. Growth uses real time and guest play; online accounts and multiplayer are unavailable. Browser locks serialize changes across tabs, and each tab refreshes completed timers and saved changes automatically.
+Play at **https://buicongnguyen.github.io/xom_nong_trai/** and choose **Chơi ngay**. The Pages edition runs the same farming engine in your browser, with automatic saves in this browser's localStorage. Progress stays on this device/browser. Growth uses real time and guest play; online accounts and multiplayer are unavailable. Browser locks serialize changes across tabs. Farm objects, wallet balances, storage and the HUD refresh when another tab changes the save. Deployment versions the runtime and client module URLs together so cached lazy panels share the current game state.
 
 The public source repository is **https://github.com/buicongnguyen/xom_nong_trai**, with SSH remote `git@github.com:buicongnguyen/xom_nong_trai.git`, matching the neighboring `cute_game` repo. Pushes to `main` test and build the app, then deploy it through `.github/workflows/pages.yml`.
 
@@ -29,7 +29,9 @@ Open **http://127.0.0.1:5173** and choose **Chơi ngay**. Use the existing tutor
 
 ## Local gameplay
 
-Plant, tend, fertilize, and harvest crops; buy and care for animals; produce goods; grow fruit trees; buy, place, move, store, and sell farm objects; expand land; sell inventory; complete orders and quests; claim daily rewards; upgrade storage; and earn experience.
+Plant, tend, fertilize, harvest or uproot crops; buy and care for animals; produce goods with rented factory workers; grow fruit trees; feed your farm dog; buy, place, move, store, and sell farm objects; expand land; sell inventory; complete orders and quests; reroll daily quests; claim daily rewards; upgrade storage; and earn experience. Peaceful mode can be changed in settings.
+
+Factory workers run parallel batches, can be renewed, and finish an active batch when their rental expires. Uprooting discards the crop and its seeds. A daily quest slot can be rerolled once for Xu. Seed purchases charge the selected currency, apply the configured request maximum and daily allowance, and reset their allowances on the real Vietnam calendar day. Dog food extends its guard timer up to the configured 24-hour stack limit.
 
 Progress is saved automatically to **`.local/farm.json`** and survives server restarts. This edition uses one local farm shared by browsers connecting to this server. QA uses a separate save directory.
 
@@ -51,9 +53,9 @@ Optional variables: `GAME_SPEED` (positive multiplier), `PORT` (default 5173), `
 - `public/`: mirrored public browser build and self-contained assets. This is compiled client code; the original React/TypeScript source and server source were not available.
 - `reference/`: preserved original HTML/client and asset provenance.
 - `scripts/`: asset audits and configuration/schema validation tools.
-- `tests/`: persistent gameplay regression test.
+- `tests/`: gameplay, persistence, client contract and local action regression tests.
 
-Online multiplayer, original accounts, visits to real players, chat, leaderboards, payments, and multiplayer minigames require the original service and are not reproduced by this local server. Online-only actions return a local availability message. Local progress is independent of the original game. Cloudflare telemetry/challenge scripts were removed from the local HTML.
+Online multiplayer, original accounts, visits to real players, chat, leaderboards, payments, and multiplayer minigames require the original service and are not reproduced by this local server. Unsupported online panels show a local availability notice and can be closed. Local progress is independent of the original game. Cloudflare telemetry/challenge scripts were removed from the local HTML.
 
 The review findings, fixes, and remaining local gaps are recorded in [REVIEW.md](REVIEW.md). This remains an independent single-player recreation, with reconstructed balance rather than the original server's rules. Refresh all existing game tabs after an update to load the latest saving logic.
 
@@ -67,6 +69,19 @@ node scripts/backend-schema-smoke.mjs
 node scripts/audit-assets.cjs
 ```
 
-The browser QA report and desktop/mobile screenshots are in `reference/qa/`. The farm, API mutation schemas, crop/animal/production timers, transaction rollback, experience progression, and save/reload were checked.
+The browser QA report and desktop/mobile screenshots are in `reference/qa/`. Regression coverage includes farming and production, worker rentals, dog timers, seed allowances, tutorial and quest progression, client response schemas, failed transactions, saves and migration. Browser checks cover cross-tab saving and 18 mobile panel-close flows. See [REVIEW.md](REVIEW.md) for validation status and remaining limits.
+
+Optional browser regressions require Playwright and Chrome (or Playwright's installed Chromium). They create isolated browser contexts and disposable farms. Point `XNT_QA_URL` at a served Pages build; the flow test requires browser-local saves and does not modify the Node server's farm.
+
+```powershell
+$env:XNT_QA_URL = 'https://buicongnguyen.github.io/xom_nong_trai/'
+# Set XNT_PLAYWRIGHT_MODULE or XNT_CHROME_PATH if they are installed elsewhere.
+node scripts/browser-save-qa.cjs
+node scripts/frontend-browser-qa.cjs
+node scripts/frontend-menu-qa.cjs
+node scripts/frontend-flow-qa.cjs
+```
+
+Reports from these scripts go into ignored `.local/review-qa/`. `npm run build:pages` also applies the guarded, repeatable fixes to the preserved compiled client.
 
 Reference client and artwork: Xóm Nông Trại. The local server and configuration are independently implemented.

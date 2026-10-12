@@ -19,6 +19,9 @@ export async function bootPagesRuntime({ baseUrl = new URL('.', import.meta.url)
   const backend = await withFarmLock(() => createBackend({ dataDir: 'farm', config, gameSpeed }));
   const sockets = new Set();
   let publishedWorld = backend.getWorld();
+  const worldMetadata = world => JSON.stringify({ owner: world.owner, region: world.region, layoutTemplate: world.layoutTemplate, zones: world.zones, bag: world.bag,
+    dog: world.dog ? { def: world.dog.def, active: world.dog.active, fedUntil: world.dog.fedUntil } : null });
+  let publishedMetadata = worldMetadata(publishedWorld);
   let publishedObjects = new Map(publishedWorld.objects.map(object => [object.id, JSON.stringify(object)]));
   let publishedTutorialStep = backend.getState().user.tutorialStep;
   let refreshTimer;
@@ -67,7 +70,8 @@ export async function bootPagesRuntime({ baseUrl = new URL('.', import.meta.url)
     const objects = new Map(world.objects.map(object => [object.id, JSON.stringify(object)]));
     const changed = world.objects.filter(object => publishedObjects.get(object.id) !== objects.get(object.id));
     const removed = [...publishedObjects.keys()].filter(id => !objects.has(id));
-    if (world.owner.id !== publishedWorld.owner.id) {
+    const metadata = worldMetadata(world);
+    if (metadata !== publishedMetadata) {
       for (const socket of sockets) socket.message({ t: 'resync', p: {} });
     } else if (changed.length || removed.length) {
       for (const socket of sockets) socket.message({ t: 'world_delta', p: {
@@ -81,6 +85,7 @@ export async function bootPagesRuntime({ baseUrl = new URL('.', import.meta.url)
       } });
     }
     publishedWorld = world;
+    publishedMetadata = metadata;
     publishedObjects = objects;
     publishedTutorialStep = tutorialStep;
   }

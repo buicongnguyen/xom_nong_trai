@@ -53,17 +53,23 @@ function frame(data, opcode=1) {
   return Buffer.concat([header,bytes]);
 }
 const sockets = new Set();
-let publishedObjects = new Map(backend.getWorld().objects.map(object => [object.id, JSON.stringify(object)]));
+const initialWorld = backend.getWorld();
+const worldMetadata = world => JSON.stringify({ owner: world.owner, region: world.region, layoutTemplate: world.layoutTemplate, zones: world.zones, bag: world.bag,
+  dog: world.dog ? { def: world.dog.def, active: world.dog.active, fedUntil: world.dog.fedUntil } : null });
+let publishedMetadata = worldMetadata(initialWorld);
+let publishedObjects = new Map(initialWorld.objects.map(object => [object.id, JSON.stringify(object)]));
 function publishWorld() {
   const world = backend.getWorld();
   const next = new Map(world.objects.map(object => [object.id, JSON.stringify(object)]));
   const objects = world.objects.filter(object => next.get(object.id) !== publishedObjects.get(object.id));
   const removed = [...publishedObjects.keys()].filter(id => !next.has(id));
-  if (objects.length || removed.length) {
-    const message = frame({t:'world_delta',p:{ownerId:world.owner.id,objects,removed}});
+  const metadata = worldMetadata(world);
+  if (metadata !== publishedMetadata || objects.length || removed.length) {
+    const message = frame(metadata !== publishedMetadata ? {t:'resync',p:{}} : {t:'world_delta',p:{ownerId:world.owner.id,objects,removed}});
     for(const socket of sockets)if(!socket.destroyed)socket.write(message);
   }
   publishedObjects = next;
+  publishedMetadata = metadata;
 }
 backend.setOnMutation?.(event => {
   publishWorld();

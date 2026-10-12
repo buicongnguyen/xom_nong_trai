@@ -1,4 +1,4 @@
-# Code and logic review — 2026-10-12
+# Code, logic and frontend review — 2026-10-13
 
 The published application is an independent single-player recreation. The public compiled client and artwork were mirrored; the original server and authenticated configuration were unavailable. Deployment and loading were verified earlier, but that did not establish complete gameplay parity.
 
@@ -19,20 +19,28 @@ The published application is an independent single-player recreation. The public
 | P2 | Completed construction and stage changes require a reload. | Publish passive world changes every second in both browser and Node editions. |
 | P2 | Notification failure reports an error after saving a purchase, leaving memory and disk inconsistent. A wrong-method request can partially mutate a batch. | Commit once after full validation/progression; roll back failed saves, isolate notification errors, and reject wrong methods. |
 | P2 | Planting, feeding, field purchases and decor omit configured XP. | Award XP at the successful action; bag placement does not award purchase XP again. |
+| P2 | Cached chunks can retain older behavior; inconsistent main-module URLs would separate lazy panels from the visible farm's stores. | Version the runtime and every client module URL consistently, including lazy imports and preloads. Browser checks confirm one module instance and one game canvas. |
+| P2 | Another tab updates farm objects while this tab's money, storage and HUD remain stale. | Refresh the wallet and storage stores when the saved farm changes; resynchronize the world when owner, region, bag, zones or dog state changes. |
+| P2 | Worker hire, crop uproot, peaceful mode and daily reroll controls call missing local routes. | Implement worker prices, ordered seats, renewals and parallel production; uproot growing crops without a seed refund; persist the boolean peaceful setting; replace one daily quest per slot for the configured Xu cost. |
+| P2 | Each running worker's speed-up button targets queue index 0. | Pass the selected row's actual queue index; shorten only that worker's lane and preserve other workers' timers. |
+| P2 | Seed purchases sent with `currency: "xu"` spend gold; quantities allowed by the UI fail above 99; quotas never decrease. | Honor the frontend currency field and configured request maximum, track daily allowances separately per crop/currency, and report the actual allowance remaining. Failed purchases consume neither money nor quota. |
+| P2 | A purchased dog has no implemented feeding action or guard timer. | Consume configured dog food, add its duration to the remaining timer, enforce the stack cap atomically, and expire the active flag when food runs out. |
+| P2 | Province IDs do not match the interactive map; home changes and some offline responses fail the client's response contracts. | Use the map's canonical province IDs, migrate saved aliases and return the direct Home response expected by the picker. Validate local and disabled responses against the original client's schemas. |
+| P2 | Unsupported online panels make failing API calls, and level 3 automatically opens an unusable account registration form. | Explain online availability before opening those panels, suppress automatic registration prompts, and route manual account-save requests to the same dismissible notice. |
 
 ## Still incomplete
 
 - The original React/TypeScript source, private backend, exact balance, prices, drop rates, and server rules have not been recovered.
 - Online accounts/cloud saves, multiplayer visits/help, chat, trading/market, villages, leaderboards, payments, ads, and online events remain unavailable or empty placeholders.
-- Some visible local client actions still lack implementations: hiring factory workers, uprooting crops, peaceful-mode changes, and rerolling daily quests.
-- Seed-shop daily limits, home-change restrictions, order rerolls, animal problem generation, worker production, and some upgrade rules still need a full behavior specification and review.
+- Home-change restrictions, order generation/rerolls, animal problem generation and some upgrade rules still need a full behavior specification and review.
 - Quests depending on unavailable online actions cannot be completed. This review verifies supported early progression and the identified regressions, not all 200 levels or all original features.
 - Browser saves remain device/browser-specific. A browser without Web Locks cannot safely run this edition; startup shows a reload/browser-storage message.
 
 ## Validation
 
-- 29 deterministic backend tests cover farming/animals/production, queue scheduling, transaction and save failures, tutorial filters/levels, daily rollover, care, fertilizer/soil, placement limits and layouts, clock continuity, and existing-save migration.
+- All 53 backend regression cases pass: the earlier 29 gameplay/save cases, 10 local-action cases, eight original-client contract cases and six dog/seed cases. New coverage includes worker prices/order/renewal/expiration, parallel lane scheduling and speed-ups, crop uprooting, daily rerolls, peaceful settings, dog feeding, selected seed currency, request maximums and persisted daily allowances.
 - Seven isolated browser cases cover stale-tab unload, alternating transactions, simultaneous transactions, cross-tab world updates, passive construction completion, and reset/replacement protection. The reusable harness is `scripts/browser-save-qa.cjs` (requires Playwright; supports `XNT_PLAYWRIGHT_MODULE` and `XNT_CHROME_PATH`).
-- Original client schema validation and desktop/mobile browser checks run before publication. Visual evidence is stored with the review QA artifacts.
+- 18 mobile panel-close checks pass. Desktop/mobile startup and the shared client-module build were also checked without page or console errors.
+- Actual map and factory UI checks pass: selecting Cần Thơ updates the HUD and survives reload; hiring worker 2 starts two parallel jobs; speeding up the second row completes only its product. Two-tab wallet/storage synchronization and all eight guarded menu actions pass. Original client configuration/API schemas and local asset references pass validation. Visual evidence is stored in `reference/qa/frontend-2026-10-13/`.
 
 Existing player saves are retained and migrated. Existing tabs must be refreshed to use the corrected runtime; an already-open old version still has its old unload handler.

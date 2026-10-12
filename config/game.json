@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "checksum": "6a2622004cc756cfe75c3bed4007a8dd5ad497ffdf17e44068269e4a471fffd3",
+  "version": "1.0.1",
+  "checksum": "99d065752253e5b994195eb5b532b59224d5a9e84825225dbb0ebb9240432095",
   "bundle": {
     "items": {
       "items": [
@@ -12249,199 +12249,199 @@
           "isCity": true
         },
         {
-          "id": "province_1",
+          "id": "tuyen_quang",
           "name": "Tuyên Quang",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_2",
+          "id": "cao_bang",
           "name": "Cao Bằng",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_3",
+          "id": "lang_son",
           "name": "Lạng Sơn",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_4",
+          "id": "thai_nguyen",
           "name": "Thái Nguyên",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_5",
+          "id": "phu_tho",
           "name": "Phú Thọ",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_6",
+          "id": "lao_cai",
           "name": "Lào Cai",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_7",
+          "id": "lai_chau",
           "name": "Lai Châu",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_8",
+          "id": "dien_bien",
           "name": "Điện Biên",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_9",
+          "id": "son_la",
           "name": "Sơn La",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_10",
+          "id": "bac_ninh",
           "name": "Bắc Ninh",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_11",
+          "id": "quang_ninh",
           "name": "Quảng Ninh",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_12",
+          "id": "hai_phong",
           "name": "Hải Phòng",
           "region": "bac",
           "isCity": true
         },
         {
-          "id": "province_13",
+          "id": "hung_yen",
           "name": "Hưng Yên",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_14",
+          "id": "ninh_binh",
           "name": "Ninh Bình",
           "region": "bac",
           "isCity": false
         },
         {
-          "id": "province_15",
+          "id": "thanh_hoa",
           "name": "Thanh Hóa",
           "region": "trung",
           "isCity": false
         },
         {
-          "id": "province_16",
+          "id": "nghe_an",
           "name": "Nghệ An",
           "region": "trung",
           "isCity": false
         },
         {
-          "id": "province_17",
+          "id": "ha_tinh",
           "name": "Hà Tĩnh",
           "region": "trung",
           "isCity": false
         },
         {
-          "id": "province_18",
+          "id": "quang_tri",
           "name": "Quảng Trị",
           "region": "trung",
           "isCity": false
         },
         {
-          "id": "province_19",
+          "id": "hue",
           "name": "Huế",
           "region": "trung",
           "isCity": true
         },
         {
-          "id": "province_20",
+          "id": "da_nang",
           "name": "Đà Nẵng",
           "region": "trung",
           "isCity": true
         },
         {
-          "id": "province_21",
+          "id": "quang_ngai",
           "name": "Quảng Ngãi",
           "region": "trung",
           "isCity": false
         },
         {
-          "id": "province_22",
+          "id": "gia_lai",
           "name": "Gia Lai",
           "region": "trung",
           "isCity": false
         },
         {
-          "id": "province_23",
+          "id": "dak_lak",
           "name": "Đắk Lắk",
           "region": "trung",
           "isCity": false
         },
         {
-          "id": "province_24",
+          "id": "lam_dong",
           "name": "Lâm Đồng",
           "region": "trung",
           "isCity": false
         },
         {
-          "id": "province_25",
+          "id": "khanh_hoa",
           "name": "Khánh Hòa",
           "region": "trung",
           "isCity": false
         },
         {
-          "id": "province_26",
+          "id": "dong_nai",
           "name": "Đồng Nai",
           "region": "nam",
           "isCity": false
         },
         {
-          "id": "province_27",
+          "id": "tay_ninh",
           "name": "Tây Ninh",
           "region": "nam",
           "isCity": false
         },
         {
-          "id": "ho_chi_minh",
+          "id": "tp_ho_chi_minh",
           "name": "TP. Hồ Chí Minh",
           "region": "nam",
           "isCity": true
         },
         {
-          "id": "province_29",
+          "id": "vinh_long",
           "name": "Vĩnh Long",
           "region": "nam",
           "isCity": false
         },
         {
-          "id": "province_30",
+          "id": "dong_thap",
           "name": "Đồng Tháp",
           "region": "nam",
           "isCity": false
         },
         {
-          "id": "province_31",
+          "id": "an_giang",
           "name": "An Giang",
           "region": "nam",
           "isCity": false
         },
         {
-          "id": "province_32",
+          "id": "can_tho",
           "name": "Cần Thơ",
           "region": "nam",
           "isCity": true
         },
         {
-          "id": "province_33",
+          "id": "ca_mau",
           "name": "Cà Mau",
           "region": "nam",
           "isCity": false
@@ -12784,7 +12784,7 @@
       }
     },
     "gameConfig": {
-      "configVersion": "1.0.0",
+      "configVersion": "1.0.1",
       "serverMode": "classic",
       "platform": {
         "primary": "web",

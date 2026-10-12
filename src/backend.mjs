@@ -11,6 +11,9 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
   fs.mkdirSync(dataDir, { recursive: true });
   const savePath = path.join(dataDir, 'farm.json');
   const bundle = config.bundle;
+  const provinceAliases = new Map(bundle.provinces.provinces.map((province, index) => [`province_${index}`, province.id]));
+  provinceAliases.set('ho_chi_minh', 'tp_ho_chi_minh');
+  const provinceId = id => provinceAliases.get(id) || id;
   const cfg = bundle.gameConfig;
   const chests = config.localRules?.chests || { extraCostXu: 5, table: [
     { weight: 60, reward: { gold: 100 } }, { weight: 30, reward: { gold: 250 } }, { weight: 10, reward: { xu: 5 } },
@@ -104,7 +107,8 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
     return { ...state.wallet, expToNext: next ? Math.max(0, next.cumExp - state.wallet.exp) : 0 };
   }
   function publicUser() {
-    return { id: state.user.id, displayName: state.user.displayName, avatar: state.user.avatar || 'farmer', level: state.wallet.level, isNpc: false };
+    return { id: state.user.id, displayName: state.user.displayName, avatar: state.user.avatar || 'farmer', level: state.wallet.level, isNpc: false,
+      ...(state.user.activeTitle ? { title: state.user.activeTitle } : {}) };
   }
   function addExp(amount) {
     amount = Math.max(0, integer(amount));
@@ -147,6 +151,41 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
     for (const id of daily) delete state.questProgress[id];
     state.claimedQuests = state.claimedQuests.filter(id => !daily.has(id));
     state.dailyQuestDay = day;
+    state.dailyQuestSlots = bundle.quests.dailyPool.slice(0, cfg.quests.dailyPick).map(quest => ({ questId: quest.id, rerolled: false }));
+  }
+  function dailyQuestSlots() {
+    return state.dailyQuestSlots ||= bundle.quests.dailyPool.slice(0, cfg.quests.dailyPick).map(quest => ({ questId: quest.id, rerolled: false }));
+  }
+  function workerPrice(obj, workerNo) {
+    const config = cfg.factoryWorkers;
+    const spec = config.hires[workerNo - 2];
+    if (!spec) fail('VALIDATION', 'Choose a valid worker seat.');
+    return { level: spec.unlockLevel, gold: Math.ceil(Math.max(spec.minGold, spec.priceMult * factories.get(obj.defId).price) / config.roundTo) * config.roundTo };
+  }
+  function activeWorkerHires(obj, time = now()) {
+    return (obj.factory.hires || []).filter(hire => Date.parse(hire.until) > time);
+  }
+  function factoryWorkerLane(obj, available, time = now()) {
+    const lanes = [{ no: 1, availableAt: available.get(1) || time, until: Infinity }, ...activeWorkerHires(obj, time).map(hire => ({
+      no: hire.no, availableAt: available.get(hire.no) || time, until: Date.parse(hire.until),
+    }))].filter(lane => lane.availableAt < lane.until);
+    return lanes.sort((a, b) => a.availableAt - b.availableAt || a.no - b.no)[0];
+  }
+  function scheduleFactory(obj, time = now(), newJobs = new Set()) {
+    const available = new Map();
+    for (const job of obj.factory.queue) if (!newJobs.has(job) && Date.parse(job.startAt) <= time) {
+      const worker = job.w || 1;
+      available.set(worker, Math.max(available.get(worker) || time, Date.parse(job.endAt)));
+    }
+    // Running jobs finish even after a hired seat expires. Waiting jobs move to an
+    // available active seat, so renting a second worker produces parallel work.
+    for (const job of obj.factory.queue) if (newJobs.has(job) || Date.parse(job.startAt) > time) {
+      const duration = Date.parse(job.endAt) - Date.parse(job.startAt);
+      const lane = factoryWorkerLane(obj, available, time);
+      job.w = lane.no; job.startAt = iso(lane.availableAt); job.endAt = iso(lane.availableAt + duration);
+      available.set(lane.no, lane.availableAt + duration);
+    }
+    obj.factory.workers = 1 + activeWorkerHires(obj, time).length;
   }
   function normalizeTutorial() {
     state.user.tutorialStep = Math.min(tutorial.length, Math.max(0, integer(state.user.tutorialStep)));
@@ -171,7 +210,7 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
       value.tree = { state: 'GROWING', readyAt: iso(now() + tree.cycleSeconds * 1000), harvestsDone: 0, cyclesBeforeWither: tree.cyclesBeforeWither, fruitRemaining: tree.fruitPerCycle, revivers: [] };
     }
     if (def.kind === 'pen') value.pen = { capacity: pens.get(id)?.capacity[0] || 4, animals: [] };
-    if (def.kind === 'factory') value.factory = { slots: factories.get(id)?.queueSlots.start || 2, workers: 1, queue: [], output: [] };
+    if (def.kind === 'factory') value.factory = { slots: factories.get(id)?.queueSlots.start || 2, workers: 1, hires: [], queue: [], output: [] };
     if (def.kind === 'obstacle') value.obstacle = { tool: def.tool, toolQty: def.toolQty, exp: def.exp };
     return value;
   }
@@ -209,6 +248,10 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
     if (!fs.existsSync(savePath)) fail('SAVE_RESET', 'This farm was reset in another tab. Reload the game to start again.', undefined, 409);
     state = JSON.parse(fs.readFileSync(savePath, 'utf8'));
     let migrated = false;
+    if (provinceId(state.home.provinceId) !== state.home.provinceId) {
+      state.home.provinceId = provinceId(state.home.provinceId);
+      migrated = true;
+    }
     if (state.clock.speed !== gameSpeed) {
       state.clock.gameAt += Math.max(0, wallTime() - state.clock.wallAt) * (state.clock.speed || gameSpeed);
       state.clock.wallAt = wallTime();
@@ -232,6 +275,10 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
   function tick() {
     resetDailyQuests();
     const time = now();
+    if (state.dog) {
+      state.dog.foodStackSeconds = Math.max(0, Math.ceil((Date.parse(state.dog.fedUntil || iso(time)) - time) / 1000));
+      state.dog.active = state.dog.foodStackSeconds > 0;
+    }
     for (const obj of state.objects) {
       const field = obj.field;
       if (field?.state === 'GROWING') {
@@ -262,6 +309,7 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
           else obj.factory.output.push({ itemId: recipe.id, qty: recipe.outputQty });
         }
         obj.factory.queue = obj.factory.queue.filter(job => time < Date.parse(job.endAt));
+        scheduleFactory(obj, time);
       }
       if (obj.construction && time >= Date.parse(obj.construction.endsAt)) delete obj.construction;
     }
@@ -316,15 +364,22 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
       ...(pens.has(def.id) ? { capacity: pens.get(def.id).capacity, upgradeGold: pens.get(def.id).upgradeGold } : {}),
       ...(def.kind === 'decor' ? { season: def.season ?? null, expOnBuy: def.expOnBuy || 0 } : {}) };
   }
+  function seedQuota(cropId, currency) {
+    if (state.seedPurchaseDay !== today()) { state.seedPurchaseDay = today(); state.seedPurchases = {}; }
+    const limit = currency === 'xu' ? cfg.seedShop.xuDailyUnitLimitPerCrop : cfg.seedShop.goldDailyUnitLimitPerCrop;
+    const used = state.seedPurchases?.[cropId]?.[currency] || 0;
+    return { limit, remaining: Math.max(0, limit - used) };
+  }
   function quests() {
     const convert = (def, kind) => {
       const progress = Math.min(def.goal.count, state.questProgress[def.id] || 0);
       const locked = state.wallet.level < def.minLevel || !!def.after && !state.claimedQuests.includes(def.after);
       return { id: def.id, kind, name: def.name, desc: def.desc, minLevel: def.minLevel, event: def.goal.event,
         count: def.goal.count, progress, reward: normalizeReward(def.reward), completedAt: progress >= def.goal.count ? iso(now()) : null,
-        claimedAt: state.claimedQuests.includes(def.id) ? state.user.createdAt : null, locked, rerolled: false, targetDefId: def.goal.filter?.defId };
+        claimedAt: state.claimedQuests.includes(def.id) ? state.user.createdAt : null, locked,
+        rerolled: kind === 'daily' && !!dailyQuestSlots().find(slot => slot.questId === def.id)?.rerolled, targetDefId: def.goal.filter?.defId };
     };
-    return { main: bundle.quests.main.map(def => convert(def, 'main')), daily: bundle.quests.dailyPool.slice(0, 5).map(def => convert(def, 'daily')), dailyRerollXu: cfg.quests.dailyRerollXu };
+    return { main: bundle.quests.main.map(def => convert(def, 'main')), daily: dailyQuestSlots().map(slot => bundle.quests.dailyPool.find(def => def.id === slot.questId)).filter(Boolean).map(def => convert(def, 'daily')), dailyRerollXu: cfg.quests.dailyRerollXu };
   }
   function normalizeReward(value = {}) { return { ...value, ...(value.items ? { items: value.items.map(item => Array.isArray(item) ? { itemId: item[0], qty: item[1] } : item) } : {}) }; }
   function checkin() { return { streakDay: state.streakDay, canClaimToday: state.checkinDay !== today(), rewards: cfg.dailyLogin.rewards.map(normalizeReward) }; }
@@ -368,7 +423,7 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
       field.stageEnds = (field.stageEnds || [1, 2, 3].map(n => Date.parse(field.plantedAt) + (Date.parse(field.matureAt) + reduction - Date.parse(field.plantedAt)) * n / 3))
         .map(end => Math.max(now(), end - reduction));
     }
-    if (target.index !== undefined) for (const job of target.obj.factory.queue.slice(target.index + 1)) {
+    if (target.index !== undefined) for (const job of target.obj.factory.queue.slice(target.index + 1).filter(job => (job.w || 1) === (target.owner.w || 1))) {
       job.startAt = iso(Date.parse(job.startAt) - reduction); job.endAt = iso(Date.parse(job.endAt) - reduction);
     }
     tick();
@@ -388,7 +443,7 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
     const before = clone(state);
     let committed = false;
     try {
-      const reads = new Set(['/config', '/world', '/storage', '/map/national', '/shop', '/shop/seeds', '/quests', '/achievements', '/titles', '/speed-up/quote',
+      const reads = new Set(['/config', '/world', '/storage', '/map/national', '/shop', '/shop/seeds', '/quests', '/achievements', '/titles', '/dog/progress', '/speed-up/quote',
         '/orders/truck', '/orders/boat', '/events', '/flags', '/ads/status', '/affiliate/links', '/chat/global/messages', '/chat/summary', '/dm/threads',
         '/giftcode/announcements', '/leaderboards/spotlight', '/pass/current', '/hamlets/me/help', '/hamlets/me', '/friends', '/friends/requests', '/mailbox', '/logs', '/health']);
       const allowed = route === '/users/me' ? ['GET', 'PATCH'] : ['/checkin', '/chests', '/home'].includes(route) ? ['GET', 'POST'] : reads.has(route) || /^\/map\/provinces\//.test(route) ? ['GET'] : ['POST'];
@@ -413,6 +468,13 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
         result = { account: { username: state.user.username, providers: [] } };
       } else if (route === '/users/me' && method === 'GET') result = me();
       else if (route === '/users/me' && method === 'PATCH') {
+        if (body.activeTitle !== undefined) {
+          const title = body.activeTitle;
+          if (typeof title !== 'string') fail('VALIDATION', 'Choose a valid title.');
+          const owned = bundle.quests.achievements.some(def => def.tiers.some((_, index) => title === `${def.id}_${index + 1}` && state.claimedAchievements.includes(`${def.id}:${index + 1}`)));
+          if (title && !owned) fail('TITLE_NOT_OWNED', 'Earn this title before selecting it.');
+          state.user.activeTitle = title || null;
+        }
         if (body.displayName) state.user.displayName = String(body.displayName).slice(0, 16);
         if (body.avatar) state.user.avatar = String(body.avatar).slice(0, 64);
         if (body.settings) state.user.settings = { ...state.user.settings, ...body.settings };
@@ -426,12 +488,20 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
       }
       else if (route === '/world') result = world();
       else if (route === '/home' && method === 'GET') result = { home: state.home };
+      else if (route === '/home/peaceful') {
+        if (typeof body.enabled !== 'boolean') fail('VALIDATION', 'Choose whether peaceful mode is enabled.');
+        state.home.peacefulMode = body.enabled; result = clone(state.home);
+      }
       else if ((route === '/home' || route === '/home/choose') && method === 'POST') {
-        const province = bundle.provinces.provinces.find(value => value.id === body.provinceId);
+        const province = bundle.provinces.provinces.find(value => value.id === provinceId(body.provinceId));
         if (!province) fail('VALIDATION', 'Choose a province.');
-        state.home.provinceId = province.id; state.home.skinRegion = province.region; state.region = province.region; result = { home: state.home };
+        state.home.provinceId = province.id; state.home.skinRegion = province.region; state.region = province.region; result = clone(state.home);
       } else if (route === '/map/national') result = { provinces: bundle.provinces.provinces.map(province => ({ ...province, playerCount: province.id === state.home.provinceId ? 1 : 0 })) };
-      else if (/^\/map\/provinces\//.test(route)) { const province = bundle.provinces.provinces.find(value => value.id === route.split('/').at(-1)); result = { ...province, villages: [] }; }
+      else if (/^\/map\/provinces\//.test(route)) {
+        const province = bundle.provinces.provinces.find(value => value.id === provinceId(route.split('/').at(-1)));
+        if (!province) fail('NOT_FOUND', 'Province not found.', undefined, 404);
+        result = { ...province, villages: [] };
+      }
       else if (route === '/storage') result = { storage: storage(), bag: state.bag };
       else if (route === '/storage/sell-npc') {
         const qty = integer(body.qty); if (qty < 1) fail('VALIDATION', 'Choose a quantity.');
@@ -476,6 +546,10 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
           obj.field = emptyField(obj.field.cycleNo, obj.field.soilTier); changed.push(obj); done.push(obj.id);
         }
         result = mutation(changed, { done, exp });
+      } else if (/^\/fields\/\d+\/uproot$/.test(route)) {
+        const obj = object(route.split('/')[2], 'field');
+        if (obj.field.state !== 'GROWING') fail('NOT_GROWING', 'Only growing crops can be uprooted.');
+        obj.field = emptyField(obj.field.cycleNo, obj.field.soilTier); result = mutation([obj]);
       } else if (/^\/fields\/\d+\/care$/.test(route)) {
         const obj = object(route.split('/')[2], 'field');
         if (!cfg.problems.types.includes(body.type)) fail('VALIDATION', 'Choose a valid crop problem.');
@@ -601,8 +675,8 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
         if (!recipe || recipe.building !== obj.defId) fail('VALIDATION', 'Choose a recipe for this factory.'); requireLevel(recipe.unlockLevel);
         if (obj.construction) fail('UNDER_CONSTRUCTION', 'Finish construction first.');
         if (obj.factory.queue.length >= obj.factory.slots) fail('QUEUE_FULL', 'The production queue is full.'); removeItems(recipe.inputs);
-        const start = Math.max(now(), ...obj.factory.queue.map(job => Date.parse(job.endAt)));
-        obj.factory.queue.push({ recipeId: recipe.id, startAt: iso(start), endAt: iso(start + recipe.seconds * 1000), w: 1 });
+        const job = { recipeId: recipe.id, startAt: iso(now()), endAt: iso(now() + recipe.seconds * 1000), w: 1 };
+        obj.factory.queue.push(job); scheduleFactory(obj, now(), new Set([job]));
         record('ENQUEUE', 1, { recipeId: recipe.id, defId: obj.defId }); record('JOB_START', 1, { recipeId: recipe.id, defId: obj.defId }); result = mutation([obj]);
       } else if (/^\/factories\/\d+\/collect$/.test(route)) {
         const obj = object(route.split('/')[2], 'factory'); if (!obj.factory.output.length) fail('NOTHING_TO_COLLECT', 'Production is still running.');
@@ -615,10 +689,30 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
         if (now() >= Date.parse(job.startAt)) fail('JOB_STARTED', 'A running production job cannot be cancelled.');
         const duration = Date.parse(job.endAt) - Date.parse(job.startAt);
         addItems(recipes.get(job.recipeId).inputs); obj.factory.queue.splice(body.jobIndex, 1);
-        for (const queued of obj.factory.queue.slice(body.jobIndex)) {
+        for (const queued of obj.factory.queue.slice(body.jobIndex).filter(queued => (queued.w || 1) === (job.w || 1))) {
           queued.startAt = iso(Date.parse(queued.startAt) - duration); queued.endAt = iso(Date.parse(queued.endAt) - duration);
         }
+        scheduleFactory(obj);
         result = mutation([obj]);
+      } else if (/^\/factories\/\d+\/hire-worker$/.test(route)) {
+        const obj = object(route.split('/')[2], 'factory');
+        if (obj.construction) fail('UNDER_CONSTRUCTION', 'Finish construction first.');
+        const active = activeWorkerHires(obj);
+        const next = cfg.factoryWorkers.hires.map((_, index) => index + 2).find(no => !active.some(hire => hire.no === no));
+        const workerNo = body.workerNo === undefined ? next : body.workerNo;
+        if (!Number.isInteger(workerNo) || workerNo < 2) fail('MAX_WORKERS', 'All worker seats are hired.');
+        const price = workerPrice(obj, workerNo); requireLevel(price.level);
+        if (!Number.isInteger(body.expectedGold) || body.expectedGold < price.gold) fail('PRICE_CHANGED', 'The worker price changed. Request a new quote.');
+        const hired = active.find(hire => hire.no === workerNo);
+        const period = cfg.factoryWorkers.rentDays * 86400000;
+        if (hired && Date.parse(hired.until) - now() > period) fail('RENEW_TOO_EARLY', 'Renew when the worker has at most one rental period left.');
+        if (!hired && workerNo !== next) fail('WORKER_ORDER', 'Hire the earlier worker seat first.');
+        pay(price.gold);
+        obj.factory.hires ||= [];
+        const existing = obj.factory.hires.find(hire => hire.no === workerNo);
+        const until = iso((hired ? Date.parse(hired.until) : now()) + period);
+        if (existing) existing.until = until; else obj.factory.hires.push({ no: workerNo, until });
+        scheduleFactory(obj); result = mutation([obj], { workerNo, goldCost: price.gold });
       } else if (/^\/factories\/\d+\/buy-slot$/.test(route)) {
         const obj = object(route.split('/')[2], 'factory'); const slots = factories.get(obj.defId).queueSlots;
         if (obj.factory.slots >= slots.max) fail('MAX_SLOTS', 'All queue slots are unlocked.'); pay(slots.xuPerSlot[obj.factory.slots - slots.start] || 5, 'xu'); obj.factory.slots++; result = mutation([obj]);
@@ -657,13 +751,21 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
       } };
       else if (route === '/shop/seeds') result = { seeds: [...crops.values()].filter(crop => crop.unlockLevel <= state.wallet.level).map(crop => ({
         cropId: crop.id, name: crop.name, have: have(crop.id), goldPrice: Math.max(1, Math.ceil((items.get(crop.id)?.sellPrice || crop.value) * 1.5)), xuPrice: 1,
-        goldDailyRemaining: 999, xuDailyRemaining: 999, goldDailyLimit: 999, xuDailyLimit: 999,
+        goldDailyRemaining: seedQuota(crop.id, 'gold').remaining,
+        xuDailyRemaining: seedQuota(crop.id, 'xu').remaining,
+        goldDailyLimit: seedQuota(crop.id, 'gold').limit, xuDailyLimit: seedQuota(crop.id, 'xu').limit,
       })) };
       else if (route === '/shop/seeds/buy') {
         const crop = crops.get(body.cropId); if (!crop) fail('VALIDATION', 'Choose a crop.'); requireLevel(crop.unlockLevel);
-        const qty = integer(body.qty); if (qty < 1 || qty > 99) fail('VALIDATION', 'Choose 1–99 seeds.');
-        const currency = body.pay === 'xu' ? 'xu' : 'gold'; pay(qty * (currency === 'xu' ? 1 : Math.max(1, Math.ceil((items.get(crop.id)?.sellPrice || crop.value) * 1.5))), currency);
-        addItems({ [crop.id]: qty }); result = mutation();
+        const qty = body.qty;
+        if (!Number.isInteger(qty) || qty < 1 || qty > cfg.seedShop.maxBuyQtyPerRequest) fail('VALIDATION', `Choose 1–${cfg.seedShop.maxBuyQtyPerRequest} seeds.`);
+        const currency = body.currency ?? body.pay ?? 'gold';
+        if (!['gold', 'xu'].includes(currency)) fail('VALIDATION', 'Choose gold or Xu.');
+        if (qty > seedQuota(crop.id, currency).remaining) fail('DAILY_LIMIT', 'The daily seed limit has been reached.');
+        pay(qty * (currency === 'xu' ? 1 : Math.max(1, Math.ceil((items.get(crop.id)?.sellPrice || crop.value) * 1.5))), currency);
+        addItems({ [crop.id]: qty });
+        const purchases = (state.seedPurchases[crop.id] ||= {}); purchases[currency] = (purchases[currency] || 0) + qty;
+        result = mutation();
       } else if (route === '/shop/consumables/buy') {
         const item = items.get(body.itemId); if (!item?.shop) fail('VALIDATION', 'This item is not for sale.');
         const qty = integer(body.qty); if (qty < 1 || qty > 20) fail('VALIDATION', 'Choose 1–20 items.'); pay(item.shop.price * qty, item.shop.currency); addItems({ [item.id]: qty }); result = mutation();
@@ -676,7 +778,29 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
       } else if (route === '/shop/dogs/buy') {
         const dog = cfg.dogs.find(value => value.id === body.dogId); if (!dog) fail('VALIDATION', 'Choose a dog.'); requireLevel(dog.unlockLevel); pay(dog.price, dog.currency);
         state.dog = { def: dog.id, active: false, fedUntil: null, foodStackSeconds: 0 }; record('BUY_DOG'); result = mutation([], { dog: state.dog });
+      } else if (route === '/dog/feed') {
+        if (!state.dog) fail('NOT_FOUND', 'Buy a dog before feeding it.', undefined, 404);
+        const qty = body.qty;
+        if (!Number.isInteger(qty) || qty < 1) fail('VALIDATION', 'Choose a positive food quantity.');
+        const seconds = state.dog.foodStackSeconds + qty * cfg.dogRules.foodSeconds;
+        if (seconds > cfg.dogRules.maxStackSeconds) fail('MAX_FOOD', 'The dog already has enough food. Use a smaller quantity.');
+        removeItems({ [cfg.dogRules.food]: qty });
+        state.dog.foodStackSeconds = seconds; state.dog.fedUntil = iso(now() + seconds * 1000); state.dog.active = true;
+        result = mutation([], { dog: state.dog });
       } else if (route === '/quests') result = quests();
+      else if (route === '/quests/daily/reroll') {
+        const slot = dailyQuestSlots().find(slot => slot.questId === body.questId);
+        const quest = quests().daily.find(quest => quest.id === body.questId);
+        if (!slot || !quest) fail('NOT_FOUND', 'Choose one of today’s daily quests.', undefined, 404);
+        if (slot.rerolled || quest.completedAt || quest.claimedAt) fail('CANNOT_REROLL', 'This daily quest cannot be changed again.');
+        const used = new Set(dailyQuestSlots().map(slot => slot.questId));
+        const candidates = bundle.quests.dailyPool.filter(def => !used.has(def.id) && def.minLevel <= state.wallet.level);
+        if (!candidates.length) fail('NO_QUEST_AVAILABLE', 'No replacement quest is available.');
+        const replacement = candidates[Math.min(candidates.length - 1, Math.floor(random() * candidates.length))];
+        pay(cfg.quests.dailyRerollXu, 'xu');
+        delete state.questProgress[replacement.id]; slot.questId = replacement.id; slot.rerolled = true;
+        result = mutation([], { quest: quests().daily.find(quest => quest.id === replacement.id) });
+      }
       else if (/^\/quests\/.+\/claim$/.test(route)) {
         const id = decodeURIComponent(route.split('/')[2]); const quest = [...quests().main, ...quests().daily].find(value => value.id === id);
         if (!quest || !quest.completedAt || quest.claimedAt || quest.locked) fail('NOT_CLAIMABLE', 'Complete the quest first.');
@@ -715,7 +839,8 @@ export function createBackend({ dataDir, config, gameSpeed = 1, onMutation = () 
       } else if (route === '/orders/boat') result = { boat: { id: null, status: 'none', crates: [], helpRequestsLeft: 0 } };
       else if (route === '/events') result = { events: [] };
       else if (route === '/flags') result = { flags: {} };
-      else if (route === '/ads/status') result = { enabled: false, placements: [], provider: 'none', serverTime: iso(now()) };
+      else if (route === '/ads/status') result = { enabled: false, usedToday: 0, dailyCapTotal: Math.max(1, cfg.ads.dailyCapTotal), placements: [], provider: null, serverTime: iso(now()) };
+      else if (route === '/dog/progress') result = { level: 1, xp: 0, nextLevelXp: null, maxLevel: 1, skills: [], points: 0, enabled: false };
       else if (route === '/affiliate/links') result = { links: [] };
       else if (route === '/chat/global/messages') result = { items: [], nextCursor: null, disabled: true };
       else if (route === '/chat/summary') result = { global: { key: 'global', disabled: true, latest: null }, province: null, village: null, hamlet: null, hiddenUserIds: [] };

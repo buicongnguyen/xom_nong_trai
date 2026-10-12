@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-13",
+  "target": "http://127.0.0.1:4198/xom_nong_trai/",
+  "edition": "isolated browser-local Pages preview",
+  "backendTests": { "passed": 53, "failed": 0 },
+  "browserSaveCases": { "passed": 7, "failed": 0 },
+  "mobilePanelCloseCases": { "passed": 18, "failed": 0, "viewports": ["320x568", "390x844", "844x390"], "panels": ["storage", "orders", "quests", "shop", "settings", "logs"] },
+  "guardedMenuCases": { "passed": 8, "failed": 0, "unsupportedApiRequests": 0, "controls": ["hamlet", "explore", "leaderboard", "marketLevels", "watch", "reputation", "fair", "feedbackFame"] },
+  "twoTabHud": { "passed": true, "goldBefore": 2500, "goldAfterInBothTabs": 2492, "storageBefore": "45/150", "storageAfterInBothTabs": "46/150" },
+  "actualUiFlow": {
+    "passed": true,
+    "provinceClick": "can_tho",
+    "homeHudAfterConfirmAndReload": "Cần Thơ",
+    "parallelFactoryWorkers": 2,
+    "secondRowSpeedupJobIndex": 1,
+    "firstJobEndAtUnchanged": true,
+    "secondProductCompleted": true,
+    "automaticAccountRegistrationSuppressed": true,
+    "pageErrors": []
+  },
+  "desktopMobilePurchaseReload": { "passed": true, "pageErrors": [], "consoleErrors": [], "httpFailures": [], "externalApiOrWebSocketRequests": [] },
+  "moduleAndFonts": { "passed": true, "sharedMainModuleInstance": true, "gameCanvases": 1, "localFonts": ["Baloo 2", "Be Vietnam Pro"] },
+  "configurationSchemaTables": 17,
+  "apiSchemaErrors": [],
+  "assetAudit": { "files": 122, "missing": [], "emptyFiles": [], "invalidGlbs": [] },
+  "reusableScripts": ["scripts/browser-save-qa.cjs", "scripts/frontend-browser-qa.cjs", "scripts/frontend-menu-qa.cjs", "scripts/frontend-flow-qa.cjs"],
+  "notes": ["QA uses disposable test farms; player saves are retained.", "Online accounts, multiplayer and payments remain unavailable."]
+}
