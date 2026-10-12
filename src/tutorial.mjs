@@ -1,0 +1,25 @@
+// Indices must match the preserved public client's tutorial definitions.
+// Online-only steps are skipped by the independent single-player backend.
+export const tutorial = [
+  { event: 'HARVEST_FIELD', level: 1, filter: { cropId: 'lua' } },
+  { event: 'PLANT', level: 1, filter: { cropId: 'lua' } },
+  { event: 'FERTILIZE', level: 1, filter: { cropId: 'lua' }, gift: 'phan_nhanh' },
+  { event: 'HARVEST_FIELD', level: 1, filter: { cropId: 'lua', fertilizedThisCycle: true } },
+  { event: 'TRUCK_DELIVER', level: 1 },
+  { event: 'CLEAR_OBSTACLE', level: 1 },
+  { event: 'BUY_ANIMAL', level: 2, filter: { animalId: 'ga' } },
+  { event: 'ENQUEUE', level: 2, filter: { recipeId: 'cam_ga' } },
+  { event: 'FEED_ANIMAL', level: 2, filter: { animalId: 'ga' } },
+  { event: 'COLLECT_ANIMAL', level: 2, filter: { animalId: 'ga' } },
+  { event: 'BUILD_PLACE', level: 3, filter: { defId: 'nha_xay_xat' } },
+  { event: 'ENQUEUE', level: 3, filter: { defId: 'nha_xay_xat', recipeId: 'gao' } },
+  { skip: true }, { skip: true },
+  { event: null, level: 4 },
+  { event: 'BUILD_PLACE', level: 5, filter: { defId: 'lo_duong' } },
+  { event: 'SPEED_UP', level: 5, filter: { defId: 'lo_duong', construction: true } },
+  { event: 'BUY_DOG', level: 6 },
+  { skip: true }, { skip: true },
+  { event: null, level: 8 }, { event: null, level: 9 },
+  { event: null, level: 10 }, { event: null, level: 11 },
+  { skip: true },
+];

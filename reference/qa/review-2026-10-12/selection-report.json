@@ -1,0 +1,60 @@
+{
+  "target": "http://127.0.0.1:4196/xom_nong_trai/",
+  "initial": {
+    "text": "2.500\n100\n45/150\n1\n0/50\nHà Nội\nSự kiện\nMùa vụ\nĐiểm danh\nBạn bè\nTúi\nĐơn hàng\n3\nMời bạn\nNhiệm vụ\nCHÍNH\nTrồng những hạt giống đầu tiên\n0/3\nCửa hàng\nChưa có tin nhắn — chạm để trò chuyện\n👆\nBé Mạ\n\nRuộng lúa chín vàng rồi kìa! Lại gần rồi gặt đi con.\n\n🔊\nĐể sau",
+    "spotlight": [
+      {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000,
+          "top": 0,
+          "right": 1440,
+          "bottom": 1000,
+          "left": 0
+        },
+        "children": [
+          {
+            "shadow": "none",
+            "background": "rgba(0, 0, 0, 0)",
+            "outline": "rgb(255, 233, 138) solid 3px"
+          }
+        ]
+      }
+    ]
+  },
+  "selected": {
+    "text": "2.500\n100\n45/150\n1\n0/50\nHà Nội\nSự kiện\nMùa vụ\nĐiểm danh\nBạn bè\nTúi\nĐơn hàng\n3\nMời bạn\nNhiệm vụ\nCHÍNH\nTrồng những hạt giống đầu tiên\n0/3\nCửa hàng\nChưa có tin nhắn — chạm để trò chuyện\n👆\nBé Mạ\n\nĐất trống rồi, gieo lại lúa vào đây cho kịp vụ mới nào.\n\n🔊\nĐể sau\n+3\n+5 EXP",
+    "spotlight": [
+      {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000,
+          "top": 0,
+          "right": 1440,
+          "bottom": 1000,
+          "left": 0
+        },
+        "children": [
+          {
+            "shadow": "none",
+            "background": "rgba(0, 0, 0, 0)",
+            "outline": "rgb(255, 233, 138) solid 3px"
+          }
+        ]
+      }
+    ]
+  },
+  "harvestState": {
+    "exp": 5,
+    "text": "2.500\n100\n48/150\n1\n5/50\nHà Nội\nSự kiện\nMùa vụ\nĐiểm danh\nBạn bè\nTúi\nĐơn hàng\n3\nMời bạn\nNhiệm vụ\nCHÍNH\nTrồng những hạt giống đầu tiên\n0/3\nCửa hàng\nChưa có tin nhắn — chạm để trò chuyện\n👆\nBé Mạ\n\nĐất trống rồi, gieo lại lúa vào đây cho kịp vụ mới nào.\n\n🔊\nĐể sau"
+  },
+  "dismissed": {
+    "text": "2.500\n100\n48/150\n1\n5/50\nHà Nội\nSự kiện\nMùa vụ\nĐiểm danh\nBạn bè\nTúi\nĐơn hàng\n3\nMời bạn\nNhiệm vụ\nCHÍNH\nTrồng những hạt giống đầu tiên\n0/3\nCửa hàng\nChưa có tin nhắn — chạm để trò chuyện\nBạn có biết?\nMỗi vườn chỉ bị cùng một người hái trộm một lần mỗi đợt.\n×",
+    "spotlight": []
+  },
+  "errors": []
+}

@@ -4,7 +4,7 @@ A local single-player recreation of [nongtrai.jackle.dev](https://nongtrai.jackl
 
 ## Browser test on GitHub Pages
 
-Play at **https://buicongnguyen.github.io/xom_nong_trai/** and choose **Chơi ngay**. The Pages edition runs the same farming engine in your browser, with automatic saves in this browser's localStorage. Progress stays on this device/browser. It uses 30× game time and guest play; online accounts and multiplayer are unavailable.
+Play at **https://buicongnguyen.github.io/xom_nong_trai/** and choose **Chơi ngay**. The Pages edition runs the same farming engine in your browser, with automatic saves in this browser's localStorage. Progress stays on this device/browser. Growth uses real time and guest play; online accounts and multiplayer are unavailable. Browser locks serialize changes across tabs, and each tab refreshes completed timers and saved changes automatically.
 
 The public source repository is **https://github.com/buicongnguyen/xom_nong_trai**, with SSH remote `git@github.com:buicongnguyen/xom_nong_trai.git`, matching the neighboring `cute_game` repo. Pushes to `main` test and build the app, then deploy it through `.github/workflows/pages.yml`.
 
@@ -33,10 +33,10 @@ Plant, tend, fertilize, and harvest crops; buy and care for animals; produce goo
 
 Progress is saved automatically to **`.local/farm.json`** and survives server restarts. This edition uses one local farm shared by browsers connecting to this server. QA uses a separate save directory.
 
-Time runs at **30×** by default so farming and production can be tried quickly. To use real-time growth or another port:
+Time runs at **1×** by default so tutorial actions can be completed before crops mature. To accelerate growth for testing or use another port:
 
 ```powershell
-$env:GAME_SPEED = '1'
+$env:GAME_SPEED = '30'
 $env:PORT = '5180'
 npm start
 ```
@@ -54,6 +54,8 @@ Optional variables: `GAME_SPEED` (positive multiplier), `PORT` (default 5173), `
 - `tests/`: persistent gameplay regression test.
 
 Online multiplayer, original accounts, visits to real players, chat, leaderboards, payments, and multiplayer minigames require the original service and are not reproduced by this local server. Online-only actions return a local availability message. Local progress is independent of the original game. Cloudflare telemetry/challenge scripts were removed from the local HTML.
+
+The review findings, fixes, and remaining local gaps are recorded in [REVIEW.md](REVIEW.md). This remains an independent single-player recreation, with reconstructed balance rather than the original server's rules. Refresh all existing game tabs after an update to load the latest saving logic.
 
 ## Verify
 

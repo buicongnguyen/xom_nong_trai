@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "name": "unloading a stale tab cannot erase a completed harvest",
+      "pass": true
+    },
+    {
+      "name": "alternating tab mutations keep both inventory sales",
+      "pass": true
+    },
+    {
+      "name": "simultaneous tab transactions keep every sale",
+      "pass": true
+    },
+    {
+      "name": "other tabs receive a changed field without requesting its world",
+      "pass": true
+    },
+    {
+      "name": "passive timer completion emits a construction removal",
+      "pass": true
+    },
+    {
+      "name": "resetting browser storage prevents old tabs from resurrecting a farm",
+      "pass": true
+    },
+    {
+      "name": "a stale tab cannot mutate a replacement farm after a quick reset",
+      "pass": true
+    }
+  ]
+}

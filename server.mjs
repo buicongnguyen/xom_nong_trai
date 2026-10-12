@@ -9,7 +9,7 @@ import { createBackend } from './src/backend.mjs';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const publicDir = path.join(root, 'public');
 const config = JSON.parse(await readFile(path.join(root, 'config/game.json'), 'utf8'));
-const gameSpeed=Number(process.env.GAME_SPEED || 30);
+const gameSpeed=Number(process.env.GAME_SPEED || 1);
 if(!Number.isFinite(gameSpeed)||gameSpeed<=0)throw new Error('GAME_SPEED must be a positive number.');
 const backend = createBackend({ dataDir: process.env.DATA_DIR || path.join(root, '.local'), config, gameSpeed });
 const port = Number(process.env.PORT || 5173);
@@ -38,7 +38,7 @@ const server = http.createServer(async (req, res) => {
     let details;
     try { details = await stat(filename); } catch { res.writeHead(404); res.end('Not found'); return; }
     if (!details.isFile()) { res.writeHead(404); res.end('Not found'); return; }
-    const headers = { 'content-type': mime[path.extname(filename)] || 'application/octet-stream', 'content-length':details.size, 'cache-control':/\/assets\//.test(pathname) ? 'public, max-age=31536000, immutable' : 'no-cache' };
+    const headers = { 'content-type': mime[path.extname(filename)] || 'application/octet-stream', 'content-length':details.size, 'cache-control':'no-cache' };
     res.writeHead(200,headers);
     if (req.method === 'HEAD') res.end(); else createReadStream(filename).pipe(res);
   } catch (error) {
@@ -53,16 +53,28 @@ function frame(data, opcode=1) {
   return Buffer.concat([header,bytes]);
 }
 const sockets = new Set();
-backend.setOnMutation?.(event => {
-  if (event.result.objects || event.result.removed) {
-    const message=frame({t:'world_delta',p:{ownerId:event.user.id,objects:event.result.objects || [],removed:event.result.removed || []}});
+let publishedObjects = new Map(backend.getWorld().objects.map(object => [object.id, JSON.stringify(object)]));
+function publishWorld() {
+  const world = backend.getWorld();
+  const next = new Map(world.objects.map(object => [object.id, JSON.stringify(object)]));
+  const objects = world.objects.filter(object => next.get(object.id) !== publishedObjects.get(object.id));
+  const removed = [...publishedObjects.keys()].filter(id => !next.has(id));
+  if (objects.length || removed.length) {
+    const message = frame({t:'world_delta',p:{ownerId:world.owner.id,objects,removed}});
     for(const socket of sockets)if(!socket.destroyed)socket.write(message);
   }
+  publishedObjects = next;
+}
+backend.setOnMutation?.(event => {
+  publishWorld();
   if (event.tutorialStep !== event.previousTutorialStep) {
     const message=frame({t:'tutorial_update',p:{step:event.tutorialStep,completedStepId:`local_${event.previousTutorialStep}`}});
     for(const socket of sockets)if(!socket.destroyed)socket.write(message);
   }
 });
+const worldTimer = setInterval(() => { if (sockets.size) publishWorld(); }, 1000);
+worldTimer.unref();
+server.on('close', () => clearInterval(worldTimer));
 server.on('upgrade',(req,socket)=>{
   if (new URL(req.url,'http://localhost').pathname !== '/ws' || !req.headers['sec-websocket-key']) { socket.destroy(); return; }
   const accept=createHash('sha1').update(req.headers['sec-websocket-key']+'258EAFA5-E914-47DA-95CA-C5AB0DC85B11').digest('base64');
@@ -89,6 +101,6 @@ server.on('upgrade',(req,socket)=>{
   });
   socket.on('error',()=>{});
 });
-server.listen(port,host,()=>console.log(`Xóm Nông Trại local: http://${host}:${port}\nProgress: ${process.env.DATA_DIR || path.join(root,'.local')}\nGame speed: ${process.env.GAME_SPEED || 30}x`));
+server.listen(port,host,()=>console.log(`Xóm Nông Trại local: http://${host}:${port}\nProgress: ${process.env.DATA_DIR || path.join(root,'.local')}\nGame speed: ${process.env.GAME_SPEED || 1}x`));
 server.on('error',error=>{console.error(error.code==='EADDRINUSE'?`Port ${port} is in use. Set PORT to another port.`:error);process.exitCode=1;});
 for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>{for(const socket of sockets)socket.destroy();server.close(()=>process.exit(0));});
