@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fff6e6">
+<title>Đặt lại nông trại · Reset farm · Xóm Nông Trại</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#503b29;background:#fff6e6;line-height:1.65}*{box-sizing:border-box}body{margin:0;padding:32px 18px;min-height:100vh;display:grid;place-items:center}main{max-width:560px;width:100%;padding:32px;background:#fffdf5;border:2px solid #7f9d58;border-radius:24px;box-shadow:0 8px 0 #75944a1c}h1{font-size:clamp(25px,5vw,34px);line-height:1.2;margin:10px 0 24px;color:#2d642c}p{margin:8px 0 18px}.eyebrow{font-weight:700;font-size:14px;color:#627446;letter-spacing:.03em}a{color:#28652b;text-underline-offset:3px}button,.back{font:inherit;display:inline-block;border:0;border-radius:14px;text-decoration:none;font-weight:700;padding:12px 20px}button{background:#925132;color:white;cursor:pointer}button:disabled{opacity:.6;cursor:default}.back{background:#3d7b35;color:white}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.notice{padding:14px 16px;background:#edf3dd;border-radius:14px;margin:20px 0 0}.privacy{font-size:14px;margin-top:26px}button:focus-visible,a:focus-visible{outline:3px solid #e4b73b;outline-offset:4px}@media(max-width:430px){body{padding:16px}main{padding:24px 20px}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">🌾 Xóm Nông Trại · Bản chơi thử</div>
+<h1>Đặt lại nông trại</h1>
+<p>Bản chơi thử không có tài khoản trực tuyến. Nông trại của bạn được lưu trong trình duyệt trên thiết bị này.</p>
+<p>Xóa nông trại sẽ xóa tiến trình và vật phẩm của bản chơi thử này. Bạn sẽ bắt đầu một nông trại mới khi vào vườn lần tiếp theo. Thao tác này không thể hoàn tác.</p>
+<p>Tùy chọn trình duyệt và dữ liệu của các trò chơi khác được giữ nguyên.</p>
+<div class="actions"><button id="reset" type="button">Xóa nông trại đã lưu</button><a class="back" href="./">Về nông trại</a></div>
+<p id="status" class="notice" role="status" hidden></p>
+<p class="privacy"><a href="./privacy-vi.html">Thông tin quyền riêng tư</a> · <a href="./privacy.html" lang="en">Privacy in English</a></p>
+</main>
+<script>
+document.getElementById('reset').addEventListener('click',()=>{
+  if(!confirm('Xóa toàn bộ tiến trình nông trại của bản chơi thử này trên thiết bị hiện tại? Thao tác này không thể hoàn tác.'))return;
+  const status=document.getElementById('status');
+  try{
+    const prefix=`xnt:pages:${new URL('.',location.href).pathname}:`;
+    for(const key of Object.keys(localStorage))if(key.startsWith(prefix))localStorage.removeItem(key);
+    document.getElementById('reset').disabled=true;
+    status.textContent='Đã xóa nông trại đã lưu. Chọn “Về nông trại” để bắt đầu lại.';
+  }catch{
+    status.textContent='Trình duyệt chưa cho phép truy cập dữ liệu đã lưu. Hãy kiểm tra quyền lưu dữ liệu của trang rồi thử lại.';
+  }
+  status.hidden=false;
+});
+</script>
+</body></html>
