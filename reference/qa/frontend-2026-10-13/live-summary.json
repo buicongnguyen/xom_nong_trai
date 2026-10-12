@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-13",
+  "target": "https://buicongnguyen.github.io/xom_nong_trai/",
+  "testedAppRevision": "c751cb6c8012d47a8d574a9d0c2911830b19bd02",
+  "deployment": { "run": 38286008534, "conclusion": "success" },
+  "desktopAndMobile": {
+    "passed": true,
+    "seedPurchaseAndReload": true,
+    "pageErrors": [],
+    "consoleErrors": [],
+    "httpFailures": [],
+    "externalApiRequests": [],
+    "externalWebSocketConnections": []
+  },
+  "actualUiFlow": {
+    "passed": true,
+    "accountPromptSuppressed": true,
+    "canThoMapClickHomeConfirmHudReload": true,
+    "parallelWorkerHire": true,
+    "secondRowSpeedupJobIndex": 1,
+    "firstJobEndAtUnchanged": true,
+    "pageErrors": []
+  },
+  "mobileMenu": { "passed": 8, "failed": 0, "unsupportedApiRequests": 0, "pageErrors": [], "consoleErrors": [], "httpFailures": [] },
+  "textureDecodeChecks": {
+    "kit-tex-92e3a93edbb2ee1a.png": { "status": 200, "dimensions": "128x128" },
+    "kit-tex-38053c5ab3e413f7.png": { "status": 200, "dimensions": "128x128" },
+    "kit-tex-351e13adf845d823.png": { "status": 200, "dimensions": "128x128" },
+    "kit-tex-a38490acb187852e.png": { "status": 200, "dimensions": "128x128" },
+    "kit-tex-cf3520c4e55f90ec.png": { "status": 200, "dimensions": "128x128" }
+  },
+  "notes": ["Menu QA reuses one loaded session to avoid cancelling texture downloads between actions.", "Static asset readiness excludes streaming background music.", "All gameplay checks used isolated browser-local test farms."]
+}
