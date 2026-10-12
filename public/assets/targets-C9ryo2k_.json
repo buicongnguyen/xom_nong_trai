@@ -1,0 +1,2486 @@
+{
+ "total": 413,
+ "groups": [
+  {
+   "id": "field",
+   "label": "Luống đất",
+   "items": [
+    {
+     "kind": "field",
+     "id": "dat_thuong",
+     "states": [
+      "trong",
+      "da_gieo",
+      "uot"
+     ],
+     "label": "Đất thường",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "field",
+     "id": "dat_do",
+     "states": [
+      "trong",
+      "da_gieo",
+      "uot"
+     ],
+     "label": "Đất đỏ",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "field",
+     "id": "dat_den",
+     "states": [
+      "trong",
+      "da_gieo",
+      "uot"
+     ],
+     "label": "Đất đen",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "crop",
+   "label": "Cây trồng",
+   "items": [
+    {
+     "kind": "crop",
+     "id": "lua",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Lúa",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "ngo",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Ngô",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "rau_muong",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Rau muống",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "dau_nanh",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Đậu nành",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "mia",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Mía",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "ca_rot",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Cà rốt",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "lua_nep",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Lúa nếp",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "lua_mi",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Lúa mì",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "dau_xanh",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Đậu xanh",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "su_hao",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Su hào",
+     "region": "bac",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "toi_dao",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Tỏi đảo",
+     "region": "trung",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "lua_thom",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Lúa thơm",
+     "region": "nam",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "ca_chua",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Cà chua",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "la_dong",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Lá dong",
+     "region": "bac",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "khoai_lang",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Khoai lang",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "me",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Mè",
+     "region": "trung",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "bong",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Bông",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "dau_tay",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Dâu tây",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "ot",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Ớt",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "bi_do",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Bí đỏ",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "dua_hau",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Dưa hấu",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "hoa_cuc",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Hoa cúc",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "gung",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Gừng",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "sen",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Hoa sen",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "crop",
+     "id": "nhan_sam",
+     "states": [
+      "mam",
+      "lon",
+      "gan_chin",
+      "chin"
+     ],
+     "label": "Nhân sâm",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stubble",
+   "label": "Gốc sau thu hoạch & sự cố",
+   "items": [
+    {
+     "kind": "stubble",
+     "id": "lua",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Gốc rạ lúa",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "stubble",
+     "id": "ngo",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Thân ngô gãy",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "stubble",
+     "id": "mia",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Gốc mía",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "stubble",
+     "id": "day_bo",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Dây bò héo",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "stubble",
+     "id": "bui",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Gốc bụi",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "stubble",
+     "id": "cu",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Đất xới củ",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "stubble",
+     "id": "hoa",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cành hoa khô",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "stubble",
+     "id": "sen",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Ao sen tàn",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "overlay",
+     "id": "co_dai",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cỏ dại",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "overlay",
+     "id": "sau",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Sâu",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "overlay",
+     "id": "kho_han",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Đất nứt khô",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tree",
+   "label": "Cây ăn quả",
+   "items": [
+    {
+     "kind": "tree",
+     "id": "cay_cam",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây cam",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_vai_thieu",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây vải thiều",
+     "region": "bac",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_buoi",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây bưởi",
+     "region": "nam",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_xoai",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây xoài",
+     "region": "nam",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "tru_tieu",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Trụ tiêu",
+     "region": "trung",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_nhan_long",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây nhãn lồng",
+     "region": "bac",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_ca_phe",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây cà phê",
+     "region": "trung",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_dao_tet",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây đào Tết",
+     "region": "bac",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_sau_rieng",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây sầu riêng",
+     "region": "nam",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_mai_vang",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây mai vàng",
+     "region": "nam",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "bui_tra",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Bụi trà",
+     "region": "bac",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_dua",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây dừa",
+     "region": "nam",
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "tree",
+     "id": "cay_thanh_long",
+     "states": [
+      "non",
+      "trong_qua",
+      "ra_hoa",
+      "co_qua",
+      "heo",
+      "goc"
+     ],
+     "label": "Cây thanh long",
+     "region": "trung",
+     "footprint": [
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "house",
+   "label": "Nhà chính",
+   "items": [
+    {
+     "kind": "house",
+     "id": "nha_bac",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3",
+      "cap_4",
+      "cap_5"
+     ],
+     "label": "Nhà chính miền Bắc",
+     "region": "bac",
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "house",
+     "id": "nha_trung",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3",
+      "cap_4",
+      "cap_5"
+     ],
+     "label": "Nhà chính miền Trung",
+     "region": "trung",
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "house",
+     "id": "nha_nam",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3",
+      "cap_4",
+      "cap_5"
+     ],
+     "label": "Nhà chính miền Nam",
+     "region": "nam",
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "house",
+     "id": "nha_co_go_lim",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Nhà cổ gỗ lim (skin)",
+     "region": "bac",
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "house",
+     "id": "nha_ruong_go_lim",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Nhà rường gỗ lim (skin)",
+     "region": "trung",
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "house",
+     "id": "nha_co_nam_bo",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Nhà cổ Nam Bộ (skin)",
+     "region": "nam",
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "house",
+     "id": "nha_san",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Nhà sàn Tây Bắc (skin)",
+     "region": "vung_nui",
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "house",
+     "id": "gian_giao",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Giàn giáo nâng cấp",
+     "region": null,
+     "footprint": [
+      4,
+      4
+     ]
+    }
+   ],
+   "tiers": {
+    "cap_1": "Nhà tranh",
+    "cap_2": "Nhà cấp 4",
+    "cap_3": "Nhà truyền thống",
+    "cap_4": "Nhà lầu",
+    "cap_5": "Biệt thự vườn"
+   }
+  },
+  {
+   "id": "flora",
+   "label": "Cây cảnh & tự nhiên",
+   "items": [
+    {
+     "kind": "flora",
+     "id": "tre",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Lũy tre",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "chuoi",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Chuối",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "cau",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Cau",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "bang",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Bàng",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "da",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Cây đa",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "phuong",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Phượng vĩ",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "bang_lang",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Bằng lăng",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "xoai_hoang",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Xoài già",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "gao",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Cây gạo",
+     "region": "bac",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "sau",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Cây sấu",
+     "region": "bac",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "nhan",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Cây nhãn",
+     "region": "bac",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "vai",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Cây vải",
+     "region": "bac",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "phi_lao",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Phi lao",
+     "region": "trung",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "dua",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Dừa",
+     "region": "trung",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "bang_bien",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Bàng biển",
+     "region": "trung",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "xuong_rong",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Xương rồng",
+     "region": "trung",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "dua_dai",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Dứa dại",
+     "region": "trung",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "sim",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Sim",
+     "region": "trung",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "dua_nuoc",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Dừa nước",
+     "region": "nam",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "ban",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Cây bần",
+     "region": "nam",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "tram",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Cây tràm",
+     "region": "nam",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "mai_rung",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Mai vàng rừng",
+     "region": "nam",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "thong",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Thông",
+     "region": "vung_nui",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "dao_rung",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Đào rừng",
+     "region": "vung_nui",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "man",
+     "states": [
+      "nho",
+      "vua",
+      "lon"
+     ],
+     "label": "Mận Tây Bắc",
+     "region": "vung_nui",
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "co_ngan",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cỏ ngắn",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "co_may",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cỏ may",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "co_lau",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cỏ lau",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "co_dai_cao",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cỏ dại cao",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "hoa_dai_vang",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Hoa dại vàng",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "hoa_dai_tim",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Hoa dại tím",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "hoa_dai_trang",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Hoa dại trắng",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "hoa_dai_hong",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Hoa dại hồng",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "hoa_dai_do",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Hoa dại đỏ",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "duong_xi",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Dương xỉ",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "bui_ram",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bụi rậm",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "da_reu",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Đá rêu",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "luc_binh",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Lục bình",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "beo",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bèo tấm",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "sung",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Hoa súng",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "sen_ao",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Sen ao",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "flora",
+     "id": "lau_say",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Lau sậy",
+     "region": null,
+     "footprint": null
+    }
+   ]
+  },
+  {
+   "id": "animal",
+   "label": "Vật nuôi & chuồng",
+   "items": [
+    {
+     "kind": "animal",
+     "id": "ga",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Gà",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "animal",
+     "id": "bo",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bò sữa",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "animal",
+     "id": "heo",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Heo",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "animal",
+     "id": "vit",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Vịt",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "animal",
+     "id": "cuu",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cừu",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "animal",
+     "id": "de",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Dê",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "animal",
+     "id": "ong",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Tổ ong",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "animal",
+     "id": "dog_local",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Chó Vện",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "animal",
+     "id": "dog_shepherd",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Chó Béc",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "animal",
+     "id": "dog_mastiff",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Chó Ngao",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "pen",
+     "id": "chuong_ga",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3"
+     ],
+     "label": "Chuồng gà",
+     "region": null,
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "pen",
+     "id": "chuong_bo",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3"
+     ],
+     "label": "Chuồng bò",
+     "region": null,
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "pen",
+     "id": "chuong_heo",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3"
+     ],
+     "label": "Chuồng heo",
+     "region": null,
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "pen",
+     "id": "chuong_cuu",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3"
+     ],
+     "label": "Chuồng cừu",
+     "region": null,
+     "footprint": [
+      4,
+      4
+     ]
+    },
+    {
+     "kind": "pen",
+     "id": "vuon_ong",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3"
+     ],
+     "label": "Vườn ong",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "pen",
+     "id": "chuong_cho",
+     "states": [
+      "go",
+      "gach",
+      "cung_dinh"
+     ],
+     "label": "Chuồng chó",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "building",
+   "label": "Công trình",
+   "items": [
+    {
+     "kind": "building",
+     "id": "may_cam",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Máy xay cám",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "nha_xay_xat",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Nhà xay xát",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "lo_duong",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Lò nấu đường",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "nha_sua",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Nhà làm sữa",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "lo_banh",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Lò bánh",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "quay_nuoc",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Quầy nước",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "khung_det",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Khung dệt",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "bep_che_xoi",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bếp chè xôi",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "xuong_mut",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Xưởng mứt",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "tiem_may",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Tiệm may",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "tiem_banh_ngot",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Tiệm bánh ngọt",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "tiem_hoa",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Tiệm hoa",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "bep_co_truyen",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bếp cổ truyền",
+     "region": "bac",
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "xuong_duyen_hai",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Xưởng duyên hải",
+     "region": "trung",
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "lo_keo_miet_vuon",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Lò kẹo miệt vườn",
+     "region": "nam",
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "ham",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3"
+     ],
+     "label": "Hầm",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "kho",
+     "states": [
+      "cap_1",
+      "cap_2",
+      "cap_3"
+     ],
+     "label": "Kho",
+     "region": null,
+     "footprint": [
+      3,
+      3
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "sap_cho",
+     "states": [
+      "trong",
+      "co_hang"
+     ],
+     "label": "Sạp chợ",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "ben_ghe",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bến ghe",
+     "region": null,
+     "footprint": [
+      4,
+      2
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "ghe",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Ghe",
+     "region": null,
+     "footprint": [
+      3,
+      1
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "bang_don_xe_tai",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bảng đơn xe tải",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "building",
+     "id": "xe_tai",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Xe tải",
+     "region": null,
+     "footprint": [
+      3,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "decor",
+   "label": "Trang trí & chướng ngại",
+   "items": [
+    {
+     "kind": "decor",
+     "id": "hang_rao_tre",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Hàng rào tre",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "duong_gach",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Đường gạch",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "bu_nhin",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bù nhìn",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "lu_nuoc",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Lu nước",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "chum_hoa",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Chum hoa",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "cay_chuoi_kieng",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cây chuối kiểng",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "ghe_da",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Ghế đá",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "hang_rao_go",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Hàng rào gỗ",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "leu_rom",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Lều rơm",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "den_long",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Đèn lồng",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "xe_dap",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Xe đạp",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "gieng_nuoc",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Giếng nước",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "coi_xay_gio",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cối xay gió",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "cau_khi",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cầu khỉ",
+     "region": null,
+     "footprint": [
+      2,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "ao_sen",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Ao sen",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "xe_bo",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Xe bò",
+     "region": null,
+     "footprint": [
+      2,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "gian_muop",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Giàn mướp",
+     "region": null,
+     "footprint": [
+      2,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "cau_tre",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cầu tre",
+     "region": null,
+     "footprint": [
+      2,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "cong_lang",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cổng làng",
+     "region": null,
+     "footprint": [
+      2,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "thuyen_hoa",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Thuyền hoa",
+     "region": null,
+     "footprint": [
+      2,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "xich_du_tre",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Xích đu tre",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "gian_hoa_giay",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Giàn hoa giấy",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "tuong_chuot_ti",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Tượng Chuột Tí",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "nha_choi_be_ma",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Nhà chòi Bé Mạ",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "den_hoa_dang",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Đèn hoa đăng",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "hoa_mai",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Chậu mai",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "decor",
+     "id": "hoa_dao",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Chậu đào",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "obstacle",
+     "id": "bui_ram",
+     "states": [
+      "nguyen",
+      "dang_don"
+     ],
+     "label": "Bụi rậm",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "obstacle",
+     "id": "goc_cay",
+     "states": [
+      "nguyen",
+      "dang_don"
+     ],
+     "label": "Gốc cây",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "obstacle",
+     "id": "cay_to",
+     "states": [
+      "nguyen",
+      "dang_don"
+     ],
+     "label": "Cây to",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "obstacle",
+     "id": "dam_lay",
+     "states": [
+      "nguyen",
+      "dang_don"
+     ],
+     "label": "Đầm lầy",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    },
+    {
+     "kind": "obstacle",
+     "id": "da_nho",
+     "states": [
+      "nguyen",
+      "dang_don"
+     ],
+     "label": "Tảng đá",
+     "region": null,
+     "footprint": [
+      1,
+      1
+     ]
+    },
+    {
+     "kind": "obstacle",
+     "id": "da_lon",
+     "states": [
+      "nguyen",
+      "dang_don"
+     ],
+     "label": "Đá lớn",
+     "region": null,
+     "footprint": [
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "critter",
+   "label": "Sinh vật môi trường",
+   "items": [
+    {
+     "kind": "critter",
+     "id": "ong",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Ong mật",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "critter",
+     "id": "buom_vang",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bướm vàng",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "critter",
+     "id": "buom_trang",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bướm trắng",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "critter",
+     "id": "buom_xanh",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Bướm xanh",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "critter",
+     "id": "chuon_chuon",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Chuồn chuồn",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "critter",
+     "id": "co_trang",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cò trắng",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "critter",
+     "id": "chim_se",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Chim sẻ",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "critter",
+     "id": "ca_chep",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Cá chép",
+     "region": null,
+     "footprint": null
+    },
+    {
+     "kind": "critter",
+     "id": "dom_dom",
+     "states": [
+      "mac_dinh"
+     ],
+     "label": "Đom đóm",
+     "region": null,
+     "footprint": null
+    }
+   ]
+  }
+ ]
+}

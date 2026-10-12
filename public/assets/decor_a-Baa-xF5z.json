@@ -1,0 +1,385 @@
+{
+ "module": "decor_a",
+ "built_at": 1791521983.943008,
+ "seconds": 0.2,
+ "assets": [
+  {
+   "key": "decor/hang_rao_tre/mac_dinh",
+   "node": "decor__hang_rao_tre__mac_dinh",
+   "kind": "decor",
+   "id": "hang_rao_tre",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Hàng rào tre",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 212,
+   "mats": 6,
+   "wind": "none",
+   "size": [
+    1.05,
+    0.66,
+    0.25
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/duong_gach/mac_dinh",
+   "node": "decor__duong_gach__mac_dinh",
+   "kind": "decor",
+   "id": "duong_gach",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Đường gạch",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 52,
+   "mats": 4,
+   "wind": "none",
+   "size": [
+    1.0,
+    0.1,
+    1.0
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/bu_nhin/mac_dinh",
+   "node": "decor__bu_nhin__mac_dinh",
+   "kind": "decor",
+   "id": "bu_nhin",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Bù nhìn",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 510,
+   "mats": 10,
+   "wind": "none",
+   "size": [
+    1.06,
+    1.25,
+    0.78
+   ],
+   "parts": [
+    "sway_0.14"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/lu_nuoc/mac_dinh",
+   "node": "decor__lu_nuoc__mac_dinh",
+   "kind": "decor",
+   "id": "lu_nuoc",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Lu nước",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 514,
+   "mats": 15,
+   "wind": "none",
+   "size": [
+    1.05,
+    1.05,
+    0.99
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/chum_hoa/mac_dinh",
+   "node": "decor__chum_hoa__mac_dinh",
+   "kind": "decor",
+   "id": "chum_hoa",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Chum hoa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 328,
+   "mats": 12,
+   "wind": "none",
+   "size": [
+    0.83,
+    1.12,
+    0.86
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/cay_chuoi_kieng/mac_dinh",
+   "node": "decor__cay_chuoi_kieng__mac_dinh",
+   "kind": "decor",
+   "id": "cay_chuoi_kieng",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Cây chuối kiểng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 318,
+   "mats": 7,
+   "wind": "none",
+   "size": [
+    1.02,
+    1.26,
+    0.98
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/ghe_da/mac_dinh",
+   "node": "decor__ghe_da__mac_dinh",
+   "kind": "decor",
+   "id": "ghe_da",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Ghế đá",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 418,
+   "mats": 9,
+   "wind": "none",
+   "size": [
+    0.99,
+    0.44,
+    1.02
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/hang_rao_go/mac_dinh",
+   "node": "decor__hang_rao_go__mac_dinh",
+   "kind": "decor",
+   "id": "hang_rao_go",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Hàng rào gỗ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 280,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    1.0,
+    0.87,
+    0.26
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/leu_rom/mac_dinh",
+   "node": "decor__leu_rom__mac_dinh",
+   "kind": "decor",
+   "id": "leu_rom",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Lều rơm",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 304,
+   "mats": 6,
+   "wind": "none",
+   "size": [
+    2.0,
+    1.93,
+    2.1
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/den_long/mac_dinh",
+   "node": "decor__den_long__mac_dinh",
+   "kind": "decor",
+   "id": "den_long",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Đèn lồng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 356,
+   "mats": 10,
+   "wind": "none",
+   "size": [
+    0.93,
+    1.07,
+    0.91
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.3,
+      0.76,
+      0.24
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "decor/xe_dap/mac_dinh",
+   "node": "decor__xe_dap__mac_dinh",
+   "kind": "decor",
+   "id": "xe_dap",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Xe đạp",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 682,
+   "mats": 10,
+   "wind": "none",
+   "size": [
+    1.0,
+    0.68,
+    0.31
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/gieng_nuoc/mac_dinh",
+   "node": "decor__gieng_nuoc__mac_dinh",
+   "kind": "decor",
+   "id": "gieng_nuoc",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Giếng nước",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 426,
+   "mats": 14,
+   "wind": "none",
+   "size": [
+    0.94,
+    1.3,
+    0.99
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/coi_xay_gio/mac_dinh",
+   "node": "decor__coi_xay_gio__mac_dinh",
+   "kind": "decor",
+   "id": "coi_xay_gio",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Cối xay gió",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 300,
+   "mats": 9,
+   "wind": "none",
+   "size": [
+    1.39,
+    1.49,
+    1.45
+   ],
+   "parts": [
+    "spin_y_0.4"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/cau_khi/mac_dinh",
+   "node": "decor__cau_khi__mac_dinh",
+   "kind": "decor",
+   "id": "cau_khi",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Cầu khỉ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    1
+   ],
+   "tris": 414,
+   "mats": 9,
+   "wind": "none",
+   "size": [
+    2.02,
+    0.75,
+    0.64
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,327 @@
+{
+  "files": 118,
+  "bytes": 26449479,
+  "counts": {
+    ".js": 36,
+    ".glb": 20,
+    ".json": 18,
+    ".webp": 7,
+    ".woff2": 12,
+    ".mp3": 2,
+    ".css": 1,
+    ".png": 19,
+    ".html": 1,
+    ".webmanifest": 1,
+    ".jpg": 1
+  },
+  "missing": [],
+  "emptyFiles": [],
+  "invalidGlbs": [],
+  "externalGlbUris": [
+    {
+      "file": "assets\\animals-55a303e256.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\animals-55a303e256.glb",
+      "uri": "kit-tex-e383e73cbc0496fa.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\animals-55a303e256.glb",
+      "uri": "kit-tex-5ac9e65c8ee4cd7e.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\animals-55a303e256.glb",
+      "uri": "kit-tex-5974938f313ba423.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\buildings_misc-55a07df9b9.glb",
+      "uri": "kit-tex-5974938f313ba423.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\buildings_misc-55a07df9b9.glb",
+      "uri": "kit-tex-90067ff68e3c60f0.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\buildings_misc-55a07df9b9.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\buildings_misc-55a07df9b9.glb",
+      "uri": "kit-tex-3d24089f41440fc8.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\crops_a-2d0a5a6dd8.glb",
+      "uri": "kit-tex-0f139f272e840f5c.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\crops_b-e7bd381847.glb",
+      "uri": "kit-tex-0f139f272e840f5c.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_a-b8092f1f1a.glb",
+      "uri": "kit-tex-3d24089f41440fc8.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_a-b8092f1f1a.glb",
+      "uri": "kit-tex-0f139f272e840f5c.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_a-b8092f1f1a.glb",
+      "uri": "kit-tex-38053c5ab3e413f7.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_a-b8092f1f1a.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_a-b8092f1f1a.glb",
+      "uri": "kit-tex-92e3a93edbb2ee1a.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_a-b8092f1f1a.glb",
+      "uri": "kit-tex-90067ff68e3c60f0.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_b-4c3eeb2d57.glb",
+      "uri": "kit-tex-0f139f272e840f5c.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_b-4c3eeb2d57.glb",
+      "uri": "kit-tex-5974938f313ba423.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_b-4c3eeb2d57.glb",
+      "uri": "kit-tex-3d24089f41440fc8.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_b-4c3eeb2d57.glb",
+      "uri": "kit-tex-90067ff68e3c60f0.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\decor_b-4c3eeb2d57.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_a-a289d25b0f.glb",
+      "uri": "kit-tex-5974938f313ba423.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_a-a289d25b0f.glb",
+      "uri": "kit-tex-cf3520c4e55f90ec.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_a-a289d25b0f.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_a-a289d25b0f.glb",
+      "uri": "kit-tex-38053c5ab3e413f7.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_a-a289d25b0f.glb",
+      "uri": "kit-tex-90067ff68e3c60f0.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_a-a289d25b0f.glb",
+      "uri": "kit-tex-92e3a93edbb2ee1a.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_b-283fbb0b41.glb",
+      "uri": "kit-tex-5974938f313ba423.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_b-283fbb0b41.glb",
+      "uri": "kit-tex-90067ff68e3c60f0.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_b-283fbb0b41.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_b-283fbb0b41.glb",
+      "uri": "kit-tex-38053c5ab3e413f7.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_b-283fbb0b41.glb",
+      "uri": "kit-tex-92e3a93edbb2ee1a.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_b-283fbb0b41.glb",
+      "uri": "kit-tex-cf3520c4e55f90ec.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\factories_b-283fbb0b41.glb",
+      "uri": "kit-tex-a38490acb187852e.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\farm_kit-1bf85868a7.glb",
+      "uri": "kit-tex-0f139f272e840f5c.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\fields-863c11c25e.glb",
+      "uri": "kit-tex-8232ccdc5f102738.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\flora-68d4505b45.glb",
+      "uri": "kit-tex-0f139f272e840f5c.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_bac-e585993b59.glb",
+      "uri": "kit-tex-90067ff68e3c60f0.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_bac-e585993b59.glb",
+      "uri": "kit-tex-38053c5ab3e413f7.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_bac-e585993b59.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_bac-e585993b59.glb",
+      "uri": "kit-tex-5974938f313ba423.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_nam-3256c623ba.glb",
+      "uri": "kit-tex-5974938f313ba423.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_nam-3256c623ba.glb",
+      "uri": "kit-tex-92e3a93edbb2ee1a.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_nam-3256c623ba.glb",
+      "uri": "kit-tex-38053c5ab3e413f7.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_nam-3256c623ba.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_nam-3256c623ba.glb",
+      "uri": "kit-tex-cf3520c4e55f90ec.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_nam-3256c623ba.glb",
+      "uri": "kit-tex-351e13adf845d823.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_nam-3256c623ba.glb",
+      "uri": "kit-tex-3d24089f41440fc8.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_trung-643626952f.glb",
+      "uri": "kit-tex-351e13adf845d823.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_trung-643626952f.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_trung-643626952f.glb",
+      "uri": "kit-tex-38053c5ab3e413f7.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_trung-643626952f.glb",
+      "uri": "kit-tex-5974938f313ba423.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\houses_trung-643626952f.glb",
+      "uri": "kit-tex-f0d0d16e5325886b.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\obstacles-07a6f3decf.glb",
+      "uri": "kit-tex-84ebe2c5c5b83425.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\pens-19d0a303b6.glb",
+      "uri": "kit-tex-a38490acb187852e.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\pens-19d0a303b6.glb",
+      "uri": "kit-tex-92e3a93edbb2ee1a.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\pens-19d0a303b6.glb",
+      "uri": "kit-tex-a95129c6b205e2e4.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\pens-19d0a303b6.glb",
+      "uri": "kit-tex-5974938f313ba423.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\pens-19d0a303b6.glb",
+      "uri": "kit-tex-90067ff68e3c60f0.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\pens-19d0a303b6.glb",
+      "uri": "kit-tex-351e13adf845d823.png",
+      "exists": true
+    },
+    {
+      "file": "assets\\trees_fruit-5a05951eff.glb",
+      "uri": "kit-tex-0f139f272e840f5c.png",
+      "exists": true
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+ "module": "obstacles",
+ "built_at": 1791523963.334788,
+ "seconds": 0.2,
+ "assets": [
+  {
+   "key": "obstacle/bui_ram/nguyen",
+   "node": "obstacle__bui_ram__nguyen",
+   "kind": "obstacle",
+   "id": "bui_ram",
+   "state": "nguyen",
+   "group": "decor",
+   "label": "Bụi rậm",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 592,
+   "mats": 5,
+   "wind": "plant",
+   "size": [
+    0.95,
+    0.62,
+    0.95
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/bui_ram/dang_don",
+   "node": "obstacle__bui_ram__dang_don",
+   "kind": "obstacle",
+   "id": "bui_ram",
+   "state": "dang_don",
+   "group": "decor",
+   "label": "Bụi rậm",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 510,
+   "mats": 6,
+   "wind": "plant",
+   "size": [
+    0.95,
+    0.49,
+    0.95
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/goc_cay/nguyen",
+   "node": "obstacle__goc_cay__nguyen",
+   "kind": "obstacle",
+   "id": "goc_cay",
+   "state": "nguyen",
+   "group": "decor",
+   "label": "Gốc cây",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 650,
+   "mats": 6,
+   "wind": "plant",
+   "size": [
+    0.95,
+    0.7,
+    0.95
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/goc_cay/dang_don",
+   "node": "obstacle__goc_cay__dang_don",
+   "kind": "obstacle",
+   "id": "goc_cay",
+   "state": "dang_don",
+   "group": "decor",
+   "label": "Gốc cây",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 682,
+   "mats": 6,
+   "wind": "plant",
+   "size": [
+    0.95,
+    0.83,
+    0.95
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/cay_to/nguyen",
+   "node": "obstacle__cay_to__nguyen",
+   "kind": "obstacle",
+   "id": "cay_to",
+   "state": "nguyen",
+   "group": "decor",
+   "label": "Cây to",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 656,
+   "mats": 6,
+   "wind": "tree",
+   "size": [
+    1.9,
+    2.41,
+    1.9
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/cay_to/dang_don",
+   "node": "obstacle__cay_to__dang_don",
+   "kind": "obstacle",
+   "id": "cay_to",
+   "state": "dang_don",
+   "group": "decor",
+   "label": "Cây to",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 448,
+   "mats": 6,
+   "wind": "tree",
+   "size": [
+    1.9,
+    0.74,
+    1.9
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/dam_lay/nguyen",
+   "node": "obstacle__dam_lay__nguyen",
+   "kind": "obstacle",
+   "id": "dam_lay",
+   "state": "nguyen",
+   "group": "decor",
+   "label": "Đầm lầy",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 624,
+   "mats": 6,
+   "wind": "plant",
+   "size": [
+    1.9,
+    0.24,
+    1.9
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/dam_lay/dang_don",
+   "node": "obstacle__dam_lay__dang_don",
+   "kind": "obstacle",
+   "id": "dam_lay",
+   "state": "dang_don",
+   "group": "decor",
+   "label": "Đầm lầy",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 562,
+   "mats": 6,
+   "wind": "plant",
+   "size": [
+    1.9,
+    0.24,
+    1.9
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/da_nho/nguyen",
+   "node": "obstacle__da_nho__nguyen",
+   "kind": "obstacle",
+   "id": "da_nho",
+   "state": "nguyen",
+   "group": "decor",
+   "label": "Tảng đá",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 518,
+   "mats": 6,
+   "wind": "none",
+   "size": [
+    0.95,
+    0.59,
+    0.95
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/da_nho/dang_don",
+   "node": "obstacle__da_nho__dang_don",
+   "kind": "obstacle",
+   "id": "da_nho",
+   "state": "dang_don",
+   "group": "decor",
+   "label": "Tảng đá",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 570,
+   "mats": 6,
+   "wind": "none",
+   "size": [
+    0.95,
+    0.55,
+    0.95
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/da_lon/nguyen",
+   "node": "obstacle__da_lon__nguyen",
+   "kind": "obstacle",
+   "id": "da_lon",
+   "state": "nguyen",
+   "group": "decor",
+   "label": "Đá lớn",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 568,
+   "mats": 6,
+   "wind": "none",
+   "size": [
+    1.9,
+    0.97,
+    1.9
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "obstacle/da_lon/dang_don",
+   "node": "obstacle__da_lon__dang_don",
+   "kind": "obstacle",
+   "id": "da_lon",
+   "state": "dang_don",
+   "group": "decor",
+   "label": "Đá lớn",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 608,
+   "mats": 6,
+   "wind": "none",
+   "size": [
+    1.9,
+    0.94,
+    1.9
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "overlay/co_dai/mac_dinh",
+   "node": "overlay__co_dai__mac_dinh",
+   "kind": "overlay",
+   "id": "co_dai",
+   "state": "mac_dinh",
+   "group": "stubble",
+   "label": "Cỏ dại",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 144,
+   "mats": 6,
+   "wind": "plant",
+   "size": [
+    1.2,
+    0.5,
+    1.4
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "overlay/sau/mac_dinh",
+   "node": "overlay__sau__mac_dinh",
+   "kind": "overlay",
+   "id": "sau",
+   "state": "mac_dinh",
+   "group": "stubble",
+   "label": "Sâu",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 396,
+   "mats": 5,
+   "wind": "none",
+   "size": [
+    1.49,
+    0.19,
+    1.45
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "overlay/kho_han/mac_dinh",
+   "node": "overlay__kho_han__mac_dinh",
+   "kind": "overlay",
+   "id": "kho_han",
+   "state": "mac_dinh",
+   "group": "stubble",
+   "label": "Đất nứt khô",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 189,
+   "mats": 4,
+   "wind": "none",
+   "size": [
+    1.92,
+    0.48,
+    1.93
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

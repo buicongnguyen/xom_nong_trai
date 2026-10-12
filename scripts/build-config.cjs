@@ -1,0 +1,118 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const { loadClientSchemas } = require('./client-schema.cjs');
+const ctx = loadClientSchemas(process.argv[2]);
+const outputPath = process.argv[3] || path.resolve(__dirname, fs.existsSync(path.resolve(__dirname,'client-pretty.js'))?'config.json':'../config/game.json');
+const { Ui } = ctx.schemas;
+function base(schema) {
+  const d = schema._def;
+  switch (d.typeName) {
+    case 'ZodDefault': return d.defaultValue();
+    case 'ZodOptional': return undefined;
+    case 'ZodNullable': return null;
+    case 'ZodEffects': return base(d.schema);
+    case 'ZodObject': return Object.fromEntries(Object.entries(schema.shape).map(([k,v]) => [k,base(v)]).filter(([,v]) => v !== undefined));
+    case 'ZodArray': return Array.from({length:d.exactLength?.value ?? d.minLength?.value ?? 0}, () => base(d.type));
+    case 'ZodTuple': return d.items.map(base);
+    case 'ZodRecord': return {};
+    case 'ZodBoolean': return false;
+    case 'ZodLiteral': return d.value;
+    case 'ZodEnum': return d.values[0];
+    case 'ZodUnion': return base(d.options[0]);
+    case 'ZodDiscriminatedUnion': return base(d.options[0]);
+    case 'ZodNumber': {
+      let lo = -Infinity, hi = Infinity, integer = false;
+      for (const c of d.checks) { if(c.kind==='min')lo=Math.max(lo,c.value+(c.inclusive?0:0.01));if(c.kind==='max')hi=Math.min(hi,c.value-(c.inclusive?0:0.01));if(c.kind==='int')integer=true; }
+      let n = Math.max(lo,Math.min(1,hi)); if (integer) n=Math.ceil(n);return n;
+    }
+    case 'ZodString': {
+      const regex = d.checks.find(c=>c.kind==='regex')?.regex;
+      let value = 'local';
+      if(regex) {const r=String(regex); if(r.includes('m\\d'))value='m01';else if(r.includes('a_'))value='a_harvest';else if(r.includes('d_'))value='d_harvest';else if(r.includes('\\d+\\.'))value='1.0.0';else if(r.includes('^[a-z]'))value='local'; }
+      const min=d.checks.find(c=>c.kind==='min')?.value ?? 0; return value.padEnd(min,'x');
+    }
+    case 'ZodAny': case 'ZodUnknown': return {};
+    default: throw new Error('Unhandled schema '+d.typeName);
+  }
+}
+function item(id, name, cat='product', level=1) {return {...base(ctx.schemas.Dn),id,name,cat,storage:['crop','fruit','animal_product','feed','product'].includes(cat)?'ham':'kho',unlockLevel:level,value:10,sellPrice:5,expPerUnit:1,tradable:true,region:null};}
+const bundle=base(Ui), g=bundle.gameConfig;
+const labels={lua:'Lúa',ngo:'Ngô',mia:'Mía',ca_rot:'Cà rốt',ca_chua:'Cà chua',khoai_lang:'Khoai lang',bong:'Bông',dau_tay:'Dâu tây',ot:'Ớt',bi_do:'Bí đỏ',dua_hau:'Dưa hấu',hoa_cuc:'Hoa cúc',sen:'Sen',lua_mi:'Lúa mì',rau_muong:'Rau muống',gung:'Gừng',nhan_sam:'Nhân sâm',dau_nanh:'Đậu nành',dau_xanh:'Đậu xanh',su_hao:'Su hào',toi_dao:'Tỏi đảo',lua_thom:'Lúa thơm',lua_nep:'Lúa nếp',la_dong:'Lá dong',me:'Mè',nha:'Nhà nông trại',ham:'Hầm chứa',kho:'Nhà kho',may_cam:'Máy làm cám',nha_xay_xat:'Nhà xay xát',lo_duong:'Lò đường',nha_sua:'Nhà máy sữa',lo_banh:'Lò bánh',quay_nuoc:'Quầy nước',khung_det:'Khung dệt',bep_che_xoi:'Bếp chè xôi',xuong_mut:'Xưởng mứt',tiem_may:'Tiệm may',tiem_banh_ngot:'Tiệm bánh ngọt',tiem_hoa:'Tiệm hoa',chuong_ga:'Chuồng gà',chuong_bo:'Chuồng bò',chuong_heo:'Chuồng heo',chuong_cuu:'Chuồng cừu',vuon_ong:'Vườn ong',ga:'Gà',vit:'Vịt',bo:'Bò',heo:'Heo',cuu:'Cừu',de:'Dê',ong:'Ong',trung:'Trứng gà',trung_vit:'Trứng vịt',sua:'Sữa',sua_de:'Sữa dê',cam_ga:'Cám gà',cam_vit:'Cám vịt',cam_bo:'Cám bò',cam_heo:'Cám heo',cam_cuu:'Cám cừu',cam_de:'Cám dê',gao:'Gạo',gao_nep:'Gạo nếp',bot_gao:'Bột gạo',bot_mi:'Bột mì',duong:'Đường',banh_mi:'Bánh mì',banh_mi_trung:'Bánh mì trứng',nuoc_mia:'Nước mía',nuoc_cam:'Nước cam',cam:'Cam',xoai:'Xoài',dua:'Dừa',vai_thieu:'Vải thiều',buoi:'Bưởi',tao:'Táo',bo_sap:'Bơ sáp',thanh_long:'Thanh long',mat_ong:'Mật ong',long_cuu:'Lông cừu',van_go:'Ván gỗ',dinh:'Đinh',son:'Sơn',ban_le:'Bản lề',oc_vit:'Ốc vít',ton:'Tôn',so_do:'Sổ đỏ',coc_moc:'Cọc mốc',riu:'Rìu',cua:'Cưa',xeng:'Xẻng',thuoc_no:'Thuốc nổ',dao_phat:'Dao phát',bua:'Búa',phan_nhanh:'Phân nhanh',phan_sieu_toc:'Phân siêu tốc',phan_chuong:'Phân chuồng',dong_ho_cat_15p:'Đồng hồ cát 15 phút',dong_ho_cat_1h:'Đồng hồ cát 1 giờ',bang_don_xe_tai:'Bảng đơn xe tải',chuong_cho:'Nhà của chó',sap_cho:'Sạp chợ',ben_ghe:'Bến ghe',bui_ram:'Bụi rậm',goc_cay:'Gốc cây',cay_to:'Cây lớn',dam_lay:'Đầm lầy',da_nho:'Đá nhỏ',da_lon:'Đá lớn',ruong_bau_vat:'Rương báu vật'};
+const title=id=>labels[id] ?? id.replace(/^cay_/,'Cây ').replaceAll('_',' ').replace(/^./,c=>c.toUpperCase());
+const cropIds=Object.keys(ctx.maps.vf), cropLevels={lua:1,ngo:2,mia:4,ca_rot:6,ca_chua:3,khoai_lang:5,bong:9,dau_tay:10,lua_nep:3,dau_nanh:4,dau_xanh:5};
+bundle.crops.crops=cropIds.map((id,i)=>({...base(ctx.schemas.Fn),id,name:title(id),unlockLevel:cropLevels[id]??Math.min(25,7+i),growSeconds:id==='lua'?30:45+i*15,yieldPerField:3,sowCost:2+i,minSoilTier:0,bestMonths:[1,2,3,4,5,6,7,8,9,10,11,12],value:4+i*2,expPerHarvest:5+i,region:null}));
+const treeProducts={cay_cam:'cam',cay_xoai:'xoai',cay_dua:'dua',cay_thanh_long:'thanh_long',cay_vai_thieu:'vai_thieu',cay_buoi:'buoi',tru_tieu:'hat_tieu',cay_nhan_long:'nhan_long',cay_ca_phe:'hat_ca_phe',cay_dao_tet:'canh_dao',cay_sau_rieng:'sau_rieng',cay_mai_vang:'canh_mai',bui_tra:'la_tra',cay_tao:'tao',cay_bo:'bo_sap',cay_na:'na',cay_mang_cau:'mang_cau',cay_man_tay_bac:'man',cay_mang_cut:'mang_cut',cay_mac_ca:'mac_ca',cay_hong_khong_hat:'hong'};
+bundle.crops.trees=Object.keys(treeProducts).map((id,i)=>({...base(ctx.schemas.Un),id,name:title(id),kind:'tree',unlockLevel:3+i,price:200+i*100,footprint:[2,2],cycleSeconds:90+i*15,fruitPerCycle:5,cyclesBeforeWither:4,product:treeProducts[id],reviveHelpers:3,expPerHarvest:10+i,region:null}));
+const penIds=['chuong_ga','chuong_bo','chuong_heo','chuong_cuu','vuon_ong'];
+bundle.animals.pens=penIds.map((id,i)=>({...base(ctx.schemas.Gn),id,name:title(id),unlockLevel:2+i*3,price:150+i*300,footprint:[4,3],capacity:[4,6,8],upgradeGold:[0,500,1500],maxCountByLevel:[{level:1,count:2},{level:10,count:4},{level:20,count:6}]}));
+const animalData=[['ga','chuong_ga','cam_ga','trung',2],['vit','chuong_ga','cam_vit','trung_vit',4],['bo','chuong_bo','cam_bo','sua',5],['heo','chuong_heo','cam_heo','thit_heo',9],['cuu','chuong_cuu','cam_cuu','long_cuu',12],['de','chuong_bo','cam_de','sua_de',15],['ong','vuon_ong','sen','mat_ong',18]];
+bundle.animals.animals=animalData.map(([id,pen,feed,product,level],i)=>({...base(ctx.schemas.zn),id,name:title(id),unlockLevel:level,price:50+i*120,feed,feedQty:1,cycleSeconds:45+i*20,product,productQty:2,pen,expPerCollect:5+i*2}));
+const factoryIds=Object.keys(ctx.maps.If).filter(id=>ctx.maps.If[id].startsWith('factory_'));
+const factoryLevels={may_cam:2,nha_xay_xat:3,lo_duong:5,nha_sua:6,lo_banh:8,quay_nuoc:10,khung_det:11};
+bundle.buildings.buildings=factoryIds.map((id,i)=>({...base(ctx.schemas.Hn),id,name:title(id),unlockLevel:factoryLevels[id]??12+i,price:200+i*250,footprint:[4,3],unique:true,queueSlots:{start:3,max:8,xuPerSlot:[2,4,6,8,10]},region:null,buildSeconds:20+i*10}));
+const recipeData=[['cam_ga','may_cam',{lua:2,ngo:1}],['cam_bo','may_cam',{ngo:2}],['cam_vit','may_cam',{lua:2}],['cam_heo','may_cam',{ngo:2,khoai_lang:1}],['cam_cuu','may_cam',{ngo:2}],['cam_de','may_cam',{ngo:2}],['gao','nha_xay_xat',{lua:2}],['gao_nep','nha_xay_xat',{lua_nep:2}],['bot_gao','nha_xay_xat',{lua:3}],['bot_mi','nha_xay_xat',{lua_mi:2}],['duong','lo_duong',{mia:2}],['pho_mai','nha_sua',{sua:2}],['sua_chua','nha_sua',{sua:2}],['bo_lat','nha_sua',{sua:3}],['banh_mi','lo_banh',{bot_gao:2}],['banh_mi_trung','lo_banh',{bot_gao:1,trung:1}],['nuoc_mia','quay_nuoc',{mia:2}],['nuoc_cam','quay_nuoc',{cam:2}],['nuoc_dua','quay_nuoc',{dua:2}],['vai_bong','khung_det',{bong:3}],['len','khung_det',{long_cuu:2}],['che_bap','bep_che_xoi',{ngo:2,duong:1}],['xoi_dau','bep_che_xoi',{gao_nep:2,dau_xanh:1}],['mut_dau','xuong_mut',{dau_tay:2,duong:1}],['ao_ba_ba','tiem_may',{vai_bong:2}],['banh_flan','tiem_banh_ngot',{trung:2,sua:1}],['bo_hoa_cuc','tiem_hoa',{hoa_cuc:3}]];
+bundle.recipes.recipes=recipeData.map(([id,building,inputs],i)=>({...base(ctx.schemas.Wn),id,name:title(id),building,unlockLevel:factoryLevels[building]??12,seconds:20+i*3,inputs,outputQty:id.startsWith('cam_')?3:1,value:15+i*4,exp:8+i,region:null}));
+const materialIds=['van_go','dinh','son','ban_le','oc_vit','ton','so_do','coc_moc','riu','cua','xeng','thuoc_no','dao_phat','bua'];
+const consumableIds=['phan_nhanh','phan_sieu_toc','dong_ho_cat_15p','dong_ho_cat_1h','phan_chuong','xuong_gam'];
+const products=new Set([...Object.keys(ctx.maps.Mf),...bundle.animals.animals.map(a=>a.product),...bundle.recipes.recipes.map(r=>r.id),...Object.values(treeProducts)]);
+bundle.items.items=[...products].filter(id=>!Object.keys(ctx.maps.Tf).includes(id)).map(id=>{let cat=cropIds.includes(id)?'crop':Object.values(treeProducts).includes(id)?'fruit':animalData.some(a=>a[3]===id)?'animal_product':id.startsWith('cam_')?'feed':materialIds.includes(id)?'material':consumableIds.includes(id)?'consumable':'product';let it=item(id,title(id),cat,cropLevels[id]??1);if(cat==='consumable')it.shop={price:20,currency:'gold'};if(id==='phan_nhanh')it.effect='reduceCurrentStageSeconds';if(id==='phan_sieu_toc')it.effect='finishNow';return it;});
+const variants=ctx.schemas.Yn._def.options;
+function obj(kind,extra){const schema=variants.find(s=>s.shape.kind._def.value===kind);return {...base(schema),...extra,kind};}
+const common={currency:'gold',movable:true,rotatable:true,storable:false};
+bundle.objects.objects=[obj('field',{...common,id:'field',name:'Ô đất trồng',footprint:[2,2],unlockLevel:1,unique:false,price:{base:20,perOwned:5,perOwnedSquared:0},maxCount:{base:6,perLevel:2,cap:80}}),...['nha','bang_don_xe_tai','ben_ghe','chuong_cho','sap_cho'].map((id,i)=>obj('special',{...common,id,name:title(id),footprint:id==='nha'?[4,4]:[2,2],unlockLevel:1,unique:true,note:'Nông trại'})),...['ham','kho'].map(id=>obj('storage',{...common,id,name:title(id),footprint:[3,3],unlockLevel:1,unique:true,note:'Chứa nông sản và vật liệu'})),...bundle.buildings.buildings.map(b=>obj('factory',{...common,id:b.id,name:b.name,footprint:b.footprint,unlockLevel:b.unlockLevel,price:b.price,unique:true})),...bundle.animals.pens.map(p=>obj('pen',{...common,id:p.id,name:p.name,footprint:p.footprint,unlockLevel:p.unlockLevel,price:p.price,unique:false,maxCountByLevel:p.maxCountByLevel})),...bundle.crops.trees.map(t=>obj('tree',{...common,id:t.id,name:t.name,footprint:t.footprint,unlockLevel:t.unlockLevel,price:t.price,unique:false,sellable:true})),...['bui_ram','goc_cay','cay_to','dam_lay','da_nho','da_lon','ruong_bau_vat'].map((id,i)=>obj('obstacle',{id,name:title(id),footprint:[2,2],unlockLevel:1,currency:'gold',unique:false,movable:false,storable:false,rotatable:false,tool:i===0?'dao_phat':i<3?'riu':'xeng',toolQty:1,exp:10}))];
+const decoIds=Object.keys(ctx.maps.If).filter(id=>ctx.maps.If[id].startsWith('deco_')||['bu_nhin','den_long','den_hoa_dang','nha_choi_be_ma','tuong_chuot_ti'].includes(id));
+bundle.decor.decor=decoIds.map((id,i)=>({...base(ctx.schemas.Zn),id,name:title(id),footprint:[1,1],price:30+i*15,currency:'gold',unlockLevel:1,season:null,expOnBuy:2,storable:true,rotatable:true}));
+bundle.objects.objects.push(...bundle.decor.decor.map(d=>obj('decor',{...common,id:d.id,name:d.name,footprint:d.footprint,unlockLevel:d.unlockLevel,price:d.price,unique:false,storable:true,season:null,expOnBuy:2})));
+g.configVersion='1.0.0';g.serverMode='classic';g.platform.rewardedAds=false;
+g.features.classic={weather_seasons:true,market:true,boat_orders:true,truck_orders:true,quests:true,friends:true,dogs:true,visit:true,hamlet:true,decor:true};g.features.plus={};
+g.auth={providers:['guest'],guestUpgradeAllowed:true,sessionDays:30,refreshDays:90,oneActiveSessionPerUser:false};
+g.startingState={level:1,exp:0,gold:2500,xu:100,objects:[{def:'nha',x:22,y:19},{def:'ham',x:17,y:21},{def:'kho',x:28,y:21},{def:'bang_don_xe_tai',x:24,y:25},{def:'chuong_ga',x:28,y:26},{def:'may_cam',x:17,y:26},{def:'field',x:21,y:28},{def:'field',x:23,y:28},{def:'field',x:25,y:28},{def:'field',x:21,y:30},{def:'field',x:23,y:30},{def:'field',x:25,y:30},{def:'cay_cam',x:17,y:30},{def:'bui_ram',x:29,y:30},{def:'goc_cay',x:28,y:18},{def:'chuong_cho',x:19,y:18},{def:'hang_rao_tre',x:20,y:18}],items:{lua:20,ngo:10,cam_ga:10,cam_bo:5,dao_phat:8,riu:8,xeng:8,van_go:8,dinh:8,son:8,ban_le:8,oc_vit:8,ton:8,so_do:10,coc_moc:10,phan_nhanh:5},unlockedZones:['start']};
+g.level.levelUpReward={goldPerLevel:100,xuEvery:3,xuAmount:5};
+g.fields={buyPrice:{base:20,perOwned:5,perOwnedSquared:0,_formula:'base + owned * perOwned'},maxByLevel:{base:6,perLevel:2,cap:80},footprint:[2,2],sellRefundRatio:0.5};
+g.soil=[{tier:0,name:'Đất thường',timeMul:1,yieldMul:1},{tier:1,name:'Đất đỏ',timeMul:0.8,yieldMul:1.25,upgrade:{level:3,gold:100}},{tier:2,name:'Đất đen',timeMul:0.6,yieldMul:1.5,upgrade:{level:6,gold:300}}];
+g.problems={appliesTo:['field'],types:['weed','pest','dry'],natural:{weed:[0,1],pest:[0,1],dry:[0,1]},onlyIfGrowSecondsAtLeast:40,windowRatio:[0.2,0.8],maxPerTypePerField:1,penaltyPerProblem:0.1,penaltyCap:0.3,fixTool:{weed:'dao_phat',pest:'thuoc_no',dry:'xeng'},fixCostGold:0,visitorWaterPerDay:20};
+g.penProblems={types:['manure','flies'],natural:{manure:[0,1],flies:[0,1]},onlyIfCycleSecondsAtLeast:60,windowRatio:[0.2,0.8],maxPerTypePerAnimal:1,slowdownPerProblem:0.1,slowdownCap:0.3};
+g.fertilizer=[{id:'phan_nhanh',source:'shop',effect:'reduceCurrentStageSeconds',value:20},{id:'phan_sieu_toc',source:'shop',effect:'finishNow'}];g.fertilizerRule.maxCutRatio=0.8;
+g.exp={plant:1,care:2,fixProblem:2,buyField:5,clearObstacle:10,feed:1};
+g.gifts={dailySendMax:10,dailyReceiveMax:20,table:[['lua',3]],_note:'Quà hàng xóm'};g.mailbox={maxItems:100,expireDays:30};
+g.dogs=Object.keys(ctx.maps.Tf).map((id,i)=>({id,name:['Chó vàng','Chó Phú Quốc','Chó Boxer'][i],price:150+i*300,currency:'gold',unlockLevel:1+i*3,biteChance:0.2+i*0.1,biteGold:[10,30]}));
+g.dogRules={food:'xuong_gam',foodSeconds:3600,maxStackSeconds:86400};
+g.market={...g.market,unlockLevel:3,slots:{start:3,max:10,buySlot:[{gold:100},{gold:200},{xu:5}]},maxQtyPerSlot:10,priceRange:[0.5,2],feeRatio:0.05,feeRatioByLevel:{village:0.02,province:0.05,region:0.1},newspaperPageSize:20,listingExpireSeconds:86400,tradableCats:['crop','fruit','animal_product','feed','product','material']};
+g.itemSpeedUp.items={dong_ho_cat_15p:{reduceSeconds:900},dong_ho_cat_1h:{reduceSeconds:3600}};g.itemSpeedUp.appliesTo=['factory_job','animal','construction'];
+g.starterGift={gold:100,xu:10,items:[['lua',10]]};
+g.newbieHandbook.days=Array.from({length:7},(_,i)=>({day:i+1,title:`Ngày ${i+1}`,desc:'Chăm sóc nông trại mỗi ngày',goal:{event:'HARVEST_FIELD',count:3+i,filter:{}},reward:{gold:50,exp:20}}));g.newbieHandbook.completionReward={gold:500,xu:10};
+g.dailyLogin.rewards=Array.from({length:7},(_,i)=>({day:i+1,gold:50+i*25,xu:i===6?10:1}));
+g.shop.tabs=['fields','seeds','buildings','pens','animals','trees','decor','dogs','consumables','xu'];g.shop.sellBackRatio=0.5;
+g.reputation.helpReduces={perHelp:-1,dailyCap:-20};g.reputation.redemptionTask.amount=-10;
+g.reputation.tiers=Array.from({length:4},(_,i)=>({...g.reputation.tiers[0],id:['good','normal','wanted','danger'][i],name:['Hàng xóm tốt','Bình thường','Bị truy nã','Nguy hiểm'][i],min:i*100,max:i===3?null:(i+1)*100,biteAdd:i*0.1,qtyMul:1,fineMul:1,bountyForCatcher:i>1}));
+g.villageCharter.presets=['lang_thoang','lang_ne_nep','lang_nghiem','lang_hien'].map((id,i)=>({...g.villageCharter.presets[0],id,name:title(id),stealingDisabled:i===3}));g.villageCharter.defaultPreset='lang_hien';
+g.shipping.adjacentRegionPairs=[['bac','trung'],['trung','nam']];g.league.tiers=['bronze','silver','gold','diamond','master'];g.league.tierNames=['Đồng','Bạc','Vàng','Kim cương','Cao thủ'];g.league.groupBy=['levelBand','tier'];
+g.season={...g.season,name:'Mùa gặt',titleExamples:['Nông dân chăm chỉ']};g.pass.tracks=['free','paid'];g.pass.rewardTypes=['gold','xu','items'];g.pass.premiumSku='farm_pass';g.pass.tiers=[{tier:1,xpRequired:10,free:{gold:100},premium:{xu:10}}];
+g.ads.placementShare={seed_pack:0.2,speed_up:0.2,double_harvest:0.2,extra_chest:0.2,order_refresh:0.2};g.ads.dailyIncomeAnchors=[[1,100],[10,1000]];
+g.seedShop={...g.seedShop,enabled:true,marginMultiplier:1.2,goldDailyUnitLimitPerCrop:1000,xuDailyUnitLimitPerCrop:1000,maxBuyQtyPerRequest:999,unlockGiftRows:5};g.xuExchange.enabled=false;g.goldExchange.enabled=false;
+g.factoryWorkers.hires=[{unlockLevel:3,minGold:100,priceMult:1},{unlockLevel:8,minGold:200,priceMult:1.5}];
+bundle.expansion.map={size:[64,64],startZone:{x:16,y:16,w:32,h:32},zoneSize:16,lockedZones:12};
+bundle.expansion.zoneCost={materials:['so_do','coc_moc','bua'],qtyPerMaterial:{perZoneIndex:2},gold:{formula:'100 * zoneIndex * zoneIndex',perZoneIndexQuadratic:100},level:{base:2,perZoneIndex:1},mustBeAdjacent:true};
+bundle.expansion.obstacles=bundle.objects.objects.filter(o=>o.kind==='obstacle').map(o=>({id:o.id,name:o.name,kind:'obstacle',footprint:o.footprint,tool:o.tool,toolQty:1,exp:10}));
+bundle.expansion.obstacleSpawn={startZone:[{def:'bui_ram',x:29,y:31}],perUnlockedZone:{count:[2,4],weights:{bui_ram:2,goc_cay:1},minLevelFor:{bui_ram:1}},startZonePool:{defs:['bui_ram','goc_cay'],weights:{bui_ram:2,goc_cay:1},count:[1,3]}};
+bundle.expansion.startingLayouts=[{id:'local_farm',objects:g.startingState.objects.map(o=>({def:o.def,x:o.x,y:o.y,rot:0})),obstacleSlots:[{x:28,y:30}]}];bundle.expansion.regionStartingLayouts={bac:['local_farm'],trung:['local_farm'],nam:['local_farm']};
+bundle.expansion.treasureChest={defId:'ruong_bau_vat',loot:[{weight:1,reward:{gold:100}}]};bundle.expansion.fertilePlots={soilTier:1,cellOffsets:[[0,0],[2,0]]};bundle.expansion.unlockGift={reward:{gold:100},decorByRegion:{bac:'hang_rao_tre',trung:'hang_rao_tre',nam:'hang_rao_tre'}};
+for(const kind of ['ham','kho'])bundle.storage[kind]={name:title(kind),object:kind,categories:kind==='ham'?['crop','fruit','animal_product','feed','product']:['material','consumable'],capacity:{start:kind==='ham'?150:120,perLevel:30,maxLevel:40},materials:kind==='ham'?['van_go','dinh','son']:['ban_le','oc_vit','ton'],qtyPerMaterial:{base:3,perUpgradeLevel:1}};
+bundle.house.nha={object:'nha',maxLevel:3,tiers:[1,2,3].map((level,i)=>({level,name:`Nhà cấp ${level}`,unlockLevel:1+i*5,descBac:'Ngôi nhà miền Bắc',descTrung:'Ngôi nhà miền Trung',descNam:'Ngôi nhà miền Nam',...(i?{upgrade:{gold:i*500,materials:{van_go:i*5,dinh:i*5}}}:{})}))};
+bundle.drops={sources:['HARVEST_FIELD','HARVEST_TREE','COLLECT_ANIMAL','COLLECT_PRODUCT'],weights:Object.fromEntries(materialIds.map(id=>[id,1]))};
+bundle.levels.maxLevel=200;bundle.levels.formula='level * level * 50';bundle.levels.levels=Array.from({length:200},(_,i)=>({...base(ctx.schemas.ci),level:i+1,cumExp:i*i*50,expToNext:i===199?null:(2*i+1)*50,reward:{gold:100,xu:(i+1)%3===0?5:0},maxFields:Math.min(80,6+i*2),unlocks:{crops:bundle.crops.crops.filter(c=>c.unlockLevel===i+1).map(c=>c.id),trees:bundle.crops.trees.filter(c=>c.unlockLevel===i+1).map(c=>c.id),animals:bundle.animals.animals.filter(c=>c.unlockLevel===i+1).map(c=>c.id),pens:bundle.animals.pens.filter(c=>c.unlockLevel===i+1).map(c=>c.id),buildings:bundle.buildings.buildings.filter(c=>c.unlockLevel===i+1).map(c=>c.id),recipes:bundle.recipes.recipes.filter(c=>c.unlockLevel===i+1).map(c=>c.id),decor:[],features:[],titles:[]},milestoneGift:null}));
+const goals=[['PLANT','Trồng những hạt giống đầu tiên','Hãy gieo lúa lên ô đất trống',3,{cropId:'lua'}],['HARVEST_FIELD','Mùa gặt đầu tiên','Thu hoạch lúa chín trong vườn',3,{cropId:'lua'}],['BUY_FIELD','Mở rộng vườn rau','Mua thêm một ô đất trồng',1,{}],['FIX_PROBLEM','Chăm cây lớn khỏe','Tưới nước và chăm sóc cây trồng',1,{}],['BUY_ANIMAL','Đàn gà của bạn','Mua một con gà vào chuồng',1,{animalId:'ga'}],['FEED_ANIMAL','Cho gà ăn','Cho đàn gà ăn cám',1,{}],['COLLECT_ANIMAL','Thu hoạch trứng','Thu trứng gà đã sẵn sàng',2,{}],['JOB_START','Bắt đầu sản xuất','Làm cám cho đàn gà',1,{recipeId:'cam_ga'}],['COLLECT_PRODUCT','Sản phẩm đầu tiên','Thu sản phẩm từ nhà máy',1,{}],['BUILD_PLACE','Nhà xay xát','Xây một nhà xay xát',1,{defId:'nha_xay_xat'}]];
+bundle.quests.main=Array.from({length:46},(_,i)=>{const [event,name,desc,count,filter]=goals[i%goals.length];return {id:`m${String(i+1).padStart(2,'0')}`,name:i<10?name:`${name} ${Math.floor(i/10)+1}`,desc,minLevel:Math.max(1,Math.floor(i/4)),goal:{event,count:count+Math.floor(i/10),filter},reward:{gold:30+i*5,exp:20+i*2},...(i?{after:`m${String(i).padStart(2,'0')}`}:{})};});
+bundle.quests.dailyPool=goals.slice(0,7).map(([event,name,desc,count,filter],i)=>({id:`d_${event.toLowerCase()}`,minLevel:1,name,desc,goal:{event,count:count*2,filter},reward:{gold:100,exp:30}}));bundle.quests.dailyPick=5;bundle.quests.dailyRerollXu=2;
+bundle.quests.achievements=Array.from({length:15},(_,i)=>({...base(ctx.schemas.pi),id:`a_${i<goals.length?goals[i][0].toLowerCase():'farmer_'+String.fromCharCode(97+i)}`,title:i<goals.length?goals[i][1]:`Nông dân chăm chỉ ${i}`,event:goals[i%goals.length][0],filter:{},tiers:[10,50,100],rewardPerTier:[{gold:100},{gold:500},{gold:1000,xu:10}]}));
+bundle.quests.events=[...new Set(goals.map(g=>g[0]))];
+bundle.regions.regions=['bac','trung','nam'].map((id,i)=>({id,name:['Miền Bắc','Miền Trung','Miền Nam'][i],description:'Nông trại Việt Nam',factory:['bep_co_truyen','xuong_duyen_hai','lo_keo_miet_vuon'][i],specialtyItems:[['banh_chung'],['nuoc_mam'],['keo_dua']][i],climate:[{months:[1,2,3,4,5,6,7,8,9,10,11,12],growTimeMul:1,problemMul:1,note:'Khí hậu ôn hòa'}]}));
+const provinceNames=['Hà Nội','Tuyên Quang','Cao Bằng','Lạng Sơn','Thái Nguyên','Phú Thọ','Lào Cai','Lai Châu','Điện Biên','Sơn La','Bắc Ninh','Quảng Ninh','Hải Phòng','Hưng Yên','Ninh Bình','Thanh Hóa','Nghệ An','Hà Tĩnh','Quảng Trị','Huế','Đà Nẵng','Quảng Ngãi','Gia Lai','Đắk Lắk','Lâm Đồng','Khánh Hòa','Đồng Nai','Tây Ninh','TP. Hồ Chí Minh','Vĩnh Long','Đồng Tháp','An Giang','Cần Thơ','Cà Mau'];
+bundle.provinces.provinces=provinceNames.map((name,i)=>({id:i===0?'ha_noi':i===28?'ho_chi_minh':`province_${i}`,name,region:i<15?'bac':i<26?'trung':'nam',isCity:[0,12,19,20,28,32].includes(i)}));
+bundle.leaderboards.scopes=['village','province','region','nation','hamlet','friends','league'];bundle.leaderboards.periods=['day','week','season','lifetime'];bundle.leaderboards.groupTabs=['tong_luc','binh_quan','dong_long'];bundle.leaderboards.metrics=Array.from({length:14},(_,i)=>({...bundle.leaderboards.metrics[0],id:`metric_${i}`,name:`Nông dân ${i+1}`,measures:'Điểm',events:[goals[i%goals.length][0]],aggregation:'sum',scopes:['nation','village'],periods:['day','week','lifetime'],decorOnly:false,antiCheatNote:'Local game'}));bundle.leaderboards.diemNong.defaultWeights={metric_0:1};
+// Required refinement values that cannot be inferred from basic field constraints.
+if(g.minigame?.hats) console.log('minigame hats',g.minigame.hats);
+const result=Ui.safeParse(bundle);
+if(!result.success){fs.writeFileSync(__dirname+'/config-errors.json',JSON.stringify(result.error.issues,null,2));console.log(JSON.stringify(result.error.issues,null,2));process.exitCode=1;}
+else {const clean=JSON.parse(JSON.stringify(result.data));const checksum=crypto.createHash('sha256').update(JSON.stringify(clean)).digest('hex');fs.writeFileSync(outputPath,JSON.stringify({version:'1.0.0',checksum,bundle:clean,oauthProviders:{google:false,facebook:false,apple:false},push:{enabled:false}},null,2));console.log('Validated config generated:',Object.keys(clean).length,'tables;',clean.items.items.length,'items,',clean.objects.objects.length,'objects');}

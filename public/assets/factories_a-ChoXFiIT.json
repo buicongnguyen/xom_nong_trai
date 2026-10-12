@@ -1,0 +1,405 @@
+{
+ "module": "factories_a",
+ "built_at": 1791539298.1096802,
+ "seconds": 0.7,
+ "assets": [
+  {
+   "key": "building/may_cam/mac_dinh",
+   "node": "building__may_cam__mac_dinh",
+   "kind": "building",
+   "id": "may_cam",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Máy xay cám",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2312,
+   "mats": 30,
+   "wind": "none",
+   "size": [
+    2.99,
+    2.62,
+    2.8
+   ],
+   "parts": [
+    "spin_y_0.6"
+   ],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.55,
+      1.45,
+      0.6
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.35,
+      0.24,
+      0.55
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/nha_xay_xat/mac_dinh",
+   "node": "building__nha_xay_xat__mac_dinh",
+   "kind": "building",
+   "id": "nha_xay_xat",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Nhà xay xát",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 1774,
+   "mats": 27,
+   "wind": "none",
+   "size": [
+    3.06,
+    2.73,
+    2.8
+   ],
+   "parts": [
+    "spin_x_0.35"
+   ],
+   "anchors": [
+    {
+     "name": "fx_water",
+     "pos": [
+      1.28,
+      0.19,
+      0.55
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.17,
+      0.58
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.42,
+      0.27,
+      0.62
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/lo_duong/mac_dinh",
+   "node": "building__lo_duong__mac_dinh",
+   "kind": "building",
+   "id": "lo_duong",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Lò nấu đường",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2032,
+   "mats": 30,
+   "wind": "none",
+   "size": [
+    2.8,
+    2.71,
+    2.56
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      -0.55,
+      0.72,
+      0.62
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.15,
+      1.186,
+      0.52
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.72,
+      0.27,
+      -0.6
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/nha_sua/mac_dinh",
+   "node": "building__nha_sua__mac_dinh",
+   "kind": "building",
+   "id": "nha_sua",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Nhà làm sữa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 1790,
+   "mats": 26,
+   "wind": "none",
+   "size": [
+    3.02,
+    2.7,
+    2.76
+   ],
+   "parts": [
+    "spin_y_0.4"
+   ],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -0.75,
+      1.42,
+      0.44
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.6,
+      0.14
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/lo_banh/mac_dinh",
+   "node": "building__lo_banh__mac_dinh",
+   "kind": "building",
+   "id": "lo_banh",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Lò bánh",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2410,
+   "mats": 26,
+   "wind": "none",
+   "size": [
+    2.9,
+    2.58,
+    2.76
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      -0.5,
+      2.22,
+      -0.77
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.4,
+      1.195,
+      0.42
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.78,
+      0.6,
+      0.22
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/quay_nuoc/mac_dinh",
+   "node": "building__quay_nuoc__mac_dinh",
+   "kind": "building",
+   "id": "quay_nuoc",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Quầy nước",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1394,
+   "mats": 24,
+   "wind": "none",
+   "size": [
+    2.1,
+    2.12,
+    2.1
+   ],
+   "parts": [
+    "sway_0.05"
+   ],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.65,
+      0.98,
+      -0.48
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.1,
+      0.58,
+      0.28
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/khung_det/mac_dinh",
+   "node": "building__khung_det__mac_dinh",
+   "kind": "building",
+   "id": "khung_det",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Khung dệt",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 1508,
+   "mats": 26,
+   "wind": "none",
+   "size": [
+    2.76,
+    2.79,
+    2.76
+   ],
+   "parts": [
+    "spin_x_0.4"
+   ],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.44,
+      0.44
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.72,
+      0.42,
+      -0.5
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/bep_che_xoi/mac_dinh",
+   "node": "building__bep_che_xoi__mac_dinh",
+   "kind": "building",
+   "id": "bep_che_xoi",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Bếp chè xôi",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2870,
+   "mats": 42,
+   "wind": "none",
+   "size": [
+    2.68,
+    1.54,
+    2.62
+   ],
+   "parts": [
+    "sway_0.035",
+    "sway_0.04"
+   ],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      -0.85,
+      0.2,
+      0.03
+     ]
+    },
+    {
+     "name": "fx_smoke",
+     "pos": [
+      -0.25,
+      1.0,
+      0.35
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.4,
+      -0.9
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.44,
+      -0.78
+     ]
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

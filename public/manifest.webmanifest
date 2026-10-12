@@ -1,0 +1,20 @@
+{
+  "name": "Xóm Nông Trại",
+  "short_name": "Nông Trại",
+  "description": "Trồng trọt, nuôi gia súc và dựng nông trại của riêng bạn — chơi cùng hàng xóm, ghé thăm và giúp đỡ nhau mỗi ngày.",
+  "lang": "vi",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "any",
+  "background_color": "#fff6e6",
+  "theme_color": "#fff6e6",
+  "categories": ["games"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

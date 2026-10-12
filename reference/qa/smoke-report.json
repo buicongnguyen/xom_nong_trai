@@ -1,0 +1,94 @@
+{
+  "target": "http://127.0.0.1:4173/",
+  "browserVersion": "153.0.8010.53",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "failedResourceResponses": [],
+  "failedApiResponses": [],
+  "progress": [
+    {
+      "seconds": 0,
+      "text": "Tiếng Việt\nEnglish\nVào vườn\nXóm Nông Trại\n\nTrang trại nhỏ xinh của bạn đang chờ\n\nChơi ngay\nĐã có tài khoản? Đăng nhập\nChính sách quyền riêng tư\nXoá tài khoản"
+    }
+  ],
+  "screenshots": [
+    "C:\\Users\\n\\source\\repos\\3D_claudeopus55\\nongtrai-work\\smoke-output\\desktop-initial.png",
+    "C:\\Users\\n\\source\\repos\\3D_claudeopus55\\nongtrai-work\\smoke-output\\desktop-ready.png",
+    "C:\\Users\\n\\source\\repos\\3D_claudeopus55\\nongtrai-work\\smoke-output\\desktop-onboarding.png",
+    "C:\\Users\\n\\source\\repos\\3D_claudeopus55\\nongtrai-work\\smoke-output\\desktop-game.png",
+    "C:\\Users\\n\\source\\repos\\3D_claudeopus55\\nongtrai-work\\smoke-output\\mobile-game.png"
+  ],
+  "guestClicked": true,
+  "onboardingDismissed": true,
+  "beforeGuest": {
+    "url": "http://127.0.0.1:4173/",
+    "text": "Tiếng Việt\nEnglish\nVào vườn\nXóm Nông Trại\n\nTrang trại nhỏ xinh của bạn đang chờ\n\nChơi ngay\nĐã có tài khoản? Đăng nhập\nChính sách quyền riêng tư\nXoá tài khoản",
+    "buttons": [
+      "Chơi ngay",
+      "Đã có tài khoản? Đăng nhập"
+    ],
+    "canvasCount": 0
+  },
+  "desktop": {
+    "url": "http://127.0.0.1:4173/",
+    "text": "2.500\n100\n45/150\n1\n0/50\nHà Nội\nSự kiện\nMùa vụ\nĐiểm danh\nBạn bè\nTúi\nĐơn hàng\n3\nMời bạn\nNhiệm vụ\nCHÍNH\nTrồng những hạt giống đầu tiên\n0/3\nCửa hàng\nChưa có tin nhắn — chạm để trò chuyện\nBạn có biết?\nMùa vụ Pass: làm việc quen thuộc mỗi ngày để lên bậc nhận quà.\n×",
+    "buttons": [
+      "2.500",
+      "100",
+      "45/150",
+      "1",
+      "Hà Nội",
+      "Sự kiện",
+      "Mùa vụ",
+      "Điểm danh",
+      "",
+      "",
+      "",
+      "Bạn bè",
+      "Túi",
+      "Đơn hàng3",
+      "Mời bạn",
+      "Nhiệm vụChínhTrồng những hạt giống đầu tiên0/3",
+      "",
+      "",
+      "Cửa hàng",
+      "Chưa có tin nhắn — chạm để trò chuyện",
+      "",
+      "Mùa vụ Pass: làm việc quen thuộc mỗi ngày để lên bậc nhận quà.",
+      "×"
+    ],
+    "canvasCount": 1
+  },
+  "mobileViewport": {
+    "url": "http://127.0.0.1:4173/",
+    "text": "2.500\n100\n45/150\n1\n0/50\nHà Nội\nSự kiện\nMùa vụ\nĐiểm danh\nBạn bè\nTúi\nĐơn hàng\n3\nMời bạn\nNhiệm vụ\nCHÍNH\nTrồng những hạt giống đầu tiên\n0/3\nCửa hàng\nChưa có tin nhắn — chạm để trò chuyện\nBạn có biết?\nMùa vụ Pass: làm việc quen thuộc mỗi ngày để lên bậc nhận quà.\n×",
+    "buttons": [
+      "2.500",
+      "100",
+      "45/150",
+      "1",
+      "Hà Nội",
+      "Sự kiện",
+      "Mùa vụ",
+      "Điểm danh",
+      "",
+      "",
+      "",
+      "Bạn bè",
+      "Túi",
+      "Đơn hàng3",
+      "Mời bạn",
+      "Nhiệm vụChínhTrồng những hạt giống đầu tiên0/3",
+      "",
+      "",
+      "Cửa hàng",
+      "Chưa có tin nhắn — chạm để trò chuyện",
+      "",
+      "Mùa vụ Pass: làm việc quen thuộc mỗi ngày để lên bậc nhận quà.",
+      "×"
+    ],
+    "canvasCount": 1
+  },
+  "ready": true
+}

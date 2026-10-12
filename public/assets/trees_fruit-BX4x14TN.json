@@ -1,0 +1,3959 @@
+{
+ "module": "trees_fruit",
+ "built_at": 1791481317.829597,
+ "seconds": 1.6,
+ "assets": [
+  {
+   "key": "tree/cay_xoai/non",
+   "node": "tree__cay_xoai__non",
+   "kind": "tree",
+   "id": "cay_xoai",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây xoài",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 84,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.49,
+    1.47,
+    1.37
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_xoai/trong_qua",
+   "node": "tree__cay_xoai__trong_qua",
+   "kind": "tree",
+   "id": "cay_xoai",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây xoài",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 230,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.69,
+    2.74,
+    2.6
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_xoai/ra_hoa",
+   "node": "tree__cay_xoai__ra_hoa",
+   "kind": "tree",
+   "id": "cay_xoai",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây xoài",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 230,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.89,
+    2.79,
+    2.69
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_xoai/co_qua",
+   "node": "tree__cay_xoai__co_qua",
+   "kind": "tree",
+   "id": "cay_xoai",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây xoài",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1430,
+   "mats": 6,
+   "wind": "tree",
+   "size": [
+    2.82,
+    2.72,
+    2.61
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.21,
+      2.503,
+      -0.071
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.309,
+      2.473,
+      -0.013
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      -0.363,
+      2.48,
+      -0.261
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_xoai/heo",
+   "node": "tree__cay_xoai__heo",
+   "kind": "tree",
+   "id": "cay_xoai",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây xoài",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 882,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.37,
+    2.12,
+    2.3
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_xoai/goc",
+   "node": "tree__cay_xoai__goc",
+   "kind": "tree",
+   "id": "cay_xoai",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây xoài",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.64,
+    0.78,
+    0.67
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_cam/non",
+   "node": "tree__cay_cam__non",
+   "kind": "tree",
+   "id": "cay_cam",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây cam",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 86,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.35,
+    1.54,
+    1.31
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_cam/trong_qua",
+   "node": "tree__cay_cam__trong_qua",
+   "kind": "tree",
+   "id": "cay_cam",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây cam",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 230,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.5,
+    2.82,
+    2.5
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_cam/ra_hoa",
+   "node": "tree__cay_cam__ra_hoa",
+   "kind": "tree",
+   "id": "cay_cam",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây cam",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 230,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.49,
+    3.01,
+    2.57
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_cam/co_qua",
+   "node": "tree__cay_cam__co_qua",
+   "kind": "tree",
+   "id": "cay_cam",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây cam",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1426,
+   "mats": 5,
+   "wind": "tree",
+   "size": [
+    2.51,
+    2.89,
+    2.49
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.146,
+      2.737,
+      0.052
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      -0.281,
+      2.697,
+      -0.124
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.068,
+      2.699,
+      0.379
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_cam/heo",
+   "node": "tree__cay_cam__heo",
+   "kind": "tree",
+   "id": "cay_cam",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây cam",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 866,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.12,
+    1.84,
+    2.13
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_cam/goc",
+   "node": "tree__cay_cam__goc",
+   "kind": "tree",
+   "id": "cay_cam",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây cam",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.7,
+    0.8,
+    0.68
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_buoi/non",
+   "node": "tree__cay_buoi__non",
+   "kind": "tree",
+   "id": "cay_buoi",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây bưởi",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 86,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.33,
+    1.6,
+    1.41
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_buoi/trong_qua",
+   "node": "tree__cay_buoi__trong_qua",
+   "kind": "tree",
+   "id": "cay_buoi",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây bưởi",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 224,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.63,
+    2.95,
+    2.68
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_buoi/ra_hoa",
+   "node": "tree__cay_buoi__ra_hoa",
+   "kind": "tree",
+   "id": "cay_buoi",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây bưởi",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 224,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.75,
+    3.18,
+    2.7
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_buoi/co_qua",
+   "node": "tree__cay_buoi__co_qua",
+   "kind": "tree",
+   "id": "cay_buoi",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây bưởi",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1052,
+   "mats": 5,
+   "wind": "tree",
+   "size": [
+    2.66,
+    3.08,
+    2.71
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.225,
+      2.85,
+      0.081
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      -0.292,
+      2.793,
+      -0.239
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.139,
+      2.75,
+      0.467
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_buoi/heo",
+   "node": "tree__cay_buoi__heo",
+   "kind": "tree",
+   "id": "cay_buoi",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây bưởi",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 814,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.19,
+    1.85,
+    2.15
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_buoi/goc",
+   "node": "tree__cay_buoi__goc",
+   "kind": "tree",
+   "id": "cay_buoi",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây bưởi",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.64,
+    0.77,
+    0.62
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_vai_thieu/non",
+   "node": "tree__cay_vai_thieu__non",
+   "kind": "tree",
+   "id": "cay_vai_thieu",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây vải thiều",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 86,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.43,
+    1.69,
+    1.51
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_vai_thieu/trong_qua",
+   "node": "tree__cay_vai_thieu__trong_qua",
+   "kind": "tree",
+   "id": "cay_vai_thieu",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây vải thiều",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 242,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.44,
+    2.64,
+    2.29
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_vai_thieu/ra_hoa",
+   "node": "tree__cay_vai_thieu__ra_hoa",
+   "kind": "tree",
+   "id": "cay_vai_thieu",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây vải thiều",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 242,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.35,
+    2.74,
+    2.25
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_vai_thieu/co_qua",
+   "node": "tree__cay_vai_thieu__co_qua",
+   "kind": "tree",
+   "id": "cay_vai_thieu",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây vải thiều",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1802,
+   "mats": 6,
+   "wind": "tree",
+   "size": [
+    2.67,
+    2.77,
+    2.3
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.342,
+      2.591,
+      0.028
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      -0.402,
+      2.536,
+      -0.307
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.089,
+      2.463,
+      0.633
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_vai_thieu/heo",
+   "node": "tree__cay_vai_thieu__heo",
+   "kind": "tree",
+   "id": "cay_vai_thieu",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây vải thiều",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 902,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.05,
+    1.86,
+    1.78
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_vai_thieu/goc",
+   "node": "tree__cay_vai_thieu__goc",
+   "kind": "tree",
+   "id": "cay_vai_thieu",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây vải thiều",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.51,
+    0.69,
+    0.54
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_nhan_long/non",
+   "node": "tree__cay_nhan_long__non",
+   "kind": "tree",
+   "id": "cay_nhan_long",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây nhãn lồng",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 86,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.54,
+    1.73,
+    1.47
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_nhan_long/trong_qua",
+   "node": "tree__cay_nhan_long__trong_qua",
+   "kind": "tree",
+   "id": "cay_nhan_long",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây nhãn lồng",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 242,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.56,
+    2.65,
+    2.43
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_nhan_long/ra_hoa",
+   "node": "tree__cay_nhan_long__ra_hoa",
+   "kind": "tree",
+   "id": "cay_nhan_long",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây nhãn lồng",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 242,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.46,
+    2.74,
+    2.32
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_nhan_long/co_qua",
+   "node": "tree__cay_nhan_long__co_qua",
+   "kind": "tree",
+   "id": "cay_nhan_long",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây nhãn lồng",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1802,
+   "mats": 6,
+   "wind": "tree",
+   "size": [
+    2.6,
+    2.81,
+    2.39
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.298,
+      2.62,
+      0.018
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      -0.485,
+      2.487,
+      -0.434
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.197,
+      2.456,
+      0.66
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_nhan_long/heo",
+   "node": "tree__cay_nhan_long__heo",
+   "kind": "tree",
+   "id": "cay_nhan_long",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây nhãn lồng",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 894,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.83,
+    1.88,
+    1.98
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_nhan_long/goc",
+   "node": "tree__cay_nhan_long__goc",
+   "kind": "tree",
+   "id": "cay_nhan_long",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây nhãn lồng",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.54,
+    0.71,
+    0.55
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_ca_phe/non",
+   "node": "tree__cay_ca_phe__non",
+   "kind": "tree",
+   "id": "cay_ca_phe",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây cà phê",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 194,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.36,
+    1.81,
+    0.67
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_ca_phe/trong_qua",
+   "node": "tree__cay_ca_phe__trong_qua",
+   "kind": "tree",
+   "id": "cay_ca_phe",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây cà phê",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 320,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.14,
+    2.98,
+    2.24
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_ca_phe/ra_hoa",
+   "node": "tree__cay_ca_phe__ra_hoa",
+   "kind": "tree",
+   "id": "cay_ca_phe",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây cà phê",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 320,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.21,
+    2.98,
+    2.16
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_ca_phe/co_qua",
+   "node": "tree__cay_ca_phe__co_qua",
+   "kind": "tree",
+   "id": "cay_ca_phe",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây cà phê",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1820,
+   "mats": 5,
+   "wind": "tree",
+   "size": [
+    2.2,
+    3.01,
+    2.2
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.543,
+      1.778,
+      0.043
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.168,
+      1.713,
+      -0.396
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.065,
+      1.704,
+      0.544
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_ca_phe/heo",
+   "node": "tree__cay_ca_phe__heo",
+   "kind": "tree",
+   "id": "cay_ca_phe",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây cà phê",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 668,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.46,
+    0.99,
+    2.11
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_ca_phe/goc",
+   "node": "tree__cay_ca_phe__goc",
+   "kind": "tree",
+   "id": "cay_ca_phe",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây cà phê",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.44,
+    0.73,
+    0.42
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_sau_rieng/non",
+   "node": "tree__cay_sau_rieng__non",
+   "kind": "tree",
+   "id": "cay_sau_rieng",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây sầu riêng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 178,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.44,
+    1.94,
+    1.81
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_sau_rieng/trong_qua",
+   "node": "tree__cay_sau_rieng__trong_qua",
+   "kind": "tree",
+   "id": "cay_sau_rieng",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây sầu riêng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 332,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.35,
+    3.4,
+    2.4
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_sau_rieng/ra_hoa",
+   "node": "tree__cay_sau_rieng__ra_hoa",
+   "kind": "tree",
+   "id": "cay_sau_rieng",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây sầu riêng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 362,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.33,
+    3.33,
+    2.26
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.311,
+      2.613,
+      -0.059
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.501,
+      2.678,
+      -0.044
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.73,
+      2.74,
+      -0.092
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_sau_rieng/co_qua",
+   "node": "tree__cay_sau_rieng__co_qua",
+   "kind": "tree",
+   "id": "cay_sau_rieng",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây sầu riêng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1036,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.82,
+    3.42,
+    2.33
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.987,
+      2.707,
+      0.112
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.22,
+      2.694,
+      -0.846
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      -0.832,
+      2.608,
+      -0.386
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_sau_rieng/heo",
+   "node": "tree__cay_sau_rieng__heo",
+   "kind": "tree",
+   "id": "cay_sau_rieng",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây sầu riêng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 902,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.73,
+    3.24,
+    1.88
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_sau_rieng/goc",
+   "node": "tree__cay_sau_rieng__goc",
+   "kind": "tree",
+   "id": "cay_sau_rieng",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây sầu riêng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.63,
+    0.74,
+    0.59
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dao_tet/non",
+   "node": "tree__cay_dao_tet__non",
+   "kind": "tree",
+   "id": "cay_dao_tet",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây đào Tết",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 446,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.72,
+    2.24,
+    1.71
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dao_tet/trong_qua",
+   "node": "tree__cay_dao_tet__trong_qua",
+   "kind": "tree",
+   "id": "cay_dao_tet",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây đào Tết",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 662,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.13,
+    2.77,
+    2.29
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dao_tet/ra_hoa",
+   "node": "tree__cay_dao_tet__ra_hoa",
+   "kind": "tree",
+   "id": "cay_dao_tet",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây đào Tết",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 662,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.1,
+    2.77,
+    2.34
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.242,
+      1.92,
+      -0.163
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.452,
+      2.084,
+      -0.221
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.789,
+      2.441,
+      -0.316
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dao_tet/co_qua",
+   "node": "tree__cay_dao_tet__co_qua",
+   "kind": "tree",
+   "id": "cay_dao_tet",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây đào Tết",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 704,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.23,
+    2.8,
+    2.33
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.136,
+      1.867,
+      -0.139
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.353,
+      1.962,
+      -0.155
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.455,
+      2.124,
+      -0.171
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dao_tet/heo",
+   "node": "tree__cay_dao_tet__heo",
+   "kind": "tree",
+   "id": "cay_dao_tet",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây đào Tết",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1058,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.81,
+    2.44,
+    2.22
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dao_tet/goc",
+   "node": "tree__cay_dao_tet__goc",
+   "kind": "tree",
+   "id": "cay_dao_tet",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây đào Tết",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.54,
+    0.77,
+    0.56
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mai_vang/non",
+   "node": "tree__cay_mai_vang__non",
+   "kind": "tree",
+   "id": "cay_mai_vang",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây mai vàng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 446,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.83,
+    2.24,
+    1.78
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mai_vang/trong_qua",
+   "node": "tree__cay_mai_vang__trong_qua",
+   "kind": "tree",
+   "id": "cay_mai_vang",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây mai vàng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 662,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.01,
+    2.77,
+    2.33
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mai_vang/ra_hoa",
+   "node": "tree__cay_mai_vang__ra_hoa",
+   "kind": "tree",
+   "id": "cay_mai_vang",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây mai vàng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 662,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.34,
+    2.77,
+    2.19
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.23,
+      1.868,
+      -0.051
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.479,
+      1.981,
+      -0.01
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.772,
+      2.233,
+      -0.079
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mai_vang/co_qua",
+   "node": "tree__cay_mai_vang__co_qua",
+   "kind": "tree",
+   "id": "cay_mai_vang",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây mai vàng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 704,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.3,
+    2.94,
+    2.54
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.188,
+      1.829,
+      0.031
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.339,
+      1.968,
+      0.073
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.534,
+      2.161,
+      0.04
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mai_vang/heo",
+   "node": "tree__cay_mai_vang__heo",
+   "kind": "tree",
+   "id": "cay_mai_vang",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây mai vàng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1022,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.31,
+    2.38,
+    2.11
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mai_vang/goc",
+   "node": "tree__cay_mai_vang__goc",
+   "kind": "tree",
+   "id": "cay_mai_vang",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây mai vàng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.51,
+    0.75,
+    0.54
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/bui_tra/non",
+   "node": "tree__bui_tra__non",
+   "kind": "tree",
+   "id": "bui_tra",
+   "state": "non",
+   "group": "tree",
+   "label": "Bụi trà",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.35,
+    0.77,
+    1.32
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/bui_tra/trong_qua",
+   "node": "tree__bui_tra__trong_qua",
+   "kind": "tree",
+   "id": "bui_tra",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Bụi trà",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 228,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.38,
+    1.31,
+    2.21
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/bui_tra/ra_hoa",
+   "node": "tree__bui_tra__ra_hoa",
+   "kind": "tree",
+   "id": "bui_tra",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Bụi trà",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 228,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.26,
+    1.33,
+    2.2
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/bui_tra/co_qua",
+   "node": "tree__bui_tra__co_qua",
+   "kind": "tree",
+   "id": "bui_tra",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Bụi trà",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 516,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.42,
+    1.6,
+    2.29
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.056,
+      1.125,
+      0.084
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      -0.138,
+      1.113,
+      -0.153
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.045,
+      1.102,
+      0.247
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/bui_tra/heo",
+   "node": "tree__bui_tra__heo",
+   "kind": "tree",
+   "id": "bui_tra",
+   "state": "heo",
+   "group": "tree",
+   "label": "Bụi trà",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 256,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.18,
+    1.05,
+    2.21
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/bui_tra/goc",
+   "node": "tree__bui_tra__goc",
+   "kind": "tree",
+   "id": "bui_tra",
+   "state": "goc",
+   "group": "tree",
+   "label": "Bụi trà",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.12,
+    0.81,
+    1.07
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dua/non",
+   "node": "tree__cay_dua__non",
+   "kind": "tree",
+   "id": "cay_dua",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây dừa",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 132,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.82,
+    2.23,
+    1.64
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dua/trong_qua",
+   "node": "tree__cay_dua__trong_qua",
+   "kind": "tree",
+   "id": "cay_dua",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây dừa",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 560,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    3.67,
+    5.37,
+    3.5
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dua/ra_hoa",
+   "node": "tree__cay_dua__ra_hoa",
+   "kind": "tree",
+   "id": "cay_dua",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây dừa",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 566,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    3.67,
+    5.38,
+    3.61
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dua/co_qua",
+   "node": "tree__cay_dua__co_qua",
+   "kind": "tree",
+   "id": "cay_dua",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây dừa",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1172,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    3.38,
+    5.36,
+    3.4
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      1.433,
+      4.364,
+      0.038
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      1.099,
+      4.412,
+      -0.401
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.788,
+      4.448,
+      -0.537
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dua/heo",
+   "node": "tree__cay_dua__heo",
+   "kind": "tree",
+   "id": "cay_dua",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây dừa",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 544,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    3.15,
+    5.13,
+    3.05
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_dua/goc",
+   "node": "tree__cay_dua__goc",
+   "kind": "tree",
+   "id": "cay_dua",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây dừa",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 186,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.61,
+    0.45,
+    0.68
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_thanh_long/non",
+   "node": "tree__cay_thanh_long__non",
+   "kind": "tree",
+   "id": "cay_thanh_long",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây thanh long",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 52,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.49,
+    1.54,
+    1.35
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_thanh_long/trong_qua",
+   "node": "tree__cay_thanh_long__trong_qua",
+   "kind": "tree",
+   "id": "cay_thanh_long",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây thanh long",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.36,
+    2.53,
+    2.49
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_thanh_long/ra_hoa",
+   "node": "tree__cay_thanh_long__ra_hoa",
+   "kind": "tree",
+   "id": "cay_thanh_long",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây thanh long",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 230,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.51,
+    2.54,
+    2.54
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_thanh_long/co_qua",
+   "node": "tree__cay_thanh_long__co_qua",
+   "kind": "tree",
+   "id": "cay_thanh_long",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây thanh long",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 232,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.83,
+    2.56,
+    2.62
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      -1.366,
+      0.6,
+      -0.164
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      -0.986,
+      0.785,
+      0.913
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      1.248,
+      0.6,
+      0.092
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_thanh_long/heo",
+   "node": "tree__cay_thanh_long__heo",
+   "kind": "tree",
+   "id": "cay_thanh_long",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây thanh long",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 160,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.96,
+    2.53,
+    1.94
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_thanh_long/goc",
+   "node": "tree__cay_thanh_long__goc",
+   "kind": "tree",
+   "id": "cay_thanh_long",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây thanh long",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 32,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    0.17,
+    1.01,
+    0.17
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/tru_tieu/non",
+   "node": "tree__tru_tieu__non",
+   "kind": "tree",
+   "id": "tru_tieu",
+   "state": "non",
+   "group": "tree",
+   "label": "Trụ tiêu",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 218,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.73,
+    1.62,
+    0.75
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/tru_tieu/trong_qua",
+   "node": "tree__tru_tieu__trong_qua",
+   "kind": "tree",
+   "id": "tru_tieu",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Trụ tiêu",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 264,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.05,
+    3.06,
+    2.08
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/tru_tieu/ra_hoa",
+   "node": "tree__tru_tieu__ra_hoa",
+   "kind": "tree",
+   "id": "tru_tieu",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Trụ tiêu",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 288,
+   "mats": 5,
+   "wind": "tree",
+   "size": [
+    2.12,
+    3.06,
+    2.1
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/tru_tieu/co_qua",
+   "node": "tree__tru_tieu__co_qua",
+   "kind": "tree",
+   "id": "tru_tieu",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Trụ tiêu",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1558,
+   "mats": 6,
+   "wind": "tree",
+   "size": [
+    1.86,
+    3.06,
+    2.29
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.262,
+      0.54,
+      0.329
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.343,
+      1.944,
+      0.242
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.348,
+      1.008,
+      0.235
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/tru_tieu/heo",
+   "node": "tree__tru_tieu__heo",
+   "kind": "tree",
+   "id": "tru_tieu",
+   "state": "heo",
+   "group": "tree",
+   "label": "Trụ tiêu",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1248,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.15,
+    2.9,
+    1.13
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/tru_tieu/goc",
+   "node": "tree__tru_tieu__goc",
+   "kind": "tree",
+   "id": "tru_tieu",
+   "state": "goc",
+   "group": "tree",
+   "label": "Trụ tiêu",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 50,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    0.3,
+    0.36,
+    0.31
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_tao/non",
+   "node": "tree__cay_tao__non",
+   "kind": "tree",
+   "id": "cay_tao",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây táo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 86,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.28,
+    1.55,
+    1.25
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_tao/trong_qua",
+   "node": "tree__cay_tao__trong_qua",
+   "kind": "tree",
+   "id": "cay_tao",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây táo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 232,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.45,
+    2.76,
+    2.45
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_tao/ra_hoa",
+   "node": "tree__cay_tao__ra_hoa",
+   "kind": "tree",
+   "id": "cay_tao",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây táo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 232,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.37,
+    3.02,
+    2.45
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_tao/co_qua",
+   "node": "tree__cay_tao__co_qua",
+   "kind": "tree",
+   "id": "cay_tao",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây táo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1520,
+   "mats": 5,
+   "wind": "tree",
+   "size": [
+    2.41,
+    2.93,
+    2.53
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.204,
+      2.767,
+      -0.082
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      -0.112,
+      2.734,
+      -0.202
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.009,
+      2.71,
+      0.383
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_tao/heo",
+   "node": "tree__cay_tao__heo",
+   "kind": "tree",
+   "id": "cay_tao",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây táo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 680,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.92,
+    1.74,
+    2.08
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_tao/goc",
+   "node": "tree__cay_tao__goc",
+   "kind": "tree",
+   "id": "cay_tao",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây táo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.68,
+    0.73,
+    0.67
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_man_tay_bac/non",
+   "node": "tree__cay_man_tay_bac__non",
+   "kind": "tree",
+   "id": "cay_man_tay_bac",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây mận Tam Hoa",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 300,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.8,
+    2.17,
+    1.31
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_man_tay_bac/trong_qua",
+   "node": "tree__cay_man_tay_bac__trong_qua",
+   "kind": "tree",
+   "id": "cay_man_tay_bac",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây mận Tam Hoa",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 460,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.13,
+    2.88,
+    2.18
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_man_tay_bac/ra_hoa",
+   "node": "tree__cay_man_tay_bac__ra_hoa",
+   "kind": "tree",
+   "id": "cay_man_tay_bac",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây mận Tam Hoa",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 530,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.22,
+    2.73,
+    2.44
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.218,
+      1.751,
+      0.141
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.467,
+      1.959,
+      0.135
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.68,
+      2.21,
+      0.106
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_man_tay_bac/co_qua",
+   "node": "tree__cay_man_tay_bac__co_qua",
+   "kind": "tree",
+   "id": "cay_man_tay_bac",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây mận Tam Hoa",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1580,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.14,
+    2.79,
+    2.46
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.567,
+      2.056,
+      -0.097
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.22,
+      1.876,
+      -0.453
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      -0.152,
+      1.876,
+      -0.699
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_man_tay_bac/heo",
+   "node": "tree__cay_man_tay_bac__heo",
+   "kind": "tree",
+   "id": "cay_man_tay_bac",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây mận Tam Hoa",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1306,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.29,
+    2.42,
+    1.99
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_man_tay_bac/goc",
+   "node": "tree__cay_man_tay_bac__goc",
+   "kind": "tree",
+   "id": "cay_man_tay_bac",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây mận Tam Hoa",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.56,
+    0.73,
+    0.57
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_hong_khong_hat/non",
+   "node": "tree__cay_hong_khong_hat__non",
+   "kind": "tree",
+   "id": "cay_hong_khong_hat",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây hồng không hạt",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 282,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.95,
+    2.31,
+    1.67
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_hong_khong_hat/trong_qua",
+   "node": "tree__cay_hong_khong_hat__trong_qua",
+   "kind": "tree",
+   "id": "cay_hong_khong_hat",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây hồng không hạt",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 392,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.44,
+    2.97,
+    2.66
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_hong_khong_hat/ra_hoa",
+   "node": "tree__cay_hong_khong_hat__ra_hoa",
+   "kind": "tree",
+   "id": "cay_hong_khong_hat",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây hồng không hạt",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 410,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.53,
+    3.03,
+    2.19
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.669,
+      2.107,
+      -0.093
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.992,
+      2.399,
+      -0.235
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.723,
+      2.505,
+      -0.939
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_hong_khong_hat/co_qua",
+   "node": "tree__cay_hong_khong_hat__co_qua",
+   "kind": "tree",
+   "id": "cay_hong_khong_hat",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây hồng không hạt",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1258,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.62,
+    2.92,
+    2.43
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.379,
+      2.0,
+      0.104
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.69,
+      2.247,
+      0.193
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      1.035,
+      2.646,
+      0.007
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_hong_khong_hat/heo",
+   "node": "tree__cay_hong_khong_hat__heo",
+   "kind": "tree",
+   "id": "cay_hong_khong_hat",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây hồng không hạt",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1116,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.22,
+    2.52,
+    2.36
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_hong_khong_hat/goc",
+   "node": "tree__cay_hong_khong_hat__goc",
+   "kind": "tree",
+   "id": "cay_hong_khong_hat",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây hồng không hạt",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.63,
+    0.78,
+    0.62
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_na/non",
+   "node": "tree__cay_na__non",
+   "kind": "tree",
+   "id": "cay_na",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây na",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 86,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.41,
+    1.63,
+    1.28
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_na/trong_qua",
+   "node": "tree__cay_na__trong_qua",
+   "kind": "tree",
+   "id": "cay_na",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây na",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 236,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.49,
+    2.82,
+    2.26
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_na/ra_hoa",
+   "node": "tree__cay_na__ra_hoa",
+   "kind": "tree",
+   "id": "cay_na",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây na",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 236,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.35,
+    2.92,
+    2.34
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_na/co_qua",
+   "node": "tree__cay_na__co_qua",
+   "kind": "tree",
+   "id": "cay_na",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây na",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1022,
+   "mats": 5,
+   "wind": "tree",
+   "size": [
+    2.6,
+    2.84,
+    2.39
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.281,
+      2.591,
+      0.061
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      -0.031,
+      2.532,
+      0.451
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.678,
+      2.356,
+      0.373
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_na/heo",
+   "node": "tree__cay_na__heo",
+   "kind": "tree",
+   "id": "cay_na",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây na",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 916,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.19,
+    1.88,
+    1.86
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_na/goc",
+   "node": "tree__cay_na__goc",
+   "kind": "tree",
+   "id": "cay_na",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây na",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.54,
+    0.76,
+    0.54
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cau/non",
+   "node": "tree__cay_mang_cau__non",
+   "kind": "tree",
+   "id": "cay_mang_cau",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây mãng cầu",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 86,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.44,
+    1.57,
+    1.26
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cau/trong_qua",
+   "node": "tree__cay_mang_cau__trong_qua",
+   "kind": "tree",
+   "id": "cay_mang_cau",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây mãng cầu",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 232,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.4,
+    2.77,
+    2.32
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cau/ra_hoa",
+   "node": "tree__cay_mang_cau__ra_hoa",
+   "kind": "tree",
+   "id": "cay_mang_cau",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây mãng cầu",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 232,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.42,
+    2.83,
+    2.36
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cau/co_qua",
+   "node": "tree__cay_mang_cau__co_qua",
+   "kind": "tree",
+   "id": "cay_mang_cau",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây mãng cầu",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 988,
+   "mats": 5,
+   "wind": "tree",
+   "size": [
+    2.58,
+    2.92,
+    2.5
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.305,
+      2.485,
+      0.032
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.156,
+      2.34,
+      0.613
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.782,
+      2.12,
+      0.48
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cau/heo",
+   "node": "tree__cay_mang_cau__heo",
+   "kind": "tree",
+   "id": "cay_mang_cau",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây mãng cầu",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 860,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.09,
+    1.92,
+    2.21
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cau/goc",
+   "node": "tree__cay_mang_cau__goc",
+   "kind": "tree",
+   "id": "cay_mang_cau",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây mãng cầu",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.59,
+    0.77,
+    0.62
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cut/non",
+   "node": "tree__cay_mang_cut__non",
+   "kind": "tree",
+   "id": "cay_mang_cut",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây măng cụt",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 114,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.6,
+    1.91,
+    1.55
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cut/trong_qua",
+   "node": "tree__cay_mang_cut__trong_qua",
+   "kind": "tree",
+   "id": "cay_mang_cut",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây măng cụt",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 286,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.32,
+    2.99,
+    2.28
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cut/ra_hoa",
+   "node": "tree__cay_mang_cut__ra_hoa",
+   "kind": "tree",
+   "id": "cay_mang_cut",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây măng cụt",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 286,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.24,
+    2.94,
+    2.22
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cut/co_qua",
+   "node": "tree__cay_mang_cut__co_qua",
+   "kind": "tree",
+   "id": "cay_mang_cut",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây măng cụt",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1238,
+   "mats": 6,
+   "wind": "tree",
+   "size": [
+    2.5,
+    3.27,
+    2.44
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.173,
+      3.058,
+      0.052
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.137,
+      2.905,
+      0.492
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.558,
+      2.804,
+      0.316
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cut/heo",
+   "node": "tree__cay_mang_cut__heo",
+   "kind": "tree",
+   "id": "cay_mang_cut",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây măng cụt",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 686,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.01,
+    1.77,
+    2.03
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mang_cut/goc",
+   "node": "tree__cay_mang_cut__goc",
+   "kind": "tree",
+   "id": "cay_mang_cut",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây măng cụt",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.68,
+    0.77,
+    0.69
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_bo/non",
+   "node": "tree__cay_bo__non",
+   "kind": "tree",
+   "id": "cay_bo",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây bơ",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.39,
+    1.59,
+    1.36
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_bo/trong_qua",
+   "node": "tree__cay_bo__trong_qua",
+   "kind": "tree",
+   "id": "cay_bo",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây bơ",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 238,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.69,
+    2.97,
+    2.62
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_bo/ra_hoa",
+   "node": "tree__cay_bo__ra_hoa",
+   "kind": "tree",
+   "id": "cay_bo",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây bơ",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 238,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.66,
+    2.93,
+    2.54
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_bo/co_qua",
+   "node": "tree__cay_bo__co_qua",
+   "kind": "tree",
+   "id": "cay_bo",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây bơ",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 2058,
+   "mats": 6,
+   "wind": "tree",
+   "size": [
+    2.81,
+    3.05,
+    2.62
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.295,
+      2.828,
+      -0.142
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      -0.488,
+      2.718,
+      -0.418
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.091,
+      2.575,
+      0.818
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_bo/heo",
+   "node": "tree__cay_bo__heo",
+   "kind": "tree",
+   "id": "cay_bo",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây bơ",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 702,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.85,
+    2.14,
+    1.97
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_bo/goc",
+   "node": "tree__cay_bo__goc",
+   "kind": "tree",
+   "id": "cay_bo",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây bơ",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.67,
+    0.75,
+    0.64
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mac_ca/non",
+   "node": "tree__cay_mac_ca__non",
+   "kind": "tree",
+   "id": "cay_mac_ca",
+   "state": "non",
+   "group": "tree",
+   "label": "Cây mắc ca",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.38,
+    1.61,
+    1.36
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mac_ca/trong_qua",
+   "node": "tree__cay_mac_ca__trong_qua",
+   "kind": "tree",
+   "id": "cay_mac_ca",
+   "state": "trong_qua",
+   "group": "tree",
+   "label": "Cây mắc ca",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 246,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.61,
+    2.89,
+    2.58
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mac_ca/ra_hoa",
+   "node": "tree__cay_mac_ca__ra_hoa",
+   "kind": "tree",
+   "id": "cay_mac_ca",
+   "state": "ra_hoa",
+   "group": "tree",
+   "label": "Cây mắc ca",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 262,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.84,
+    2.96,
+    2.82
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.37,
+      2.696,
+      0.027
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.03,
+      2.434,
+      0.792
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.782,
+      2.221,
+      0.553
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mac_ca/co_qua",
+   "node": "tree__cay_mac_ca__co_qua",
+   "kind": "tree",
+   "id": "cay_mac_ca",
+   "state": "co_qua",
+   "group": "tree",
+   "label": "Cây mắc ca",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1110,
+   "mats": 5,
+   "wind": "tree",
+   "size": [
+    2.58,
+    2.88,
+    2.58
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_fruit_1",
+     "pos": [
+      0.27,
+      1.984,
+      0.043
+     ]
+    },
+    {
+     "name": "slot_fruit_2",
+     "pos": [
+      0.175,
+      1.781,
+      0.669
+     ]
+    },
+    {
+     "name": "slot_fruit_3",
+     "pos": [
+      0.839,
+      1.455,
+      0.48
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mac_ca/heo",
+   "node": "tree__cay_mac_ca__heo",
+   "kind": "tree",
+   "id": "cay_mac_ca",
+   "state": "heo",
+   "group": "tree",
+   "label": "Cây mắc ca",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 898,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    2.09,
+    1.81,
+    1.81
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "tree/cay_mac_ca/goc",
+   "node": "tree__cay_mac_ca__goc",
+   "kind": "tree",
+   "id": "cay_mac_ca",
+   "state": "goc",
+   "group": "tree",
+   "label": "Cây mắc ca",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 214,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.69,
+    0.78,
+    0.68
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

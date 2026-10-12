@@ -1,0 +1,314 @@
+{
+ "module": "houses_trung",
+ "built_at": 1791484433.795879,
+ "seconds": 0.5,
+ "assets": [
+  {
+   "key": "house/nha_trung/cap_1",
+   "node": "house__nha_trung__cap_1",
+   "kind": "house",
+   "id": "nha_trung",
+   "state": "cap_1",
+   "group": "house",
+   "label": "Nhà chính miền Trung",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2026,
+   "mats": 14,
+   "wind": "none",
+   "size": [
+    4.7,
+    1.88,
+    3.75
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      0.65,
+      1.29,
+      -1.84
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.5,
+      1.12,
+      1.55
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      1.5,
+      1.12,
+      1.55
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_trung/cap_2",
+   "node": "house__nha_trung__cap_2",
+   "kind": "house",
+   "id": "nha_trung",
+   "state": "cap_2",
+   "group": "house",
+   "label": "Nhà chính miền Trung",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2430,
+   "mats": 15,
+   "wind": "none",
+   "size": [
+    5.56,
+    2.13,
+    3.72
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      0.0,
+      2.13,
+      -1.78
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.55,
+      1.39,
+      1.25
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      1.55,
+      1.39,
+      1.25
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_trung/cap_3",
+   "node": "house__nha_trung__cap_3",
+   "kind": "house",
+   "id": "nha_trung",
+   "state": "cap_3",
+   "group": "house",
+   "label": "Nhà chính miền Trung",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2770,
+   "mats": 17,
+   "wind": "none",
+   "size": [
+    5.74,
+    2.56,
+    4.29
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      0.0,
+      2.44,
+      -2.2
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.65,
+      1.53,
+      1.45
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      1.65,
+      1.53,
+      1.45
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_trung/cap_4",
+   "node": "house__nha_trung__cap_4",
+   "kind": "house",
+   "id": "nha_trung",
+   "state": "cap_4",
+   "group": "house",
+   "label": "Nhà chính miền Trung",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2920,
+   "mats": 18,
+   "wind": "none",
+   "size": [
+    5.09,
+    4.21,
+    3.47
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      0.0,
+      3.65,
+      0.5
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.02,
+      1.08,
+      1.34
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      1.02,
+      1.08,
+      1.34
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_trung/cap_5",
+   "node": "house__nha_trung__cap_5",
+   "kind": "house",
+   "id": "nha_trung",
+   "state": "cap_5",
+   "group": "house",
+   "label": "Nhà chính miền Trung",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 4352,
+   "mats": 20,
+   "wind": "none",
+   "size": [
+    5.98,
+    2.74,
+    4.16
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      -1.1,
+      2.44,
+      -1.88
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      0.0,
+      1.1,
+      1.69
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.5,
+      1.72,
+      1.1
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_ruong_go_lim/mac_dinh",
+   "node": "house__nha_ruong_go_lim__mac_dinh",
+   "kind": "house",
+   "id": "nha_ruong_go_lim",
+   "state": "mac_dinh",
+   "group": "house",
+   "label": "Nhà rường gỗ lim",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 3052,
+   "mats": 18,
+   "wind": "none",
+   "size": [
+    4.74,
+    2.58,
+    4.12
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      0.0,
+      2.46,
+      -2.0
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.55,
+      1.57,
+      1.19
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      1.55,
+      1.57,
+      1.19
+     ]
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

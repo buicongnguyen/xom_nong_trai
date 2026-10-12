@@ -1,0 +1,369 @@
+{
+ "module": "factories_b",
+ "built_at": 1791539299.68189,
+ "seconds": 1.0,
+ "assets": [
+  {
+   "key": "building/xuong_mut/mac_dinh",
+   "node": "building__xuong_mut__mac_dinh",
+   "kind": "building",
+   "id": "xuong_mut",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Xưởng mứt",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 4526,
+   "mats": 29,
+   "wind": "none",
+   "size": [
+    2.96,
+    2.46,
+    2.53
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.16,
+      0.9
+     ]
+    },
+    {
+     "name": "fx_smoke",
+     "pos": [
+      -0.75,
+      0.66,
+      0.08
+     ]
+    },
+    {
+     "name": "fx_smoke",
+     "pos": [
+      -0.3,
+      0.61,
+      0.32
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.05,
+      0.2,
+      0.82
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/tiem_may/mac_dinh",
+   "node": "building__tiem_may__mac_dinh",
+   "kind": "building",
+   "id": "tiem_may",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Tiệm may",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 3658,
+   "mats": 26,
+   "wind": "none",
+   "size": [
+    2.89,
+    2.42,
+    2.45
+   ],
+   "parts": [
+    "spin_y_1.0"
+   ],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.16,
+      0.85
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.5,
+      0.2,
+      0.7
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/tiem_banh_ngot/mac_dinh",
+   "node": "building__tiem_banh_ngot__mac_dinh",
+   "kind": "building",
+   "id": "tiem_banh_ngot",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Tiệm bánh ngọt",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 3302,
+   "mats": 29,
+   "wind": "none",
+   "size": [
+    2.96,
+    2.32,
+    2.96
+   ],
+   "parts": [
+    "sway_0.05"
+   ],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.16,
+      0.9
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.2,
+      0.85
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/tiem_hoa/mac_dinh",
+   "node": "building__tiem_hoa__mac_dinh",
+   "kind": "building",
+   "id": "tiem_hoa",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Tiệm hoa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 5698,
+   "mats": 27,
+   "wind": "none",
+   "size": [
+    2.15,
+    1.9,
+    1.96
+   ],
+   "parts": [
+    "sway_0.07"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.19,
+      -0.38
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.09,
+      0.68
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/bep_co_truyen/mac_dinh",
+   "node": "building__bep_co_truyen__mac_dinh",
+   "kind": "building",
+   "id": "bep_co_truyen",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Bếp cổ truyền",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 3238,
+   "mats": 31,
+   "wind": "none",
+   "size": [
+    2.84,
+    2.38,
+    2.87
+   ],
+   "parts": [
+    "sway_0.05"
+   ],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.16,
+      0.9
+     ]
+    },
+    {
+     "name": "fx_smoke",
+     "pos": [
+      -0.45,
+      0.92,
+      0.65
+     ]
+    },
+    {
+     "name": "fx_smoke",
+     "pos": [
+      0.7,
+      2.26,
+      -0.9
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.2,
+      0.21,
+      0.73
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/xuong_duyen_hai/mac_dinh",
+   "node": "building__xuong_duyen_hai__mac_dinh",
+   "kind": "building",
+   "id": "xuong_duyen_hai",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Xưởng duyên hải",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 4184,
+   "mats": 29,
+   "wind": "none",
+   "size": [
+    3.0,
+    2.52,
+    2.77
+   ],
+   "parts": [
+    "sway_0.1"
+   ],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.21,
+      0.95
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.3,
+      0.21,
+      0.78
+     ]
+    },
+    {
+     "name": "fx_smoke",
+     "pos": [
+      0.9,
+      0.43,
+      0.47
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/lo_keo_miet_vuon/mac_dinh",
+   "node": "building__lo_keo_miet_vuon__mac_dinh",
+   "kind": "building",
+   "id": "lo_keo_miet_vuon",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Lò kẹo miệt vườn",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 4052,
+   "mats": 30,
+   "wind": "none",
+   "size": [
+    3.1,
+    2.53,
+    2.87
+   ],
+   "parts": [
+    "spin_z_0.3"
+   ],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.21,
+      1.25
+     ]
+    },
+    {
+     "name": "fx_smoke",
+     "pos": [
+      -0.15,
+      1.146,
+      0.35
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.65,
+      0.22,
+      1.02
+     ]
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,260 @@
+{
+ "module": "critters",
+ "built_at": 1790778430.699393,
+ "seconds": 0.1,
+ "assets": [
+  {
+   "key": "critter/ong/mac_dinh",
+   "node": "critter__ong__mac_dinh",
+   "kind": "critter",
+   "id": "ong",
+   "state": "mac_dinh",
+   "group": "critter",
+   "label": "Ong mật",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 192,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.34,
+    0.15,
+    0.23
+   ],
+   "parts": [
+    "sway_0.9"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "critter/buom_vang/mac_dinh",
+   "node": "critter__buom_vang__mac_dinh",
+   "kind": "critter",
+   "id": "buom_vang",
+   "state": "mac_dinh",
+   "group": "critter",
+   "label": "Bướm vàng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 216,
+   "mats": 2,
+   "wind": "none",
+   "size": [
+    0.46,
+    0.07,
+    0.3
+   ],
+   "parts": [
+    "sway_0.75"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "critter/buom_trang/mac_dinh",
+   "node": "critter__buom_trang__mac_dinh",
+   "kind": "critter",
+   "id": "buom_trang",
+   "state": "mac_dinh",
+   "group": "critter",
+   "label": "Bướm trắng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 216,
+   "mats": 2,
+   "wind": "none",
+   "size": [
+    0.46,
+    0.07,
+    0.3
+   ],
+   "parts": [
+    "sway_0.75"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "critter/buom_xanh/mac_dinh",
+   "node": "critter__buom_xanh__mac_dinh",
+   "kind": "critter",
+   "id": "buom_xanh",
+   "state": "mac_dinh",
+   "group": "critter",
+   "label": "Bướm xanh",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 216,
+   "mats": 2,
+   "wind": "none",
+   "size": [
+    0.46,
+    0.07,
+    0.3
+   ],
+   "parts": [
+    "sway_0.75"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "critter/chuon_chuon/mac_dinh",
+   "node": "critter__chuon_chuon__mac_dinh",
+   "kind": "critter",
+   "id": "chuon_chuon",
+   "state": "mac_dinh",
+   "group": "critter",
+   "label": "Chuồn chuồn",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 228,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.62,
+    0.12,
+    0.64
+   ],
+   "parts": [
+    "sway_1.1"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "critter/co_trang/mac_dinh",
+   "node": "critter__co_trang__mac_dinh",
+   "kind": "critter",
+   "id": "co_trang",
+   "state": "mac_dinh",
+   "group": "critter",
+   "label": "Cò trắng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 270,
+   "mats": 4,
+   "wind": "none",
+   "size": [
+    0.47,
+    1.06,
+    0.8
+   ],
+   "parts": [
+    "sway_0.12"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "critter/chim_se/mac_dinh",
+   "node": "critter__chim_se__mac_dinh",
+   "kind": "critter",
+   "id": "chim_se",
+   "state": "mac_dinh",
+   "group": "critter",
+   "label": "Chim sẻ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 232,
+   "mats": 4,
+   "wind": "none",
+   "size": [
+    0.25,
+    0.18,
+    0.38
+   ],
+   "parts": [
+    "sway_0.5"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "critter/ca_chep/mac_dinh",
+   "node": "critter__ca_chep__mac_dinh",
+   "kind": "critter",
+   "id": "ca_chep",
+   "state": "mac_dinh",
+   "group": "critter",
+   "label": "Cá chép",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 258,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.2,
+    0.17,
+    0.5
+   ],
+   "parts": [
+    "sway_0.7"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "critter/dom_dom/mac_dinh",
+   "node": "critter__dom_dom__mac_dinh",
+   "kind": "critter",
+   "id": "dom_dom",
+   "state": "mac_dinh",
+   "group": "critter",
+   "label": "Đom đóm",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 128,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.2,
+    0.12,
+    0.16
+   ],
+   "parts": [
+    "sway_1.0"
+   ],
+   "anchors": [],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

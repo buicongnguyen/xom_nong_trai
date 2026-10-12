@@ -1,0 +1,323 @@
+{
+ "module": "fields",
+ "built_at": 1791523904.906585,
+ "seconds": 0.2,
+ "assets": [
+  {
+   "key": "field/dat_thuong/trong",
+   "node": "field__dat_thuong__trong",
+   "kind": "field",
+   "id": "dat_thuong",
+   "state": "trong",
+   "group": "field",
+   "label": "Luống đất thường",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 162,
+   "mats": 2,
+   "wind": "none",
+   "size": [
+    2.07,
+    0.22,
+    2.06
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_crop",
+     "pos": [
+      0.0,
+      0.16,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "field/dat_thuong/da_gieo",
+   "node": "field__dat_thuong__da_gieo",
+   "kind": "field",
+   "id": "dat_thuong",
+   "state": "da_gieo",
+   "group": "field",
+   "label": "Luống đất thường",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 182,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    2.04,
+    0.25,
+    2.04
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_crop",
+     "pos": [
+      0.0,
+      0.16,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "field/dat_thuong/uot",
+   "node": "field__dat_thuong__uot",
+   "kind": "field",
+   "id": "dat_thuong",
+   "state": "uot",
+   "group": "field",
+   "label": "Luống đất thường",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 170,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    2.06,
+    0.22,
+    2.05
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_crop",
+     "pos": [
+      0.0,
+      0.16,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "field/dat_do/trong",
+   "node": "field__dat_do__trong",
+   "kind": "field",
+   "id": "dat_do",
+   "state": "trong",
+   "group": "field",
+   "label": "Luống đất đỏ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 162,
+   "mats": 2,
+   "wind": "none",
+   "size": [
+    2.06,
+    0.22,
+    2.06
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_crop",
+     "pos": [
+      0.0,
+      0.16,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "field/dat_do/da_gieo",
+   "node": "field__dat_do__da_gieo",
+   "kind": "field",
+   "id": "dat_do",
+   "state": "da_gieo",
+   "group": "field",
+   "label": "Luống đất đỏ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 190,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    2.05,
+    0.25,
+    2.05
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_crop",
+     "pos": [
+      0.0,
+      0.16,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "field/dat_do/uot",
+   "node": "field__dat_do__uot",
+   "kind": "field",
+   "id": "dat_do",
+   "state": "uot",
+   "group": "field",
+   "label": "Luống đất đỏ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 170,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    2.05,
+    0.22,
+    2.07
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_crop",
+     "pos": [
+      0.0,
+      0.16,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "field/dat_den/trong",
+   "node": "field__dat_den__trong",
+   "kind": "field",
+   "id": "dat_den",
+   "state": "trong",
+   "group": "field",
+   "label": "Luống đất đen",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 162,
+   "mats": 2,
+   "wind": "none",
+   "size": [
+    2.05,
+    0.22,
+    2.07
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_crop",
+     "pos": [
+      0.0,
+      0.16,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "field/dat_den/da_gieo",
+   "node": "field__dat_den__da_gieo",
+   "kind": "field",
+   "id": "dat_den",
+   "state": "da_gieo",
+   "group": "field",
+   "label": "Luống đất đen",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 182,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    2.08,
+    0.24,
+    2.05
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_crop",
+     "pos": [
+      0.0,
+      0.16,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "field/dat_den/uot",
+   "node": "field__dat_den__uot",
+   "kind": "field",
+   "id": "dat_den",
+   "state": "uot",
+   "group": "field",
+   "label": "Luống đất đen",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 170,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    2.06,
+    0.22,
+    2.05
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_crop",
+     "pos": [
+      0.0,
+      0.16,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

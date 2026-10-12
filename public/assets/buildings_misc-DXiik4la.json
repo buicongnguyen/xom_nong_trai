@@ -1,0 +1,506 @@
+{
+ "module": "buildings_misc",
+ "built_at": 1791539304.7151182,
+ "seconds": 0.5,
+ "assets": [
+  {
+   "key": "building/ham/cap_1",
+   "node": "building__ham__cap_1",
+   "kind": "building",
+   "id": "ham",
+   "state": "cap_1",
+   "group": "building",
+   "label": "Hầm",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1686,
+   "mats": 23,
+   "wind": "none",
+   "size": [
+    1.96,
+    2.12,
+    2.0
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.303,
+      1.126,
+      0.471
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.28,
+      0.26,
+      0.42
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/ham/cap_2",
+   "node": "building__ham__cap_2",
+   "kind": "building",
+   "id": "ham",
+   "state": "cap_2",
+   "group": "building",
+   "label": "Hầm",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1746,
+   "mats": 23,
+   "wind": "none",
+   "size": [
+    1.96,
+    2.58,
+    2.02
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.303,
+      1.372,
+      0.471
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.28,
+      0.26,
+      0.42
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/ham/cap_3",
+   "node": "building__ham__cap_3",
+   "kind": "building",
+   "id": "ham",
+   "state": "cap_3",
+   "group": "building",
+   "label": "Hầm",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1818,
+   "mats": 23,
+   "wind": "none",
+   "size": [
+    1.97,
+    3.05,
+    1.96
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.303,
+      1.618,
+      0.471
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.28,
+      0.26,
+      0.42
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/kho/cap_1",
+   "node": "building__kho__cap_1",
+   "kind": "building",
+   "id": "kho",
+   "state": "cap_1",
+   "group": "building",
+   "label": "Kho",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2480,
+   "mats": 34,
+   "wind": "none",
+   "size": [
+    2.97,
+    2.02,
+    2.96
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -0.9,
+      1.06,
+      0.9
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.525,
+      0.31,
+      -0.45
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/kho/cap_2",
+   "node": "building__kho__cap_2",
+   "kind": "building",
+   "id": "kho",
+   "state": "cap_2",
+   "group": "building",
+   "label": "Kho",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2552,
+   "mats": 34,
+   "wind": "none",
+   "size": [
+    2.97,
+    2.3,
+    2.96
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.05,
+      1.21,
+      1.03
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.6,
+      0.31,
+      -0.58
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/kho/cap_3",
+   "node": "building__kho__cap_3",
+   "kind": "building",
+   "id": "kho",
+   "state": "cap_3",
+   "group": "building",
+   "label": "Kho",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2552,
+   "mats": 34,
+   "wind": "none",
+   "size": [
+    3.12,
+    2.63,
+    3.02
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.2,
+      1.39,
+      1.15
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.675,
+      0.31,
+      -0.7
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/sap_cho/trong",
+   "node": "building__sap_cho__trong",
+   "kind": "building",
+   "id": "sap_cho",
+   "state": "trong",
+   "group": "building",
+   "label": "Sạp chợ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1672,
+   "mats": 30,
+   "wind": "none",
+   "size": [
+    2.14,
+    1.73,
+    1.96
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "building/sap_cho/co_hang",
+   "node": "building__sap_cho__co_hang",
+   "kind": "building",
+   "id": "sap_cho",
+   "state": "co_hang",
+   "group": "building",
+   "label": "Sạp chợ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1778,
+   "mats": 33,
+   "wind": "none",
+   "size": [
+    2.14,
+    1.73,
+    1.96
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.8,
+      0.062
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.1,
+      -0.57
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/ben_ghe/mac_dinh",
+   "node": "building__ben_ghe__mac_dinh",
+   "kind": "building",
+   "id": "ben_ghe",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Bến ghe",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    4,
+    2
+   ],
+   "tris": 1704,
+   "mats": 22,
+   "wind": "none",
+   "size": [
+    4.05,
+    1.27,
+    2.12
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_boat",
+     "pos": [
+      0.292,
+      0.02,
+      0.53
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.4,
+      1.09,
+      -0.25
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/ghe/mac_dinh",
+   "node": "building__ghe__mac_dinh",
+   "kind": "building",
+   "id": "ghe",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Ghe",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    1
+   ],
+   "tris": 1266,
+   "mats": 2,
+   "wind": "none",
+   "size": [
+    3.01,
+    0.91,
+    0.99
+   ],
+   "parts": [
+    "bob_0.045"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.63,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/bang_don_xe_tai/mac_dinh",
+   "node": "building__bang_don_xe_tai__mac_dinh",
+   "kind": "building",
+   "id": "bang_don_xe_tai",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Bảng đơn xe tải",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1270,
+   "mats": 17,
+   "wind": "none",
+   "size": [
+    1.96,
+    1.84,
+    1.96
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.75,
+      -0.0
+     ]
+    },
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      1.325,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "building/xe_tai/mac_dinh",
+   "node": "building__xe_tai__mac_dinh",
+   "kind": "building",
+   "id": "xe_tai",
+   "state": "mac_dinh",
+   "group": "building",
+   "label": "Xe tải",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    3,
+    2
+   ],
+   "tris": 1892,
+   "mats": 15,
+   "wind": "none",
+   "size": [
+    2.13,
+    1.29,
+    1.26
+   ],
+   "parts": [
+    "spin_y_1.6",
+    "spin_y_1.6",
+    "spin_y_1.6",
+    "spin_y_1.6"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.36,
+      0.89,
+      -0.0
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -0.865,
+      0.5,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

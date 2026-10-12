@@ -1,0 +1,376 @@
+{
+ "module": "decor_b",
+ "built_at": 1791523327.167058,
+ "seconds": 0.3,
+ "assets": [
+  {
+   "key": "decor/ao_sen/mac_dinh",
+   "node": "decor__ao_sen__mac_dinh",
+   "kind": "decor",
+   "id": "ao_sen",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Ao sen",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1064,
+   "mats": 14,
+   "wind": "none",
+   "size": [
+    2.12,
+    0.56,
+    2.11
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/xe_bo/mac_dinh",
+   "node": "decor__xe_bo__mac_dinh",
+   "kind": "decor",
+   "id": "xe_bo",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Xe bò",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    1
+   ],
+   "tris": 520,
+   "mats": 7,
+   "wind": "none",
+   "size": [
+    2.2,
+    1.31,
+    0.91
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/gian_muop/mac_dinh",
+   "node": "decor__gian_muop__mac_dinh",
+   "kind": "decor",
+   "id": "gian_muop",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Giàn mướp",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    1
+   ],
+   "tris": 670,
+   "mats": 9,
+   "wind": "none",
+   "size": [
+    1.85,
+    1.84,
+    0.97
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/cau_tre/mac_dinh",
+   "node": "decor__cau_tre__mac_dinh",
+   "kind": "decor",
+   "id": "cau_tre",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Cầu tre",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    1
+   ],
+   "tris": 290,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    1.86,
+    0.71,
+    0.45
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/cong_lang/mac_dinh",
+   "node": "decor__cong_lang__mac_dinh",
+   "kind": "decor",
+   "id": "cong_lang",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Cổng làng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    1
+   ],
+   "tris": 276,
+   "mats": 10,
+   "wind": "none",
+   "size": [
+    1.88,
+    1.98,
+    0.64
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/thuyen_hoa/mac_dinh",
+   "node": "decor__thuyen_hoa__mac_dinh",
+   "kind": "decor",
+   "id": "thuyen_hoa",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Thuyền hoa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    1
+   ],
+   "tris": 466,
+   "mats": 1,
+   "wind": "none",
+   "size": [
+    1.93,
+    0.47,
+    1.06
+   ],
+   "parts": [
+    "bob_0.045"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/xich_du_tre/mac_dinh",
+   "node": "decor__xich_du_tre__mac_dinh",
+   "kind": "decor",
+   "id": "xich_du_tre",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Xích đu tre",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 172,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.68,
+    1.31,
+    1.0
+   ],
+   "parts": [
+    "sway_0.16"
+   ],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/gian_hoa_giay/mac_dinh",
+   "node": "decor__gian_hoa_giay__mac_dinh",
+   "kind": "decor",
+   "id": "gian_hoa_giay",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Giàn hoa giấy",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 412,
+   "mats": 6,
+   "wind": "none",
+   "size": [
+    1.17,
+    1.54,
+    0.37
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/tuong_chuot_ti/mac_dinh",
+   "node": "decor__tuong_chuot_ti__mac_dinh",
+   "kind": "decor",
+   "id": "tuong_chuot_ti",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Tượng Chuột Tí",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 570,
+   "mats": 10,
+   "wind": "none",
+   "size": [
+    0.62,
+    0.9,
+    0.64
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/nha_choi_be_ma/mac_dinh",
+   "node": "decor__nha_choi_be_ma__mac_dinh",
+   "kind": "decor",
+   "id": "nha_choi_be_ma",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Nhà chòi Bé Mạ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 640,
+   "mats": 10,
+   "wind": "none",
+   "size": [
+    2.07,
+    2.96,
+    2.12
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -0.65,
+      1.31,
+      0.7
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      0.65,
+      1.31,
+      0.7
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "decor/den_hoa_dang/mac_dinh",
+   "node": "decor__den_hoa_dang__mac_dinh",
+   "kind": "decor",
+   "id": "den_hoa_dang",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Đèn hoa đăng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 92,
+   "mats": 5,
+   "wind": "none",
+   "size": [
+    1.12,
+    0.23,
+    1.12
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      0.215,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "decor/hoa_mai/mac_dinh",
+   "node": "decor__hoa_mai__mac_dinh",
+   "kind": "decor",
+   "id": "hoa_mai",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Chậu mai",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 762,
+   "mats": 9,
+   "wind": "none",
+   "size": [
+    0.79,
+    1.26,
+    0.71
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "decor/hoa_dao/mac_dinh",
+   "node": "decor__hoa_dao__mac_dinh",
+   "kind": "decor",
+   "id": "hoa_dao",
+   "state": "mac_dinh",
+   "group": "decor",
+   "label": "Chậu đào",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 774,
+   "mats": 9,
+   "wind": "none",
+   "size": [
+    0.76,
+    1.27,
+    0.74
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

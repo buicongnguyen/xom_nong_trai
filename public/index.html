@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Khoá zoom: iOS tự phóng to khi chạm ô nhập chữ < 16px và không thu lại sau khi đóng bàn phím.
+         Game tự xử lý pinch-zoom trên bản đồ nên không cần zoom trang. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>Xóm Nông Trại</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8C%BE%3C/text%3E%3C/svg%3E" />
+    <meta name="theme-color" content="#fff6e6" />
+    <meta name="description" content="Trồng trọt, nuôi gia súc và dựng nông trại của riêng bạn — chơi cùng hàng xóm, ghé thăm và giúp đỡ nhau mỗi ngày." />
+
+    <!-- Cài vào màn hình chính (feat/pwa-install, docs tác vụ "PWA install"): manifest + icon dựng từ
+         mascot "Bé Mạ" sẵn có (packages/client/public/icons, xem scripts/gen-pwa-icons.py) — KHÔNG rasterize
+         emoji (favicon ở trên) làm icon app vì Apple không cho phép icon app dùng lại hình emoji.
+         `apple-mobile-web-app-status-bar-style=black-translucent` (thay vì "default"): HUD đã tự chừa
+         `env(safe-area-inset-top)` ở MỌI lớp phủ phía trên (`ui/hud/v4/hudV4Styles.ts` biến `--st`,
+         `VisitOverlay.tsx`, `Toast.tsx`, `Tutorial.tsx`, `map/vn/mapHud.tsx`, `ThreeRenderer.ts`) nên
+         nội dung không bao giờ lọt dưới tai thỏ/status bar — chọn "black-translucent" để nền game
+         (kem/xanh lá) tràn lên dưới status bar thay vì 1 dải đen cứng phía trên như "default". -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Nông Trại" />
+
+    <!-- Open Graph + Twitter Card (W-og-card): để Zalo/Facebook/Messenger/Twitter hiện preview có
+         ảnh/tiêu đề khi dán link game thay vì chỉ dòng chữ trần. `og:image`/`og:url` PHẢI là URL
+         TUYỆT ĐỐI (crawler các nền tảng này không tự resolve URL tương đối) — origin thật của từng
+         môi trường chỉ biết lúc build (xem vite-plugins/ogTags.ts + packages/client/Dockerfile
+         ARG VITE_PUBLIC_ORIGIN + deploy/deploy.sh), nên 2 thẻ đó giữ placeholder
+         `https://nongtrai.jackle.dev` ở đây, plugin thay bằng origin thật lúc `vite build`/`vite dev`. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Xóm Nông Trại" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:title" content="Xóm Nông Trại" />
+    <meta property="og:description" content="Trồng trọt, nuôi gia súc và dựng nông trại của riêng bạn — chơi cùng hàng xóm, ghé thăm và giúp đỡ nhau mỗi ngày." />
+    <meta property="og:url" content="https://nongtrai.jackle.dev/" />
+    <meta property="og:image" content="https://nongtrai.jackle.dev/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Nhà, vật nuôi và nhân vật xóm giềng trong Xóm Nông Trại" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Font Baloo 2 / Be Vietnam Pro tự host (bớt round-trip tới fonts.googleapis.com/gstatic.com),
+         nạp qua src/fonts.css (import trong main.tsx), KHÔNG còn <link> Google Fonts ở đây. -->
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff6e6;
+        overscroll-behavior: none;
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-Gy4nOY45.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-state-54f1U8VT.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-C4vplrqd.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-sCAGzzF1.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,2400 @@
+{
+ "module": "flora",
+ "built_at": 1791481283.5062468,
+ "seconds": 0.5,
+ "assets": [
+  {
+   "key": "flora/tre/nho",
+   "node": "flora__tre__nho",
+   "kind": "flora",
+   "id": "tre",
+   "state": "nho",
+   "group": "flora",
+   "label": "Lũy tre",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 260,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.21,
+    1.41,
+    1.85
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/tre/vua",
+   "node": "flora__tre__vua",
+   "kind": "flora",
+   "id": "tre",
+   "state": "vua",
+   "group": "flora",
+   "label": "Lũy tre",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 434,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.76,
+    2.41,
+    2.81
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/tre/lon",
+   "node": "flora__tre__lon",
+   "kind": "flora",
+   "id": "tre",
+   "state": "lon",
+   "group": "flora",
+   "label": "Lũy tre",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 680,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    3.4,
+    3.43,
+    3.4
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/chuoi/nho",
+   "node": "flora__chuoi__nho",
+   "kind": "flora",
+   "id": "chuoi",
+   "state": "nho",
+   "group": "flora",
+   "label": "Chuối",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 58,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.59,
+    1.04,
+    1.56
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/chuoi/vua",
+   "node": "flora__chuoi__vua",
+   "kind": "flora",
+   "id": "chuoi",
+   "state": "vua",
+   "group": "flora",
+   "label": "Chuối",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 96,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.57,
+    1.67,
+    2.17
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/chuoi/lon",
+   "node": "flora__chuoi__lon",
+   "kind": "flora",
+   "id": "chuoi",
+   "state": "lon",
+   "group": "flora",
+   "label": "Chuối",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 262,
+   "mats": 5,
+   "wind": "tree",
+   "size": [
+    2.95,
+    1.91,
+    2.86
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/cau/nho",
+   "node": "flora__cau__nho",
+   "kind": "flora",
+   "id": "cau",
+   "state": "nho",
+   "group": "flora",
+   "label": "Cau",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 72,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    0.74,
+    1.35,
+    0.71
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/cau/vua",
+   "node": "flora__cau__vua",
+   "kind": "flora",
+   "id": "cau",
+   "state": "vua",
+   "group": "flora",
+   "label": "Cau",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 154,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    0.87,
+    2.14,
+    0.89
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/cau/lon",
+   "node": "flora__cau__lon",
+   "kind": "flora",
+   "id": "cau",
+   "state": "lon",
+   "group": "flora",
+   "label": "Cau",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 156,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    0.96,
+    2.83,
+    1.01
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dua/nho",
+   "node": "flora__dua__nho",
+   "kind": "flora",
+   "id": "dua",
+   "state": "nho",
+   "group": "flora",
+   "label": "Dừa",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 76,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.8,
+    1.42,
+    1.94
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dua/vua",
+   "node": "flora__dua__vua",
+   "kind": "flora",
+   "id": "dua",
+   "state": "vua",
+   "group": "flora",
+   "label": "Dừa",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 158,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.24,
+    2.2,
+    2.21
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dua/lon",
+   "node": "flora__dua__lon",
+   "kind": "flora",
+   "id": "dua",
+   "state": "lon",
+   "group": "flora",
+   "label": "Dừa",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 162,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.52,
+    2.86,
+    2.57
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dua_dai/nho",
+   "node": "flora__dua_dai__nho",
+   "kind": "flora",
+   "id": "dua_dai",
+   "state": "nho",
+   "group": "flora",
+   "label": "Dứa dại",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 148,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    0.56,
+    0.7,
+    0.57
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dua_dai/vua",
+   "node": "flora__dua_dai__vua",
+   "kind": "flora",
+   "id": "dua_dai",
+   "state": "vua",
+   "group": "flora",
+   "label": "Dứa dại",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 150,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    0.66,
+    1.03,
+    0.65
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dua_dai/lon",
+   "node": "flora__dua_dai__lon",
+   "kind": "flora",
+   "id": "dua_dai",
+   "state": "lon",
+   "group": "flora",
+   "label": "Dứa dại",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 154,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    0.83,
+    1.3,
+    0.64
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dua_nuoc/nho",
+   "node": "flora__dua_nuoc__nho",
+   "kind": "flora",
+   "id": "dua_nuoc",
+   "state": "nho",
+   "group": "flora",
+   "label": "Dừa nước",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 28,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.9,
+    1.14,
+    0.96
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dua_nuoc/vua",
+   "node": "flora__dua_nuoc__vua",
+   "kind": "flora",
+   "id": "dua_nuoc",
+   "state": "vua",
+   "group": "flora",
+   "label": "Dừa nước",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 30,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.12,
+    1.32,
+    1.23
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dua_nuoc/lon",
+   "node": "flora__dua_nuoc__lon",
+   "kind": "flora",
+   "id": "dua_nuoc",
+   "state": "lon",
+   "group": "flora",
+   "label": "Dừa nước",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 32,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.12,
+    1.47,
+    1.27
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/thong/nho",
+   "node": "flora__thong__nho",
+   "kind": "flora",
+   "id": "thong",
+   "state": "nho",
+   "group": "flora",
+   "label": "Thông",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 74,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.29,
+    1.48,
+    1.3
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/thong/vua",
+   "node": "flora__thong__vua",
+   "kind": "flora",
+   "id": "thong",
+   "state": "vua",
+   "group": "flora",
+   "label": "Thông",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 106,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.54,
+    2.28,
+    1.58
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/thong/lon",
+   "node": "flora__thong__lon",
+   "kind": "flora",
+   "id": "thong",
+   "state": "lon",
+   "group": "flora",
+   "label": "Thông",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 146,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.86,
+    2.99,
+    1.84
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/phi_lao/nho",
+   "node": "flora__phi_lao__nho",
+   "kind": "flora",
+   "id": "phi_lao",
+   "state": "nho",
+   "group": "flora",
+   "label": "Phi lao",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 44,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.7,
+    1.34,
+    0.89
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/phi_lao/vua",
+   "node": "flora__phi_lao__vua",
+   "kind": "flora",
+   "id": "phi_lao",
+   "state": "vua",
+   "group": "flora",
+   "label": "Phi lao",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 64,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.17,
+    2.19,
+    1.13
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/phi_lao/lon",
+   "node": "flora__phi_lao__lon",
+   "kind": "flora",
+   "id": "phi_lao",
+   "state": "lon",
+   "group": "flora",
+   "label": "Phi lao",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 88,
+   "mats": 2,
+   "wind": "tree",
+   "size": [
+    1.33,
+    2.92,
+    1.22
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/xuong_rong/nho",
+   "node": "flora__xuong_rong__nho",
+   "kind": "flora",
+   "id": "xuong_rong",
+   "state": "nho",
+   "group": "flora",
+   "label": "Xương rồng",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 52,
+   "mats": 1,
+   "wind": "none",
+   "size": [
+    0.28,
+    0.57,
+    0.27
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/xuong_rong/vua",
+   "node": "flora__xuong_rong__vua",
+   "kind": "flora",
+   "id": "xuong_rong",
+   "state": "vua",
+   "group": "flora",
+   "label": "Xương rồng",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 188,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.43,
+    1.06,
+    0.47
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/xuong_rong/lon",
+   "node": "flora__xuong_rong__lon",
+   "kind": "flora",
+   "id": "xuong_rong",
+   "state": "lon",
+   "group": "flora",
+   "label": "Xương rồng",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 324,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.62,
+    1.42,
+    0.6
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/da/nho",
+   "node": "flora__da__nho",
+   "kind": "flora",
+   "id": "da",
+   "state": "nho",
+   "group": "flora",
+   "label": "Cây đa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 232,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    3.52,
+    2.27,
+    3.64
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/da/vua",
+   "node": "flora__da__vua",
+   "kind": "flora",
+   "id": "da",
+   "state": "vua",
+   "group": "flora",
+   "label": "Cây đa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 302,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    4.62,
+    3.18,
+    4.55
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/da/lon",
+   "node": "flora__da__lon",
+   "kind": "flora",
+   "id": "da",
+   "state": "lon",
+   "group": "flora",
+   "label": "Cây đa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 348,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    5.47,
+    4.08,
+    5.17
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/ban/nho",
+   "node": "flora__ban__nho",
+   "kind": "flora",
+   "id": "ban",
+   "state": "nho",
+   "group": "flora",
+   "label": "Cây bần",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 208,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.64,
+    1.72,
+    1.61
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/ban/vua",
+   "node": "flora__ban__vua",
+   "kind": "flora",
+   "id": "ban",
+   "state": "vua",
+   "group": "flora",
+   "label": "Cây bần",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 238,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.2,
+    2.56,
+    1.99
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/ban/lon",
+   "node": "flora__ban__lon",
+   "kind": "flora",
+   "id": "ban",
+   "state": "lon",
+   "group": "flora",
+   "label": "Cây bần",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 272,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.51,
+    3.25,
+    2.29
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bang/nho",
+   "node": "flora__bang__nho",
+   "kind": "flora",
+   "id": "bang",
+   "state": "nho",
+   "group": "flora",
+   "label": "Bàng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.47,
+    1.91,
+    2.44
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bang/vua",
+   "node": "flora__bang__vua",
+   "kind": "flora",
+   "id": "bang",
+   "state": "vua",
+   "group": "flora",
+   "label": "Bàng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 118,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.98,
+    2.83,
+    2.79
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bang/lon",
+   "node": "flora__bang__lon",
+   "kind": "flora",
+   "id": "bang",
+   "state": "lon",
+   "group": "flora",
+   "label": "Bàng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    3.57,
+    3.7,
+    3.39
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/phuong/nho",
+   "node": "flora__phuong__nho",
+   "kind": "flora",
+   "id": "phuong",
+   "state": "nho",
+   "group": "flora",
+   "label": "Phượng vĩ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.99,
+    2.0,
+    2.88
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/phuong/vua",
+   "node": "flora__phuong__vua",
+   "kind": "flora",
+   "id": "phuong",
+   "state": "vua",
+   "group": "flora",
+   "label": "Phượng vĩ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 118,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    3.81,
+    2.99,
+    3.62
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/phuong/lon",
+   "node": "flora__phuong__lon",
+   "kind": "flora",
+   "id": "phuong",
+   "state": "lon",
+   "group": "flora",
+   "label": "Phượng vĩ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    4.55,
+    3.9,
+    4.19
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bang_lang/nho",
+   "node": "flora__bang_lang__nho",
+   "kind": "flora",
+   "id": "bang_lang",
+   "state": "nho",
+   "group": "flora",
+   "label": "Bằng lăng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.13,
+    1.99,
+    1.82
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bang_lang/vua",
+   "node": "flora__bang_lang__vua",
+   "kind": "flora",
+   "id": "bang_lang",
+   "state": "vua",
+   "group": "flora",
+   "label": "Bằng lăng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 118,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.47,
+    2.95,
+    2.41
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bang_lang/lon",
+   "node": "flora__bang_lang__lon",
+   "kind": "flora",
+   "id": "bang_lang",
+   "state": "lon",
+   "group": "flora",
+   "label": "Bằng lăng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.85,
+    3.8,
+    2.83
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/xoai_hoang/nho",
+   "node": "flora__xoai_hoang__nho",
+   "kind": "flora",
+   "id": "xoai_hoang",
+   "state": "nho",
+   "group": "flora",
+   "label": "Xoài già",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.22,
+    2.4,
+    2.07
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/xoai_hoang/vua",
+   "node": "flora__xoai_hoang__vua",
+   "kind": "flora",
+   "id": "xoai_hoang",
+   "state": "vua",
+   "group": "flora",
+   "label": "Xoài già",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 118,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.71,
+    3.57,
+    2.46
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/xoai_hoang/lon",
+   "node": "flora__xoai_hoang__lon",
+   "kind": "flora",
+   "id": "xoai_hoang",
+   "state": "lon",
+   "group": "flora",
+   "label": "Xoài già",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    3.06,
+    4.54,
+    2.82
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/gao/nho",
+   "node": "flora__gao__nho",
+   "kind": "flora",
+   "id": "gao",
+   "state": "nho",
+   "group": "flora",
+   "label": "Cây gạo",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 100,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.43,
+    2.42,
+    1.36
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/gao/vua",
+   "node": "flora__gao__vua",
+   "kind": "flora",
+   "id": "gao",
+   "state": "vua",
+   "group": "flora",
+   "label": "Cây gạo",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 128,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.23,
+    3.66,
+    2.29
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/gao/lon",
+   "node": "flora__gao__lon",
+   "kind": "flora",
+   "id": "gao",
+   "state": "lon",
+   "group": "flora",
+   "label": "Cây gạo",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 162,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.59,
+    4.84,
+    2.36
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/sau/nho",
+   "node": "flora__sau__nho",
+   "kind": "flora",
+   "id": "sau",
+   "state": "nho",
+   "group": "flora",
+   "label": "Cây sấu",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.23,
+    2.51,
+    1.98
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/sau/vua",
+   "node": "flora__sau__vua",
+   "kind": "flora",
+   "id": "sau",
+   "state": "vua",
+   "group": "flora",
+   "label": "Cây sấu",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 118,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.58,
+    3.71,
+    2.53
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/sau/lon",
+   "node": "flora__sau__lon",
+   "kind": "flora",
+   "id": "sau",
+   "state": "lon",
+   "group": "flora",
+   "label": "Cây sấu",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.89,
+    4.8,
+    2.73
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/nhan/nho",
+   "node": "flora__nhan__nho",
+   "kind": "flora",
+   "id": "nhan",
+   "state": "nho",
+   "group": "flora",
+   "label": "Cây nhãn",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.0,
+    1.98,
+    1.82
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/nhan/vua",
+   "node": "flora__nhan__vua",
+   "kind": "flora",
+   "id": "nhan",
+   "state": "vua",
+   "group": "flora",
+   "label": "Cây nhãn",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 118,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.21,
+    2.88,
+    2.21
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/nhan/lon",
+   "node": "flora__nhan__lon",
+   "kind": "flora",
+   "id": "nhan",
+   "state": "lon",
+   "group": "flora",
+   "label": "Cây nhãn",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.8,
+    3.78,
+    2.66
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/vai/nho",
+   "node": "flora__vai__nho",
+   "kind": "flora",
+   "id": "vai",
+   "state": "nho",
+   "group": "flora",
+   "label": "Cây vải",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.64,
+    2.08,
+    1.61
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/vai/vua",
+   "node": "flora__vai__vua",
+   "kind": "flora",
+   "id": "vai",
+   "state": "vua",
+   "group": "flora",
+   "label": "Cây vải",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 118,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.15,
+    3.07,
+    2.02
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/vai/lon",
+   "node": "flora__vai__lon",
+   "kind": "flora",
+   "id": "vai",
+   "state": "lon",
+   "group": "flora",
+   "label": "Cây vải",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.54,
+    3.99,
+    2.47
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bang_bien/nho",
+   "node": "flora__bang_bien__nho",
+   "kind": "flora",
+   "id": "bang_bien",
+   "state": "nho",
+   "group": "flora",
+   "label": "Bàng biển",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.22,
+    1.49,
+    2.1
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bang_bien/vua",
+   "node": "flora__bang_bien__vua",
+   "kind": "flora",
+   "id": "bang_bien",
+   "state": "vua",
+   "group": "flora",
+   "label": "Bàng biển",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 118,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.6,
+    2.19,
+    2.45
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bang_bien/lon",
+   "node": "flora__bang_bien__lon",
+   "kind": "flora",
+   "id": "bang_bien",
+   "state": "lon",
+   "group": "flora",
+   "label": "Bàng biển",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    2.96,
+    2.83,
+    2.78
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/sim/nho",
+   "node": "flora__sim__nho",
+   "kind": "flora",
+   "id": "sim",
+   "state": "nho",
+   "group": "flora",
+   "label": "Sim",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 88,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    0.56,
+    0.76,
+    0.61
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/sim/vua",
+   "node": "flora__sim__vua",
+   "kind": "flora",
+   "id": "sim",
+   "state": "vua",
+   "group": "flora",
+   "label": "Sim",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 100,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    0.88,
+    1.2,
+    0.9
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/sim/lon",
+   "node": "flora__sim__lon",
+   "kind": "flora",
+   "id": "sim",
+   "state": "lon",
+   "group": "flora",
+   "label": "Sim",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 112,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.15,
+    1.53,
+    1.17
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/tram/nho",
+   "node": "flora__tram__nho",
+   "kind": "flora",
+   "id": "tram",
+   "state": "nho",
+   "group": "flora",
+   "label": "Cây tràm",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 88,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.84,
+    1.82,
+    0.75
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/tram/vua",
+   "node": "flora__tram__vua",
+   "kind": "flora",
+   "id": "tram",
+   "state": "vua",
+   "group": "flora",
+   "label": "Cây tràm",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 118,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    0.98,
+    2.81,
+    0.91
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/tram/lon",
+   "node": "flora__tram__lon",
+   "kind": "flora",
+   "id": "tram",
+   "state": "lon",
+   "group": "flora",
+   "label": "Cây tràm",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 152,
+   "mats": 3,
+   "wind": "tree",
+   "size": [
+    1.17,
+    3.8,
+    1.11
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/mai_rung/nho",
+   "node": "flora__mai_rung__nho",
+   "kind": "flora",
+   "id": "mai_rung",
+   "state": "nho",
+   "group": "flora",
+   "label": "Mai vàng rừng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 100,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.17,
+    1.62,
+    1.17
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/mai_rung/vua",
+   "node": "flora__mai_rung__vua",
+   "kind": "flora",
+   "id": "mai_rung",
+   "state": "vua",
+   "group": "flora",
+   "label": "Mai vàng rừng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 128,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.65,
+    2.41,
+    1.73
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/mai_rung/lon",
+   "node": "flora__mai_rung__lon",
+   "kind": "flora",
+   "id": "mai_rung",
+   "state": "lon",
+   "group": "flora",
+   "label": "Mai vàng rừng",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 162,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.25,
+    3.15,
+    2.02
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dao_rung/nho",
+   "node": "flora__dao_rung__nho",
+   "kind": "flora",
+   "id": "dao_rung",
+   "state": "nho",
+   "group": "flora",
+   "label": "Đào rừng",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 100,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.15,
+    1.59,
+    1.17
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dao_rung/vua",
+   "node": "flora__dao_rung__vua",
+   "kind": "flora",
+   "id": "dao_rung",
+   "state": "vua",
+   "group": "flora",
+   "label": "Đào rừng",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 128,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.06,
+    2.31,
+    2.08
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/dao_rung/lon",
+   "node": "flora__dao_rung__lon",
+   "kind": "flora",
+   "id": "dao_rung",
+   "state": "lon",
+   "group": "flora",
+   "label": "Đào rừng",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 162,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.62,
+    2.98,
+    2.42
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/man/nho",
+   "node": "flora__man__nho",
+   "kind": "flora",
+   "id": "man",
+   "state": "nho",
+   "group": "flora",
+   "label": "Mận Tây Bắc",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 100,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.17,
+    1.6,
+    1.15
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/man/vua",
+   "node": "flora__man__vua",
+   "kind": "flora",
+   "id": "man",
+   "state": "vua",
+   "group": "flora",
+   "label": "Mận Tây Bắc",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 128,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    1.57,
+    2.31,
+    1.92
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/man/lon",
+   "node": "flora__man__lon",
+   "kind": "flora",
+   "id": "man",
+   "state": "lon",
+   "group": "flora",
+   "label": "Mận Tây Bắc",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 162,
+   "mats": 4,
+   "wind": "tree",
+   "size": [
+    2.32,
+    2.99,
+    2.07
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/co_ngan/mac_dinh",
+   "node": "flora__co_ngan__mac_dinh",
+   "kind": "flora",
+   "id": "co_ngan",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Cỏ ngắn",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 30,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    0.48,
+    0.08,
+    0.64
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/co_may/mac_dinh",
+   "node": "flora__co_may__mac_dinh",
+   "kind": "flora",
+   "id": "co_may",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Cỏ may",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 52,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.44,
+    0.25,
+    0.42
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/co_lau/mac_dinh",
+   "node": "flora__co_lau__mac_dinh",
+   "kind": "flora",
+   "id": "co_lau",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Cỏ lau",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 12,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.43,
+    0.54,
+    0.44
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/co_dai_cao/mac_dinh",
+   "node": "flora__co_dai_cao__mac_dinh",
+   "kind": "flora",
+   "id": "co_dai_cao",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Cỏ dại cao",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 36,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    0.53,
+    0.11,
+    0.74
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/hoa_dai_vang/mac_dinh",
+   "node": "flora__hoa_dai_vang__mac_dinh",
+   "kind": "flora",
+   "id": "hoa_dai_vang",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Hoa dại vàng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 18,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.42,
+    0.23,
+    0.34
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/hoa_dai_tim/mac_dinh",
+   "node": "flora__hoa_dai_tim__mac_dinh",
+   "kind": "flora",
+   "id": "hoa_dai_tim",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Hoa dại tím",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 18,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.44,
+    0.2,
+    0.41
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/hoa_dai_trang/mac_dinh",
+   "node": "flora__hoa_dai_trang__mac_dinh",
+   "kind": "flora",
+   "id": "hoa_dai_trang",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Hoa dại trắng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 18,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.3,
+    0.19,
+    0.4
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/hoa_dai_hong/mac_dinh",
+   "node": "flora__hoa_dai_hong__mac_dinh",
+   "kind": "flora",
+   "id": "hoa_dai_hong",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Hoa dại hồng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 18,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.56,
+    0.2,
+    0.33
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/hoa_dai_do/mac_dinh",
+   "node": "flora__hoa_dai_do__mac_dinh",
+   "kind": "flora",
+   "id": "hoa_dai_do",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Hoa dại đỏ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 18,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.33,
+    0.22,
+    0.34
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/duong_xi/mac_dinh",
+   "node": "flora__duong_xi__mac_dinh",
+   "kind": "flora",
+   "id": "duong_xi",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Dương xỉ",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 24,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    0.93,
+    0.6,
+    0.64
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/bui_ram/mac_dinh",
+   "node": "flora__bui_ram__mac_dinh",
+   "kind": "flora",
+   "id": "bui_ram",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Bụi rậm",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 32,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.47,
+    0.27,
+    0.46
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/da_reu/mac_dinh",
+   "node": "flora__da_reu__mac_dinh",
+   "kind": "flora",
+   "id": "da_reu",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Đá rêu",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 44,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    0.53,
+    0.33,
+    0.55
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/luc_binh/mac_dinh",
+   "node": "flora__luc_binh__mac_dinh",
+   "kind": "flora",
+   "id": "luc_binh",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Lục bình",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 29,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.23,
+    0.27,
+    0.25
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/beo/mac_dinh",
+   "node": "flora__beo__mac_dinh",
+   "kind": "flora",
+   "id": "beo",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Bèo tấm",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 30,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    0.43,
+    0.01,
+    0.37
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/sung/mac_dinh",
+   "node": "flora__sung__mac_dinh",
+   "kind": "flora",
+   "id": "sung",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Hoa súng",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 20,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    0.39,
+    0.17,
+    0.56
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/sen_ao/mac_dinh",
+   "node": "flora__sen_ao__mac_dinh",
+   "kind": "flora",
+   "id": "sen_ao",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Sen ao",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 68,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    0.62,
+    0.49,
+    0.48
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  },
+  {
+   "key": "flora/lau_say/mac_dinh",
+   "node": "flora__lau_say__mac_dinh",
+   "kind": "flora",
+   "id": "lau_say",
+   "state": "mac_dinh",
+   "group": "flora",
+   "label": "Lau sậy",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 12,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.66,
+    0.67,
+    0.6
+   ],
+   "parts": [],
+   "anchors": [],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

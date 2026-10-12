@@ -1,0 +1,1850 @@
+{
+ "module": "crops_a",
+ "built_at": 1791481318.842911,
+ "seconds": 0.4,
+ "assets": [
+  {
+   "key": "crop/lua/mam",
+   "node": "crop__lua__mam",
+   "kind": "crop",
+   "id": "lua",
+   "state": "mam",
+   "group": "crop",
+   "label": "Lúa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 64,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    1.66,
+    0.24,
+    1.69
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.202,
+      0.202,
+      -0.283
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/lua/lon",
+   "node": "crop__lua__lon",
+   "kind": "crop",
+   "id": "lua",
+   "state": "lon",
+   "group": "crop",
+   "label": "Lúa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 96,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    2.01,
+    0.46,
+    2.0
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.205,
+      0.386,
+      -0.286
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/lua/gan_chin",
+   "node": "crop__lua__gan_chin",
+   "kind": "crop",
+   "id": "lua",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Lúa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 160,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.97,
+    0.8,
+    1.94
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.13,
+      0.46,
+      -0.145
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 160 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/lua/chin",
+   "node": "crop__lua__chin",
+   "kind": "crop",
+   "id": "lua",
+   "state": "chin",
+   "group": "crop",
+   "label": "Lúa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 224,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.94,
+    1.01,
+    2.06
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.203,
+      0.515,
+      -0.3
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 224 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/lua_nep/mam",
+   "node": "crop__lua_nep__mam",
+   "kind": "crop",
+   "id": "lua_nep",
+   "state": "mam",
+   "group": "crop",
+   "label": "Lúa nếp",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 64,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    1.71,
+    0.25,
+    1.74
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.27,
+      0.202,
+      -0.206
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/lua_nep/lon",
+   "node": "crop__lua_nep__lon",
+   "kind": "crop",
+   "id": "lua_nep",
+   "state": "lon",
+   "group": "crop",
+   "label": "Lúa nếp",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 96,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    1.9,
+    0.49,
+    1.88
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.238,
+      0.386,
+      -0.262
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/lua_nep/gan_chin",
+   "node": "crop__lua_nep__gan_chin",
+   "kind": "crop",
+   "id": "lua_nep",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Lúa nếp",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 160,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.84,
+    0.87,
+    1.88
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.307,
+      0.46,
+      -0.244
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 160 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/lua_nep/chin",
+   "node": "crop__lua_nep__chin",
+   "kind": "crop",
+   "id": "lua_nep",
+   "state": "chin",
+   "group": "crop",
+   "label": "Lúa nếp",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 224,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.92,
+    1.05,
+    2.1
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.243,
+      0.515,
+      -0.24
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 224 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/lua_thom/mam",
+   "node": "crop__lua_thom__mam",
+   "kind": "crop",
+   "id": "lua_thom",
+   "state": "mam",
+   "group": "crop",
+   "label": "Lúa thơm",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 64,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    1.66,
+    0.25,
+    1.7
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.199,
+      0.202,
+      -0.203
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/lua_thom/lon",
+   "node": "crop__lua_thom__lon",
+   "kind": "crop",
+   "id": "lua_thom",
+   "state": "lon",
+   "group": "crop",
+   "label": "Lúa thơm",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 96,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    1.89,
+    0.45,
+    1.95
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.215,
+      0.386,
+      -0.318
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/lua_thom/gan_chin",
+   "node": "crop__lua_thom__gan_chin",
+   "kind": "crop",
+   "id": "lua_thom",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Lúa thơm",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 128,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.94,
+    0.77,
+    1.89
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.204,
+      0.46,
+      -0.308
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 128 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/lua_thom/chin",
+   "node": "crop__lua_thom__chin",
+   "kind": "crop",
+   "id": "lua_thom",
+   "state": "chin",
+   "group": "crop",
+   "label": "Lúa thơm",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 192,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    2.04,
+    0.93,
+    1.81
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.134,
+      0.515,
+      -0.282
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 192 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/lua_mi/mam",
+   "node": "crop__lua_mi__mam",
+   "kind": "crop",
+   "id": "lua_mi",
+   "state": "mam",
+   "group": "crop",
+   "label": "Lúa mì",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 64,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    1.69,
+    0.23,
+    1.7
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.241,
+      0.19,
+      -0.255
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/lua_mi/lon",
+   "node": "crop__lua_mi__lon",
+   "kind": "crop",
+   "id": "lua_mi",
+   "state": "lon",
+   "group": "crop",
+   "label": "Lúa mì",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 96,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    1.86,
+    0.44,
+    1.89
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.207,
+      0.361,
+      -0.153
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/lua_mi/gan_chin",
+   "node": "crop__lua_mi__gan_chin",
+   "kind": "crop",
+   "id": "lua_mi",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Lúa mì",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 160,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.89,
+    0.81,
+    1.84
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.211,
+      0.437,
+      -0.292
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 160 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/lua_mi/chin",
+   "node": "crop__lua_mi__chin",
+   "kind": "crop",
+   "id": "lua_mi",
+   "state": "chin",
+   "group": "crop",
+   "label": "Lúa mì",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 224,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.84,
+    1.01,
+    1.94
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.15,
+      0.475,
+      -0.209
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 224 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/ngo/mam",
+   "node": "crop__ngo__mam",
+   "kind": "crop",
+   "id": "ngo",
+   "state": "mam",
+   "group": "crop",
+   "label": "Ngô",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 240,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    0.54,
+    0.49,
+    0.6
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.008,
+      0.36,
+      0.001
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/ngo/lon",
+   "node": "crop__ngo__lon",
+   "kind": "crop",
+   "id": "ngo",
+   "state": "lon",
+   "group": "crop",
+   "label": "Ngô",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 250,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    1.08,
+    1.55,
+    1.19
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.019,
+      1.3,
+      -0.005
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/ngo/gan_chin",
+   "node": "crop__ngo__gan_chin",
+   "kind": "crop",
+   "id": "ngo",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Ngô",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 416,
+   "mats": 5,
+   "wind": "plant",
+   "size": [
+    1.51,
+    2.3,
+    1.62
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.092,
+      1.79,
+      0.395
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 416 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/ngo/chin",
+   "node": "crop__ngo__chin",
+   "kind": "crop",
+   "id": "ngo",
+   "state": "chin",
+   "group": "crop",
+   "label": "Ngô",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 526,
+   "mats": 6,
+   "wind": "plant",
+   "size": [
+    1.84,
+    2.79,
+    1.93
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.069,
+      2.163,
+      0.454
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/mia/mam",
+   "node": "crop__mia__mam",
+   "kind": "crop",
+   "id": "mia",
+   "state": "mam",
+   "group": "crop",
+   "label": "Mía",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 232,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    0.68,
+    0.44,
+    0.59
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.043,
+      0.348,
+      0.004
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/mia/lon",
+   "node": "crop__mia__lon",
+   "kind": "crop",
+   "id": "mia",
+   "state": "lon",
+   "group": "crop",
+   "label": "Mía",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 348,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    1.17,
+    1.13,
+    1.18
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.106,
+      1.031,
+      -0.014
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/mia/gan_chin",
+   "node": "crop__mia__gan_chin",
+   "kind": "crop",
+   "id": "mia",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Mía",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 464,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    1.56,
+    1.57,
+    1.67
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.123,
+      1.375,
+      0.031
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 464 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/mia/chin",
+   "node": "crop__mia__chin",
+   "kind": "crop",
+   "id": "mia",
+   "state": "chin",
+   "group": "crop",
+   "label": "Mía",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 464,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    1.86,
+    1.84,
+    1.85
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.193,
+      1.752,
+      0.02
+     ]
+    }
+   ],
+   "warnings": [
+    "quá đơn giản: 464 < 500 tam giác"
+   ]
+  },
+  {
+   "key": "crop/ca_rot/mam",
+   "node": "crop__ca_rot__mam",
+   "kind": "crop",
+   "id": "ca_rot",
+   "state": "mam",
+   "group": "crop",
+   "label": "Cà rốt",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 24,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    1.39,
+    0.44,
+    0.7
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.5,
+      0.05,
+      -0.14
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/ca_rot/lon",
+   "node": "crop__ca_rot__lon",
+   "kind": "crop",
+   "id": "ca_rot",
+   "state": "lon",
+   "group": "crop",
+   "label": "Cà rốt",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 32,
+   "mats": 1,
+   "wind": "plant",
+   "size": [
+    1.54,
+    0.64,
+    0.83
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.5,
+      0.05,
+      -0.14
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/ca_rot/gan_chin",
+   "node": "crop__ca_rot__gan_chin",
+   "kind": "crop",
+   "id": "ca_rot",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Cà rốt",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1336,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    1.8,
+    1.25,
+    1.08
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.5,
+      0.418,
+      -0.14
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/ca_rot/chin",
+   "node": "crop__ca_rot__chin",
+   "kind": "crop",
+   "id": "ca_rot",
+   "state": "chin",
+   "group": "crop",
+   "label": "Cà rốt",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1002,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    1.72,
+    1.29,
+    0.99
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.621,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/toi_dao/mam",
+   "node": "crop__toi_dao__mam",
+   "kind": "crop",
+   "id": "toi_dao",
+   "state": "mam",
+   "group": "crop",
+   "label": "Tỏi đảo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 90,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    0.8,
+    0.5,
+    0.57
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.22,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/toi_dao/lon",
+   "node": "crop__toi_dao__lon",
+   "kind": "crop",
+   "id": "toi_dao",
+   "state": "lon",
+   "group": "crop",
+   "label": "Tỏi đảo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 100,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    1.51,
+    0.96,
+    1.19
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.41,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/toi_dao/gan_chin",
+   "node": "crop__toi_dao__gan_chin",
+   "kind": "crop",
+   "id": "toi_dao",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Tỏi đảo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 668,
+   "mats": 5,
+   "wind": "plant",
+   "size": [
+    1.61,
+    1.34,
+    1.36
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.35,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/toi_dao/chin",
+   "node": "crop__toi_dao__chin",
+   "kind": "crop",
+   "id": "toi_dao",
+   "state": "chin",
+   "group": "crop",
+   "label": "Tỏi đảo",
+   "region": "trung",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 614,
+   "mats": 5,
+   "wind": "plant",
+   "size": [
+    1.3,
+    1.57,
+    1.57
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.637,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/dau_nanh/mam",
+   "node": "crop__dau_nanh__mam",
+   "kind": "crop",
+   "id": "dau_nanh",
+   "state": "mam",
+   "group": "crop",
+   "label": "Đậu nành",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 108,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.6,
+    0.43,
+    0.57
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.114,
+      0.34,
+      0.133
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/dau_nanh/lon",
+   "node": "crop__dau_nanh__lon",
+   "kind": "crop",
+   "id": "dau_nanh",
+   "state": "lon",
+   "group": "crop",
+   "label": "Đậu nành",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 180,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.49,
+    1.1,
+    1.41
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.2,
+      0.873,
+      0.328
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/dau_nanh/gan_chin",
+   "node": "crop__dau_nanh__gan_chin",
+   "kind": "crop",
+   "id": "dau_nanh",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Đậu nành",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 644,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    1.65,
+    1.14,
+    1.68
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.136,
+      0.615,
+      -0.642
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/dau_nanh/chin",
+   "node": "crop__dau_nanh__chin",
+   "kind": "crop",
+   "id": "dau_nanh",
+   "state": "chin",
+   "group": "crop",
+   "label": "Đậu nành",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1190,
+   "mats": 5,
+   "wind": "plant",
+   "size": [
+    1.71,
+    1.17,
+    2.14
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.166,
+      0.745,
+      -0.493
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/dau_xanh/mam",
+   "node": "crop__dau_xanh__mam",
+   "kind": "crop",
+   "id": "dau_xanh",
+   "state": "mam",
+   "group": "crop",
+   "label": "Đậu xanh",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 108,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.61,
+    0.38,
+    0.55
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.13,
+      0.34,
+      0.133
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/dau_xanh/lon",
+   "node": "crop__dau_xanh__lon",
+   "kind": "crop",
+   "id": "dau_xanh",
+   "state": "lon",
+   "group": "crop",
+   "label": "Đậu xanh",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 180,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.41,
+    1.06,
+    1.37
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.085,
+      0.959,
+      0.36
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/dau_xanh/gan_chin",
+   "node": "crop__dau_xanh__gan_chin",
+   "kind": "crop",
+   "id": "dau_xanh",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Đậu xanh",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1148,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    1.62,
+    1.28,
+    1.34
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.242,
+      1.092,
+      -0.095
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/dau_xanh/chin",
+   "node": "crop__dau_xanh__chin",
+   "kind": "crop",
+   "id": "dau_xanh",
+   "state": "chin",
+   "group": "crop",
+   "label": "Đậu xanh",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 728,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    1.78,
+    1.67,
+    1.92
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.728,
+      1.256,
+      -0.255
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/su_hao/mam",
+   "node": "crop__su_hao__mam",
+   "kind": "crop",
+   "id": "su_hao",
+   "state": "mam",
+   "group": "crop",
+   "label": "Su hào",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 30,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.55,
+    0.5,
+    0.51
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.168,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/su_hao/lon",
+   "node": "crop__su_hao__lon",
+   "kind": "crop",
+   "id": "su_hao",
+   "state": "lon",
+   "group": "crop",
+   "label": "Su hào",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 36,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.04,
+    0.95,
+    1.04
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.328,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/su_hao/gan_chin",
+   "node": "crop__su_hao__gan_chin",
+   "kind": "crop",
+   "id": "su_hao",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Su hào",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 854,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.37,
+    1.25,
+    1.27
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.26,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/su_hao/chin",
+   "node": "crop__su_hao__chin",
+   "kind": "crop",
+   "id": "su_hao",
+   "state": "chin",
+   "group": "crop",
+   "label": "Su hào",
+   "region": "bac",
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 852,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    1.62,
+    1.44,
+    1.6
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.46,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/rau_muong/mam",
+   "node": "crop__rau_muong__mam",
+   "kind": "crop",
+   "id": "rau_muong",
+   "state": "mam",
+   "group": "crop",
+   "label": "Rau muống",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 228,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    0.53,
+    0.36,
+    0.72
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.115,
+      0.264,
+      0.27
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/rau_muong/lon",
+   "node": "crop__rau_muong__lon",
+   "kind": "crop",
+   "id": "rau_muong",
+   "state": "lon",
+   "group": "crop",
+   "label": "Rau muống",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 456,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.18,
+    0.58,
+    1.07
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.236,
+      0.383,
+      0.354
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/rau_muong/gan_chin",
+   "node": "crop__rau_muong__gan_chin",
+   "kind": "crop",
+   "id": "rau_muong",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Rau muống",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 768,
+   "mats": 2,
+   "wind": "plant",
+   "size": [
+    1.79,
+    1.03,
+    1.68
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.69,
+      0.76,
+      0.031
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/rau_muong/chin",
+   "node": "crop__rau_muong__chin",
+   "kind": "crop",
+   "id": "rau_muong",
+   "state": "chin",
+   "group": "crop",
+   "label": "Rau muống",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 1062,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    1.56,
+    1.23,
+    1.69
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.037,
+      0.897,
+      0.075
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/ca_chua/mam",
+   "node": "crop__ca_chua__mam",
+   "kind": "crop",
+   "id": "ca_chua",
+   "state": "mam",
+   "group": "crop",
+   "label": "Cà chua",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 68,
+   "mats": 4,
+   "wind": "plant",
+   "size": [
+    0.52,
+    0.49,
+    0.7
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.21,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/ca_chua/lon",
+   "node": "crop__ca_chua__lon",
+   "kind": "crop",
+   "id": "ca_chua",
+   "state": "lon",
+   "group": "crop",
+   "label": "Cà chua",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 66,
+   "mats": 3,
+   "wind": "plant",
+   "size": [
+    1.34,
+    1.49,
+    1.14
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.46,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/ca_chua/gan_chin",
+   "node": "crop__ca_chua__gan_chin",
+   "kind": "crop",
+   "id": "ca_chua",
+   "state": "gan_chin",
+   "group": "crop",
+   "label": "Cà chua",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 716,
+   "mats": 6,
+   "wind": "plant",
+   "size": [
+    1.48,
+    1.95,
+    1.39
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.327,
+      1.207,
+      0.315
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "crop/ca_chua/chin",
+   "node": "crop__ca_chua__chin",
+   "kind": "crop",
+   "id": "ca_chua",
+   "state": "chin",
+   "group": "crop",
+   "label": "Cà chua",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 758,
+   "mats": 6,
+   "wind": "plant",
+   "size": [
+    1.84,
+    2.7,
+    1.66
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.045,
+      1.53,
+      -0.713
+     ]
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

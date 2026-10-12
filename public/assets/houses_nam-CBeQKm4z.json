@@ -1,0 +1,400 @@
+{
+ "module": "houses_nam",
+ "built_at": 1791484396.143147,
+ "seconds": 0.8,
+ "assets": [
+  {
+   "key": "house/nha_nam/cap_1",
+   "node": "house__nha_nam__cap_1",
+   "kind": "house",
+   "id": "nha_nam",
+   "state": "cap_1",
+   "group": "house",
+   "label": "Nhà chính miền Nam",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2688,
+   "mats": 16,
+   "wind": "none",
+   "size": [
+    4.77,
+    3.18,
+    3.97
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      1.4,
+      2.43,
+      -1.05
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.6,
+      2.04,
+      0.99
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      -0.6,
+      2.04,
+      0.99
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_nam/cap_2",
+   "node": "house__nha_nam__cap_2",
+   "kind": "house",
+   "id": "nha_nam",
+   "state": "cap_2",
+   "group": "house",
+   "label": "Nhà chính miền Nam",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2856,
+   "mats": 19,
+   "wind": "none",
+   "size": [
+    4.42,
+    2.49,
+    4.05
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      1.6,
+      2.4,
+      -1.34
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.63,
+      1.01,
+      1.66
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      1.63,
+      1.01,
+      1.66
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_nam/cap_3",
+   "node": "house__nha_nam__cap_3",
+   "kind": "house",
+   "id": "nha_nam",
+   "state": "cap_3",
+   "group": "house",
+   "label": "Nhà chính miền Nam",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 4144,
+   "mats": 24,
+   "wind": "none",
+   "size": [
+    5.76,
+    3.1,
+    4.82
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      2.806,
+      1.67,
+      -1.2
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.367,
+      1.64,
+      1.4
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      1.367,
+      1.64,
+      1.4
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_nam/cap_4",
+   "node": "house__nha_nam__cap_4",
+   "kind": "house",
+   "id": "nha_nam",
+   "state": "cap_4",
+   "group": "house",
+   "label": "Nhà chính miền Nam",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 4184,
+   "mats": 24,
+   "wind": "none",
+   "size": [
+    5.99,
+    4.5,
+    4.25
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      2.886,
+      1.72,
+      -1.61
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -0.85,
+      1.25,
+      0.92
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      0.85,
+      1.25,
+      0.92
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_nam/cap_5",
+   "node": "house__nha_nam__cap_5",
+   "kind": "house",
+   "id": "nha_nam",
+   "state": "cap_5",
+   "group": "house",
+   "label": "Nhà chính miền Nam",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 6058,
+   "mats": 27,
+   "wind": "none",
+   "size": [
+    6.53,
+    3.3,
+    4.92
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      2.932,
+      1.72,
+      -2.08
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -1.426,
+      1.71,
+      1.1
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      1.426,
+      1.71,
+      1.1
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_co_nam_bo/mac_dinh",
+   "node": "house__nha_co_nam_bo__mac_dinh",
+   "kind": "house",
+   "id": "nha_co_nam_bo",
+   "state": "mac_dinh",
+   "group": "house",
+   "label": "Nhà cổ Nam Bộ",
+   "region": "nam",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 4252,
+   "mats": 21,
+   "wind": "none",
+   "size": [
+    5.38,
+    2.96,
+    4.49
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      1.77,
+      2.14,
+      -1.4
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      -0.18,
+      1.7,
+      1.3
+     ]
+    },
+    {
+     "name": "fx_light_2",
+     "pos": [
+      0.18,
+      1.7,
+      1.3
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/nha_san/mac_dinh",
+   "node": "house__nha_san__mac_dinh",
+   "kind": "house",
+   "id": "nha_san",
+   "state": "mac_dinh",
+   "group": "house",
+   "label": "Nhà sàn Tây Bắc",
+   "region": "vung_nui",
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 3676,
+   "mats": 16,
+   "wind": "none",
+   "size": [
+    4.25,
+    4.47,
+    3.63
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      0.9,
+      3.34,
+      -0.9
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      2.5,
+      0.97
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "house/gian_giao/mac_dinh",
+   "node": "house__gian_giao__mac_dinh",
+   "kind": "house",
+   "id": "gian_giao",
+   "state": "mac_dinh",
+   "group": "house",
+   "label": "Giàn giáo nâng cấp",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 3036,
+   "mats": 5,
+   "wind": "none",
+   "size": [
+    5.09,
+    3.65,
+    4.3
+   ],
+   "parts": [],
+   "anchors": [
+    {
+     "name": "fx_smoke",
+     "pos": [
+      2.3,
+      3.2,
+      -1.9
+     ]
+    },
+    {
+     "name": "fx_light_1",
+     "pos": [
+      0.0,
+      1.5,
+      2.1
+     ]
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}

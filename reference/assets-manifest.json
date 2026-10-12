@@ -1,0 +1,703 @@
+{
+  "origin": "https://nongtrai.jackle.dev",
+  "retrievedAt": "2026-10-12T10:49:18.900Z",
+  "files": [
+    {
+      "path": "assets/14_content_en-sMeMr4NI.js",
+      "bytes": 39380,
+      "sha256": "46080147c3744ad0985e4c4ecdad86aac46dbb0a0867c66df31a021522a129a8",
+      "source": "https://nongtrai.jackle.dev/assets/14_content_en-sMeMr4NI.js"
+    },
+    {
+      "path": "assets/14_copy_en-BwBNM5mE.js",
+      "bytes": 138104,
+      "sha256": "326b612b0e69b3948b54d8aaffb70a006d20eff55553434398bc802926f0b6a7",
+      "source": "https://nongtrai.jackle.dev/assets/14_copy_en-BwBNM5mE.js"
+    },
+    {
+      "path": "assets/animals_0-Cjmb-S2I.webp",
+      "bytes": 552404,
+      "sha256": "09c2584eaa41336e01785be721ad36f2787b4c7fe7e5a1c4af94e90be3994dcd",
+      "source": "https://nongtrai.jackle.dev/assets/animals_0-Cjmb-S2I.webp"
+    },
+    {
+      "path": "assets/animals-55a303e256.glb",
+      "bytes": 187536,
+      "sha256": "55a303e25608e163a864677db18df575afb94e22ee321274fbb36db04b60f0fe",
+      "source": "https://nongtrai.jackle.dev/assets/animals-55a303e256.glb"
+    },
+    {
+      "path": "assets/animals-BrR8I8ec.json",
+      "bytes": 5575,
+      "sha256": "4d11366995121f716939887ea347852987816f6304552f40d3c4541286e11bd7",
+      "source": "https://nongtrai.jackle.dev/assets/animals-BrR8I8ec.json"
+    },
+    {
+      "path": "assets/atlas_pages-BjufhtVk.json",
+      "bytes": 181302,
+      "sha256": "a839f03ad70f776f0a9c6c916a8aaa2591e63f3971eca27f2c224dd016a49cb8",
+      "source": "https://nongtrai.jackle.dev/assets/atlas_pages-BjufhtVk.json"
+    },
+    {
+      "path": "assets/baloo-2-latin-700-normal-CqTg7A15.woff2",
+      "bytes": 19436,
+      "sha256": "8e7ffc9b993aa8caa89bcab81e103c9eb2da4e3e042f37b7a5115d0ddbff12c0",
+      "source": "https://nongtrai.jackle.dev/assets/baloo-2-latin-700-normal-CqTg7A15.woff2"
+    },
+    {
+      "path": "assets/baloo-2-latin-800-normal-BbF3Etk1.woff2",
+      "bytes": 18632,
+      "sha256": "3e36c57e37bda5b5f28cf10636d6d3aed4de5250df923f1b203b64ad857c79a7",
+      "source": "https://nongtrai.jackle.dev/assets/baloo-2-latin-800-normal-BbF3Etk1.woff2"
+    },
+    {
+      "path": "assets/baloo-2-vietnamese-700-normal-h4tlcePq.woff2",
+      "bytes": 5412,
+      "sha256": "57e2a479c5c3bdb0de042e7729cdeb87351a02e0869867f4ea64ca39786afc8c",
+      "source": "https://nongtrai.jackle.dev/assets/baloo-2-vietnamese-700-normal-h4tlcePq.woff2"
+    },
+    {
+      "path": "assets/baloo-2-vietnamese-800-normal-ConLnEgt.woff2",
+      "bytes": 4796,
+      "sha256": "0f2643dd6a34fcdcf98cc339757dd3e8c801129aef82da7d7513d59fbf35cf40",
+      "source": "https://nongtrai.jackle.dev/assets/baloo-2-vietnamese-800-normal-ConLnEgt.woff2"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-500-normal-B6LVzGNe.woff2",
+      "bytes": 21892,
+      "sha256": "b621f77d35f777023aa11ca524462d511b4b28a813adbc0e9d15a10fc61dfe4e",
+      "source": "https://nongtrai.jackle.dev/assets/be-vietnam-pro-latin-500-normal-B6LVzGNe.woff2"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-700-normal-DlW1Zbsh.woff2",
+      "bytes": 22152,
+      "sha256": "a193dd87699bd2e18ddf72dc271493ea82a23dad9f5c334d9f2a257b1e05fc30",
+      "source": "https://nongtrai.jackle.dev/assets/be-vietnam-pro-latin-700-normal-DlW1Zbsh.woff2"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-800-normal-BpHZASpI.woff2",
+      "bytes": 22320,
+      "sha256": "7c5d0871188c09339a6eb46948420ed9b11f3d06ea3ff1c5d1cf41b06a3504e7",
+      "source": "https://nongtrai.jackle.dev/assets/be-vietnam-pro-latin-800-normal-BpHZASpI.woff2"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-900-normal-B6esVQUu.woff2",
+      "bytes": 21760,
+      "sha256": "b7437222bf15d6be4394c13ec31188e1bf8b9be13e6c38dc4c18ad14511b4888",
+      "source": "https://nongtrai.jackle.dev/assets/be-vietnam-pro-latin-900-normal-B6esVQUu.woff2"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-500-normal-DREgrEoJ.woff2",
+      "bytes": 12172,
+      "sha256": "86341610cbe907eecf461c9159c168d5efb52bb1a33963813a08f520555d8e66",
+      "source": "https://nongtrai.jackle.dev/assets/be-vietnam-pro-vietnamese-500-normal-DREgrEoJ.woff2"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-700-normal-Csr0PCuG.woff2",
+      "bytes": 12468,
+      "sha256": "4f58af2d1c3e28a9ba14c51c82db2751d78344b75bdcb34de24a1031ebe59da6",
+      "source": "https://nongtrai.jackle.dev/assets/be-vietnam-pro-vietnamese-700-normal-Csr0PCuG.woff2"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-800-normal-D4LFh2W4.woff2",
+      "bytes": 12404,
+      "sha256": "26b241d1d5f489c8a65c1a3c4cdcdb48dd114a9ed7e0c0180182191f087cbe96",
+      "source": "https://nongtrai.jackle.dev/assets/be-vietnam-pro-vietnamese-800-normal-D4LFh2W4.woff2"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-900-normal-DUJ3fpCl.woff2",
+      "bytes": 12072,
+      "sha256": "70b8feb4c47c137c77ba65d3ef73d5eeda852af1d7ce26f307d7853983948795",
+      "source": "https://nongtrai.jackle.dev/assets/be-vietnam-pro-vietnamese-900-normal-DUJ3fpCl.woff2"
+    },
+    {
+      "path": "assets/bgm_dew_on_the_paddy-BYTG03e0.mp3",
+      "bytes": 4203430,
+      "sha256": "2f9ad0681303cb3beb87ac8fc3f979e391acf1f26653d6abd604b12a5ab5b381",
+      "source": "https://nongtrai.jackle.dev/assets/bgm_dew_on_the_paddy-BYTG03e0.mp3"
+    },
+    {
+      "path": "assets/bgm_morning_in_the_bamboo_grove-DYMsrbBP.mp3",
+      "bytes": 4247942,
+      "sha256": "337b2a1c6a123ee24dc5d01945d84673f09f3986c527119e6a9904bbe822f5eb",
+      "source": "https://nongtrai.jackle.dev/assets/bgm_morning_in_the_bamboo_grove-DYMsrbBP.mp3"
+    },
+    {
+      "path": "assets/buildings_0-DlWzlCBm.webp",
+      "bytes": 852988,
+      "sha256": "8b3baa034296a7440d0bee50a5329cec225adb275bc66080d15e7461bc88061e",
+      "source": "https://nongtrai.jackle.dev/assets/buildings_0-DlWzlCBm.webp"
+    },
+    {
+      "path": "assets/buildings_1-CC6yozBl.webp",
+      "bytes": 919024,
+      "sha256": "95aac7eeee8c63aff8c2bba565b79c99e11cb665f76ab7dd8ed04e22acc0e256",
+      "source": "https://nongtrai.jackle.dev/assets/buildings_1-CC6yozBl.webp"
+    },
+    {
+      "path": "assets/buildings_2-C-RMmzV2.webp",
+      "bytes": 160576,
+      "sha256": "42f1deada1563765deae8d4e192721b8700e3b268bc150cf375216bc73d5d01b",
+      "source": "https://nongtrai.jackle.dev/assets/buildings_2-C-RMmzV2.webp"
+    },
+    {
+      "path": "assets/buildings_misc-55a07df9b9.glb",
+      "bytes": 523432,
+      "sha256": "55a07df9b9e8d74c84f847014222da14b17fa6087de213f15dcb8705ac5ecdc5",
+      "source": "https://nongtrai.jackle.dev/assets/buildings_misc-55a07df9b9.glb"
+    },
+    {
+      "path": "assets/buildings_misc-DXiik4la.json",
+      "bytes": 7269,
+      "sha256": "7921e44ea7009355ca6a27a56d2ff32515e1e327e77c2afe76c936a3a0972c03",
+      "source": "https://nongtrai.jackle.dev/assets/buildings_misc-DXiik4la.json"
+    },
+    {
+      "path": "assets/characters-2661deddc9.glb",
+      "bytes": 105104,
+      "sha256": "2661deddc96f918cb6df5913915832c6eb84fa90a8b0f6d4791685a7f0734ebe",
+      "source": "https://nongtrai.jackle.dev/assets/characters-2661deddc9.glb"
+    },
+    {
+      "path": "assets/ConstructionPopup-D1_vauj4.js",
+      "bytes": 3687,
+      "sha256": "0402531e5068b084b5eba5c4c1b8ff0c4193c73c78bc91a00e5927f6018f59b0",
+      "source": "https://nongtrai.jackle.dev/assets/ConstructionPopup-D1_vauj4.js"
+    },
+    {
+      "path": "assets/critters-ad64ab108c.glb",
+      "bytes": 76524,
+      "sha256": "ad64ab108c55534620cbb523c722ef11dbc2b0680456c1f452a779e4eaf07758",
+      "source": "https://nongtrai.jackle.dev/assets/critters-ad64ab108c.glb"
+    },
+    {
+      "path": "assets/critters-CA3mdQBy.json",
+      "bytes": 4117,
+      "sha256": "1b24f039ccc24ff3f16cf8bbc702666ae24847658a873032866b7cd6e5fa6409",
+      "source": "https://nongtrai.jackle.dev/assets/critters-CA3mdQBy.json"
+    },
+    {
+      "path": "assets/crops_0-B_QYY_fC.webp",
+      "bytes": 1029468,
+      "sha256": "826a49609031a76c178d99fcd60f4554bdd84430044db62dbb9e64c9738b392e",
+      "source": "https://nongtrai.jackle.dev/assets/crops_0-B_QYY_fC.webp"
+    },
+    {
+      "path": "assets/crops_1-tFGFH10s.webp",
+      "bytes": 669538,
+      "sha256": "4859de04573390006131d49976653ad61164a6c0c82d359f6008c479fbdbac34",
+      "source": "https://nongtrai.jackle.dev/assets/crops_1-tFGFH10s.webp"
+    },
+    {
+      "path": "assets/crops_a-2d0a5a6dd8.glb",
+      "bytes": 638856,
+      "sha256": "2d0a5a6dd838c08d06a54d1189c2542d321f9a7647f2434d4b3dbaa96775d818",
+      "source": "https://nongtrai.jackle.dev/assets/crops_a-2d0a5a6dd8.glb"
+    },
+    {
+      "path": "assets/crops_a-CISp5lbj.json",
+      "bytes": 26676,
+      "sha256": "4b693d4e3f896e44599c743c01825cc22d85f9332bccfac60cb16714969213bc",
+      "source": "https://nongtrai.jackle.dev/assets/crops_a-CISp5lbj.json"
+    },
+    {
+      "path": "assets/crops_b-e7bd381847.glb",
+      "bytes": 699432,
+      "sha256": "e7bd381847c11a0f26464f584925143f910d1fc093f4094b1121bb218a69430c",
+      "source": "https://nongtrai.jackle.dev/assets/crops_b-e7bd381847.glb"
+    },
+    {
+      "path": "assets/crops_b-nQmNQ5y1.json",
+      "bytes": 24062,
+      "sha256": "657e96fc4dc2e6599c93af18c9bc549cda73ec10700b62fb14037b0bb3f7f0aa",
+      "source": "https://nongtrai.jackle.dev/assets/crops_b-nQmNQ5y1.json"
+    },
+    {
+      "path": "assets/decor_a-b8092f1f1a.glb",
+      "bytes": 235604,
+      "sha256": "b8092f1f1a1080f0418276509c55272d62491f61a73cd3780c524b0e74831aca",
+      "source": "https://nongtrai.jackle.dev/assets/decor_a-b8092f1f1a.glb"
+    },
+    {
+      "path": "assets/decor_a-Baa-xF5z.json",
+      "bytes": 6164,
+      "sha256": "d2a23fa93025b9a74c0411e0d4a4ffb0b9a2f2b76829c9acbddcfc57c42e722b",
+      "source": "https://nongtrai.jackle.dev/assets/decor_a-Baa-xF5z.json"
+    },
+    {
+      "path": "assets/decor_b-4c3eeb2d57.glb",
+      "bytes": 252728,
+      "sha256": "4c3eeb2d577ad0954dd17d98a22e6ebb953aa68c2d4688e5ea3196179e9a5186",
+      "source": "https://nongtrai.jackle.dev/assets/decor_b-4c3eeb2d57.glb"
+    },
+    {
+      "path": "assets/decor_b-Ct3V1q3X.json",
+      "bytes": 5966,
+      "sha256": "730241530a6b4765f35d8475938ff4ca47f1ef2016db0c59323c5ab63f1a0c43",
+      "source": "https://nongtrai.jackle.dev/assets/decor_b-Ct3V1q3X.json"
+    },
+    {
+      "path": "assets/DevlogPanel-CiBkY9dr.js",
+      "bytes": 2451,
+      "sha256": "54af273ec18b2f4bfb1d638275ecc20e09e374b77b79140b4a70273f4c71c599",
+      "source": "https://nongtrai.jackle.dev/assets/DevlogPanel-CiBkY9dr.js"
+    },
+    {
+      "path": "assets/ExplorePanel-CaDCr84J.js",
+      "bytes": 3408,
+      "sha256": "18d07e13ab920587adcac9cc3dee1d3c9dd4e3bd4fb4484415f24046ec1cdfb2",
+      "source": "https://nongtrai.jackle.dev/assets/ExplorePanel-CaDCr84J.js"
+    },
+    {
+      "path": "assets/factories_a-a289d25b0f.glb",
+      "bytes": 502076,
+      "sha256": "a289d25b0f9f7aa440145852c1b1d3f540d606ed036e548aee3e9f42ac3dd0e2",
+      "source": "https://nongtrai.jackle.dev/assets/factories_a-a289d25b0f.glb"
+    },
+    {
+      "path": "assets/factories_a-ChoXFiIT.json",
+      "bytes": 5788,
+      "sha256": "701f8fd9349f8da8400d8855c0840ca475217dc22c24e029fc149da786c26254",
+      "source": "https://nongtrai.jackle.dev/assets/factories_a-ChoXFiIT.json"
+    },
+    {
+      "path": "assets/factories_b-_MwEnWYn.json",
+      "bytes": 5311,
+      "sha256": "130c41bfa205f2e5e9314558a7ccb697aedbe19cb0ca34023a7389812d4b5535",
+      "source": "https://nongtrai.jackle.dev/assets/factories_b-_MwEnWYn.json"
+    },
+    {
+      "path": "assets/factories_b-283fbb0b41.glb",
+      "bytes": 633816,
+      "sha256": "283fbb0b41486794c24bc010137bcaf89b749ca470a7ee97ff582c6e05ac3e6a",
+      "source": "https://nongtrai.jackle.dev/assets/factories_b-283fbb0b41.glb"
+    },
+    {
+      "path": "assets/FactoryPopup-D2otc8Mx.js",
+      "bytes": 14119,
+      "sha256": "e4ede10af78b0508e07da81b51c0917646bf21b065a35bb07e428a04856da185",
+      "source": "https://nongtrai.jackle.dev/assets/FactoryPopup-D2otc8Mx.js"
+    },
+    {
+      "path": "assets/FairPanel-DbOgjOUn.js",
+      "bytes": 4033,
+      "sha256": "21030f9ae16e5d715228ceb47f5fe07ece3063b2b23fc349bbe8d695dddb92b9",
+      "source": "https://nongtrai.jackle.dev/assets/FairPanel-DbOgjOUn.js"
+    },
+    {
+      "path": "assets/farm_kit-1bf85868a7.glb",
+      "bytes": 383244,
+      "sha256": "1bf85868a7e2131ade268e39ed8dfdd46aff4f8d1e929919cce752959c892d98",
+      "source": "https://nongtrai.jackle.dev/assets/farm_kit-1bf85868a7.glb"
+    },
+    {
+      "path": "assets/FeedbackFamePanel-CEKSB0Ef.js",
+      "bytes": 3130,
+      "sha256": "0c8f2956a5c8879e3eedc346ea2b4c95dc47cb01a4a5593f36c7b347ae9e98ac",
+      "source": "https://nongtrai.jackle.dev/assets/FeedbackFamePanel-CEKSB0Ef.js"
+    },
+    {
+      "path": "assets/FeedbackPanel-widVruwE.js",
+      "bytes": 10855,
+      "sha256": "ade44555f8b316466dd9db8357c023461440b8f74ff5757106acd3f613ff522f",
+      "source": "https://nongtrai.jackle.dev/assets/FeedbackPanel-widVruwE.js"
+    },
+    {
+      "path": "assets/FieldPopup-BGj-4lNR.js",
+      "bytes": 10675,
+      "sha256": "78622aa89f43440fbc629b812c0f3d06a89d6be9cee00707fa61c9c0cd6712ec",
+      "source": "https://nongtrai.jackle.dev/assets/FieldPopup-BGj-4lNR.js"
+    },
+    {
+      "path": "assets/fields-863c11c25e.glb",
+      "bytes": 54920,
+      "sha256": "863c11c25e3dfddc32cba1b2ea81840d49fc6d2bf4b0ad0108848a169fcd88ea",
+      "source": "https://nongtrai.jackle.dev/assets/fields-863c11c25e.glb"
+    },
+    {
+      "path": "assets/fields-B7LfOyET.json",
+      "bytes": 4747,
+      "sha256": "88c60b7e48594c4f889934b5eab6f94df015f986c119dd9d47555ea43a9de5cc",
+      "source": "https://nongtrai.jackle.dev/assets/fields-B7LfOyET.json"
+    },
+    {
+      "path": "assets/flora-68d4505b45.glb",
+      "bytes": 637464,
+      "sha256": "68d4505b45edff19a50c67757a8ef615f1c8a29bcb96dc04326078cdf3e726fb",
+      "source": "https://nongtrai.jackle.dev/assets/flora-68d4505b45.glb"
+    },
+    {
+      "path": "assets/flora-D_fnIy7f.json",
+      "bytes": 36918,
+      "sha256": "4da462617de4d6d2147b76b22cf8402c3c9bd736db5530b66a1e207499f956d3",
+      "source": "https://nongtrai.jackle.dev/assets/flora-D_fnIy7f.json"
+    },
+    {
+      "path": "assets/framePacing-v0NaHLk2.js",
+      "bytes": 82400,
+      "sha256": "625016141f20251499e3e58166d51d510596e3bb8a1994e55489f28935e40a0d",
+      "source": "https://nongtrai.jackle.dev/assets/framePacing-v0NaHLk2.js"
+    },
+    {
+      "path": "assets/hourglass-DVGT3IIe.js",
+      "bytes": 796,
+      "sha256": "ed5e01b37485e793059fdacc1134eaeb9d331b1740ddef6dcc15934ee3d68125",
+      "source": "https://nongtrai.jackle.dev/assets/hourglass-DVGT3IIe.js"
+    },
+    {
+      "path": "assets/HousePopup-DZfPLxD1.js",
+      "bytes": 10744,
+      "sha256": "71dac4aa1938ed3f59f32bd5f937682fa65f565541024424b177c104ee54d34b",
+      "source": "https://nongtrai.jackle.dev/assets/HousePopup-DZfPLxD1.js"
+    },
+    {
+      "path": "assets/houses_bac-e585993b59.glb",
+      "bytes": 331760,
+      "sha256": "e585993b5979d2441bc046ecc8ffac33aee5f3db1467e7b624496d89eac8f79a",
+      "source": "https://nongtrai.jackle.dev/assets/houses_bac-e585993b59.glb"
+    },
+    {
+      "path": "assets/houses_nam-3256c623ba.glb",
+      "bytes": 570668,
+      "sha256": "3256c623ba3b22132ac1a478ca35b21e12f74c7e182c7b18d051ce3c39c54cd0",
+      "source": "https://nongtrai.jackle.dev/assets/houses_nam-3256c623ba.glb"
+    },
+    {
+      "path": "assets/houses_nam-CBeQKm4z.json",
+      "bytes": 5636,
+      "sha256": "6821b5075fca5c6103a495d319b98c23fb701ae8eff51e78fa2ebd6d7d2e76d3",
+      "source": "https://nongtrai.jackle.dev/assets/houses_nam-CBeQKm4z.json"
+    },
+    {
+      "path": "assets/houses_trung-643626952f.glb",
+      "bytes": 346676,
+      "sha256": "643626952f4b1dc965fb87a4f43ccc6e317c1abcc7712dafe1e67e3da10a49b2",
+      "source": "https://nongtrai.jackle.dev/assets/houses_trung-643626952f.glb"
+    },
+    {
+      "path": "assets/houses_trung-CmKRWS0B.json",
+      "bytes": 4454,
+      "sha256": "9bb8a649422dcb96d2e32e5d95f902daebe948d8c2b07a45a9bda07f4d1bfc0d",
+      "source": "https://nongtrai.jackle.dev/assets/houses_trung-CmKRWS0B.json"
+    },
+    {
+      "path": "assets/icons_0-CVWrPPij.webp",
+      "bytes": 963852,
+      "sha256": "a8e76a0c8aca962d4860045e6368e950e8884860345330d750d1810d8f13d115",
+      "source": "https://nongtrai.jackle.dev/assets/icons_0-CVWrPPij.webp"
+    },
+    {
+      "path": "assets/index-Gy4nOY45.js",
+      "bytes": 2011391,
+      "sha256": "9507e3b72085a680c6b27a440ab4b933311a929a61c942933328ecbca7066426",
+      "source": "https://nongtrai.jackle.dev/assets/index-Gy4nOY45.js"
+    },
+    {
+      "path": "assets/index-sCAGzzF1.css",
+      "bytes": 3955,
+      "sha256": "181ba631576b2bc51f3cf136ceea55a86ffc00e189fb58d61f1bcf6ad6d08712",
+      "source": "https://nongtrai.jackle.dev/assets/index-sCAGzzF1.css"
+    },
+    {
+      "path": "assets/InvitePanel-CDXWvkrK.js",
+      "bytes": 6623,
+      "sha256": "e40aaec1d97bb82b2f89057672cc02854ac0a1f81b1441c9ecec0037aeb95798",
+      "source": "https://nongtrai.jackle.dev/assets/InvitePanel-CDXWvkrK.js"
+    },
+    {
+      "path": "assets/kit-tex-0f139f272e840f5c.png",
+      "bytes": 220456,
+      "sha256": "0f139f272e840f5cf00b7ce4a8b02647e88acca51086fe7ba93928616f3cfccd",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-0f139f272e840f5c.png"
+    },
+    {
+      "path": "assets/kit-tex-351e13adf845d823.png",
+      "bytes": 5444,
+      "sha256": "351e13adf845d823341103573200d71a6557968fa5c5cf5b378ca79b5b9c3b50",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-351e13adf845d823.png"
+    },
+    {
+      "path": "assets/kit-tex-38053c5ab3e413f7.png",
+      "bytes": 4081,
+      "sha256": "38053c5ab3e413f7155ec91483961162a8e057378d9d2710fdf2d53454f0869a",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-38053c5ab3e413f7.png"
+    },
+    {
+      "path": "assets/kit-tex-3d24089f41440fc8.png",
+      "bytes": 4486,
+      "sha256": "3d24089f41440fc85dd0dbb4c2295a5e05f87e69acc3ebdbbeee3bcb4519eede",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-3d24089f41440fc8.png"
+    },
+    {
+      "path": "assets/kit-tex-5974938f313ba423.png",
+      "bytes": 5416,
+      "sha256": "5974938f313ba423e819de3eafd9a4f887e05985ba3fc9bcc8ddd9d851262ff9",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-5974938f313ba423.png"
+    },
+    {
+      "path": "assets/kit-tex-5ac9e65c8ee4cd7e.png",
+      "bytes": 5466,
+      "sha256": "5ac9e65c8ee4cd7e7194a3e93f4321ec5df58fd81700555dbd2c2b2338ace4c5",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-5ac9e65c8ee4cd7e.png"
+    },
+    {
+      "path": "assets/kit-tex-8232ccdc5f102738.png",
+      "bytes": 5377,
+      "sha256": "8232ccdc5f1027383e724fc845a6478ec172d9eaab94ecb6dd8e1dd162495ff0",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-8232ccdc5f102738.png"
+    },
+    {
+      "path": "assets/kit-tex-84ebe2c5c5b83425.png",
+      "bytes": 5209,
+      "sha256": "84ebe2c5c5b8342527121a27c0bee32ad7e2fc1c51c796ee2a97ed20318e5e44",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-84ebe2c5c5b83425.png"
+    },
+    {
+      "path": "assets/kit-tex-90067ff68e3c60f0.png",
+      "bytes": 5496,
+      "sha256": "90067ff68e3c60f053699c765ae50a8f46b5d7a4b7272e49c37e15ab500893b0",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-90067ff68e3c60f0.png"
+    },
+    {
+      "path": "assets/kit-tex-92e3a93edbb2ee1a.png",
+      "bytes": 7804,
+      "sha256": "92e3a93edbb2ee1a7a0f61b2370213efcabaafcfed30b8b51a49b0319bd9f7ca",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-92e3a93edbb2ee1a.png"
+    },
+    {
+      "path": "assets/kit-tex-a38490acb187852e.png",
+      "bytes": 759,
+      "sha256": "a38490acb187852e01da010fe088a24ceb7737962b3eee1bd76ad4928bc2d8c0",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-a38490acb187852e.png"
+    },
+    {
+      "path": "assets/kit-tex-a95129c6b205e2e4.png",
+      "bytes": 100467,
+      "sha256": "a95129c6b205e2e420423d24b38e395a3ea661110aebc3b57f243761d957171e",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-a95129c6b205e2e4.png"
+    },
+    {
+      "path": "assets/kit-tex-cf3520c4e55f90ec.png",
+      "bytes": 542,
+      "sha256": "cf3520c4e55f90ecd6e5cfbf9d5498eb08d7680cb8402fac6859756c0aad9f60",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-cf3520c4e55f90ec.png"
+    },
+    {
+      "path": "assets/kit-tex-e383e73cbc0496fa.png",
+      "bytes": 3793,
+      "sha256": "e383e73cbc0496fa3035ddb72e213f846b4b7414f0bcba3e8f624dcfc65df92e",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-e383e73cbc0496fa.png"
+    },
+    {
+      "path": "assets/kit-tex-f0d0d16e5325886b.png",
+      "bytes": 905,
+      "sha256": "f0d0d16e5325886b1983faac872ce91e0abcc503a22d937e664dc8b10455ebde",
+      "source": "https://nongtrai.jackle.dev/assets/kit-tex-f0d0d16e5325886b.png"
+    },
+    {
+      "path": "assets/LeaderboardPanel-DdYh0Bo7.js",
+      "bytes": 11487,
+      "sha256": "d859952197ca11089b6901c3b37a79eea96f14e29b8efab37f30594424f0b45d",
+      "source": "https://nongtrai.jackle.dev/assets/LeaderboardPanel-DdYh0Bo7.js"
+    },
+    {
+      "path": "assets/LoaListPanel-OkZmQ750.js",
+      "bytes": 796,
+      "sha256": "5be1cb0c417433da5f038f4abf06fcf8e17a0601f88e904e40a720325faaa0fc",
+      "source": "https://nongtrai.jackle.dev/assets/LoaListPanel-OkZmQ750.js"
+    },
+    {
+      "path": "assets/MapScreen-C0dphvzx.js",
+      "bytes": 7751,
+      "sha256": "74ba0aaa7a2f114cc48b2a29ee27fe865a286bf00a0a97537b472455b605696c",
+      "source": "https://nongtrai.jackle.dev/assets/MapScreen-C0dphvzx.js"
+    },
+    {
+      "path": "assets/MarketLevelsPanel-jUKonVMO.js",
+      "bytes": 9560,
+      "sha256": "78540d0a3ac7485b0f246fee737319402ea98becda7d431172550d6fb2494751",
+      "source": "https://nongtrai.jackle.dev/assets/MarketLevelsPanel-jUKonVMO.js"
+    },
+    {
+      "path": "assets/MinigameRenderer3D-Dou888qC.js",
+      "bytes": 50422,
+      "sha256": "6481721a1a58c8bc4b3ed561badf059c83a95148a3497d7b59aa4d54d7f2f1f0",
+      "source": "https://nongtrai.jackle.dev/assets/MinigameRenderer3D-Dou888qC.js"
+    },
+    {
+      "path": "assets/MinigameScreen-PBR4eJUi.js",
+      "bytes": 53803,
+      "sha256": "a16dad76bc6633b2031c3440f1f766771ff26e3f02ae28a3e141d9103db6f3ba",
+      "source": "https://nongtrai.jackle.dev/assets/MinigameScreen-PBR4eJUi.js"
+    },
+    {
+      "path": "assets/ObstaclePopup-19tl9zsN.js",
+      "bytes": 1409,
+      "sha256": "97065f937a7ecc6d8aa889a2df377478d1614df3edcc0128a51904d5a1fc5253",
+      "source": "https://nongtrai.jackle.dev/assets/ObstaclePopup-19tl9zsN.js"
+    },
+    {
+      "path": "assets/obstacles-07a6f3decf.glb",
+      "bytes": 196928,
+      "sha256": "07a6f3decf2c19f90a59910ac0c65be23c1778d3713741823f6cc854021b6b4c",
+      "source": "https://nongtrai.jackle.dev/assets/obstacles-07a6f3decf.glb"
+    },
+    {
+      "path": "assets/obstacles-CCkzblt8.json",
+      "bytes": 6388,
+      "sha256": "d553aa78f6c9f23360efef93eae4966e6b98a2877e01c56d982146920491c4a8",
+      "source": "https://nongtrai.jackle.dev/assets/obstacles-CCkzblt8.json"
+    },
+    {
+      "path": "assets/PassPanel-DjOAbmov.js",
+      "bytes": 13327,
+      "sha256": "bcd0a8f5cab1d412aa1318274a765f09aa0b1ab90afbd88f2755138071b742f6",
+      "source": "https://nongtrai.jackle.dev/assets/PassPanel-DjOAbmov.js"
+    },
+    {
+      "path": "assets/PenPopup-CQOccFhR.js",
+      "bytes": 8072,
+      "sha256": "b432dc2ee337f86979a936d9a32a6900c099dff08211413e2e5600f476a2feb4",
+      "source": "https://nongtrai.jackle.dev/assets/PenPopup-CQOccFhR.js"
+    },
+    {
+      "path": "assets/pens-19d0a303b6.glb",
+      "bytes": 641336,
+      "sha256": "19d0a303b687e7245964416318f832399ee0872b5e9059298275e11c94b4c3d0",
+      "source": "https://nongtrai.jackle.dev/assets/pens-19d0a303b6.glb"
+    },
+    {
+      "path": "assets/pens-elVRnBDh.json",
+      "bytes": 16572,
+      "sha256": "5c437f4cf94af6234fa15a9ade17af3247c9b795b410bef91cb719c9e57329c5",
+      "source": "https://nongtrai.jackle.dev/assets/pens-elVRnBDh.json"
+    },
+    {
+      "path": "assets/PhotoSharePanel-DdEsil1Y.js",
+      "bytes": 3292,
+      "sha256": "2a5053b9d0b0f907860063f6a79fd761c5a5b880c4a53a0dbe70fd64d2efc992",
+      "source": "https://nongtrai.jackle.dev/assets/PhotoSharePanel-DdEsil1Y.js"
+    },
+    {
+      "path": "assets/rendererGuard-_eP0FniB.js",
+      "bytes": 142,
+      "sha256": "7e352edad76025614628bf308040b7e817f3302510a8c6c7256f142e1d10020e",
+      "source": "https://nongtrai.jackle.dev/assets/rendererGuard-_eP0FniB.js"
+    },
+    {
+      "path": "assets/ReputationPanel-DI1XTZqg.js",
+      "bytes": 5865,
+      "sha256": "f51c01b30f21de52679d37c43a902e984b0ffa50adc477c68eba15735bdeebd2",
+      "source": "https://nongtrai.jackle.dev/assets/ReputationPanel-DI1XTZqg.js"
+    },
+    {
+      "path": "assets/stateMapping-CryUNirX.js",
+      "bytes": 801,
+      "sha256": "eb94e71fecf44067ea9ae46655bd2d78c7c03d4a963d5977cb23eca81dcfc1e9",
+      "source": "https://nongtrai.jackle.dev/assets/stateMapping-CryUNirX.js"
+    },
+    {
+      "path": "assets/stubble-b524b1ecab.glb",
+      "bytes": 70824,
+      "sha256": "b524b1ecab7806d1abb28933c8d32c797befdca8bf155d69cac866fcf1240c9f",
+      "source": "https://nongtrai.jackle.dev/assets/stubble-b524b1ecab.glb"
+    },
+    {
+      "path": "assets/targets-C9ryo2k_.json",
+      "bytes": 38267,
+      "sha256": "b58eb0ab72f014ea027bdf925d416dd8277b03775b62164840a28bb208eb31e8",
+      "source": "https://nongtrai.jackle.dev/assets/targets-C9ryo2k_.json"
+    },
+    {
+      "path": "assets/ThreeRenderer-BZa7j59T.js",
+      "bytes": 181750,
+      "sha256": "af93c4c4a0fad0416bf453bcbc49032e0b21388aceb879f75e3ae6e5b6dbc906",
+      "source": "https://nongtrai.jackle.dev/assets/ThreeRenderer-BZa7j59T.js"
+    },
+    {
+      "path": "assets/TreePopup-Dt0QimhD.js",
+      "bytes": 4756,
+      "sha256": "cbc88eb0d35b1f703bf07fc78b8eeb8c6bef0f4eca930b1df5f8103d84a838aa",
+      "source": "https://nongtrai.jackle.dev/assets/TreePopup-Dt0QimhD.js"
+    },
+    {
+      "path": "assets/trees_fruit-5a05951eff.glb",
+      "bytes": 1215568,
+      "sha256": "5a05951effa8e26d1355084a6fa4ca23e78adc10d3896554b28ee591ec609114",
+      "source": "https://nongtrai.jackle.dev/assets/trees_fruit-5a05951eff.glb"
+    },
+    {
+      "path": "assets/trees_fruit-BX4x14TN.json",
+      "bytes": 60901,
+      "sha256": "13327a69c44cd1529d8e68984df11945743c32ec2ecd0421e4286cfe4ba53a64",
+      "source": "https://nongtrai.jackle.dev/assets/trees_fruit-BX4x14TN.json"
+    },
+    {
+      "path": "assets/vendor-react-C4vplrqd.js",
+      "bytes": 132433,
+      "sha256": "bb8f6781606e8893132663422728260f6c3423e2a6a6ec74c3b6cc4271c9cbfb",
+      "source": "https://nongtrai.jackle.dev/assets/vendor-react-C4vplrqd.js"
+    },
+    {
+      "path": "assets/vendor-state-54f1U8VT.js",
+      "bytes": 9534,
+      "sha256": "f0708b9b1e4fe4c97b7d556d4ffeb4a7fd503ec05c91ea1115c601e0ef6fcc28",
+      "source": "https://nongtrai.jackle.dev/assets/vendor-state-54f1U8VT.js"
+    },
+    {
+      "path": "assets/VietnamMap-Cm1K32UW.js",
+      "bytes": 66486,
+      "sha256": "f30d8378dd49359cd476e58f2d3fe90134d040006fda7a19fd7ce0dea2f28a0c",
+      "source": "https://nongtrai.jackle.dev/assets/VietnamMap-Cm1K32UW.js"
+    },
+    {
+      "path": "assets/VillageScreen-CtOzjXTU.js",
+      "bytes": 89066,
+      "sha256": "a3d52e7ecb63ffd2f68800d69890f38484d29d5fa32bcc339b8da019f9183197",
+      "source": "https://nongtrai.jackle.dev/assets/VillageScreen-CtOzjXTU.js"
+    },
+    {
+      "path": "assets/WatchPanel-D7H0HTaw.js",
+      "bytes": 7115,
+      "sha256": "aa7f1295951425f754701140496d45e966440c987992389e1dbd4b07c1d77552",
+      "source": "https://nongtrai.jackle.dev/assets/WatchPanel-D7H0HTaw.js"
+    },
+    {
+      "path": "icons/apple-touch-icon.png",
+      "bytes": 28186,
+      "sha256": "ad8c3cfd72036fb15882cdad74c820b92c4b4868e83bf96da9e92d2a826b37b5",
+      "source": "https://nongtrai.jackle.dev/icons/apple-touch-icon.png"
+    },
+    {
+      "path": "icons/icon-192.png",
+      "bytes": 35352,
+      "sha256": "f73a26c2fde4109be91c6938d3dbd01e8e4aa71fa575307282e87d2194d1ef80",
+      "source": "https://nongtrai.jackle.dev/icons/icon-192.png"
+    },
+    {
+      "path": "icons/icon-512-maskable.png",
+      "bytes": 174815,
+      "sha256": "0ea8b7aacc42c2753bc89b1326af9182702e79463269b08dc81f0cba3f6de839",
+      "source": "https://nongtrai.jackle.dev/icons/icon-512-maskable.png"
+    },
+    {
+      "path": "icons/icon-512.png",
+      "bytes": 174815,
+      "sha256": "0ea8b7aacc42c2753bc89b1326af9182702e79463269b08dc81f0cba3f6de839",
+      "source": "https://nongtrai.jackle.dev/icons/icon-512.png"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4657,
+      "sha256": "bbe1b91c6d1ef86489e97d07d608f7c2c450293444e161caad580bcfbfc8faeb",
+      "source": "https://nongtrai.jackle.dev/"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 811,
+      "sha256": "29e5a9550adf3a6b852d6fbf3967671e1adb3f551ca35da968cbfa5b6a40b504",
+      "source": "https://nongtrai.jackle.dev/manifest.webmanifest"
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,389 @@
+{
+ "module": "animals",
+ "built_at": 1791481070.266677,
+ "seconds": 0.2,
+ "assets": [
+  {
+   "key": "animal/ga/mac_dinh",
+   "node": "animal__ga__mac_dinh",
+   "kind": "animal",
+   "id": "ga",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Gà",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 564,
+   "mats": 4,
+   "wind": "none",
+   "size": [
+    0.54,
+    0.49,
+    0.28
+   ],
+   "parts": [
+    "bob_0.03",
+    "sway_0.06"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.033,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "animal/bo/mac_dinh",
+   "node": "animal__bo__mac_dinh",
+   "kind": "animal",
+   "id": "bo",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Bò sữa",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 640,
+   "mats": 4,
+   "wind": "none",
+   "size": [
+    1.63,
+    1.17,
+    0.53
+   ],
+   "parts": [
+    "bob_0.025",
+    "sway_0.1"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      -0.1,
+      0.19,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "animal/heo/mac_dinh",
+   "node": "animal__heo__mac_dinh",
+   "kind": "animal",
+   "id": "heo",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Heo",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 520,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.94,
+    0.6,
+    0.5
+   ],
+   "parts": [
+    "bob_0.025",
+    "sway_0.06"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.65,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "animal/vit/mac_dinh",
+   "node": "animal__vit__mac_dinh",
+   "kind": "animal",
+   "id": "vit",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Vịt",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 472,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.58,
+    0.41,
+    0.28
+   ],
+   "parts": [
+    "bob_0.025",
+    "sway_0.05"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.033,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "animal/cuu/mac_dinh",
+   "node": "animal__cuu__mac_dinh",
+   "kind": "animal",
+   "id": "cuu",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Cừu",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 464,
+   "mats": 4,
+   "wind": "none",
+   "size": [
+    0.81,
+    0.68,
+    0.4
+   ],
+   "parts": [
+    "bob_0.025",
+    "sway_0.04"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.7,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "animal/de/mac_dinh",
+   "node": "animal__de__mac_dinh",
+   "kind": "animal",
+   "id": "de",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Dê",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 424,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    0.77,
+    0.86,
+    0.3
+   ],
+   "parts": [
+    "bob_0.03",
+    "sway_0.05"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.7,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "animal/ong/mac_dinh",
+   "node": "animal__ong__mac_dinh",
+   "kind": "animal",
+   "id": "ong",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Tổ ong",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 688,
+   "mats": 5,
+   "wind": "none",
+   "size": [
+    0.71,
+    0.71,
+    0.66
+   ],
+   "parts": [
+    "sway_0.05",
+    "sway_0.06",
+    "sway_0.07"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.7,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "animal/dog_local/mac_dinh",
+   "node": "animal__dog_local__mac_dinh",
+   "kind": "animal",
+   "id": "dog_local",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Chó Vện",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 464,
+   "mats": 2,
+   "wind": "none",
+   "size": [
+    0.93,
+    0.64,
+    0.24
+   ],
+   "parts": [
+    "bob_0.03",
+    "sway_0.07"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.7,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "animal/dog_shepherd/mac_dinh",
+   "node": "animal__dog_shepherd__mac_dinh",
+   "kind": "animal",
+   "id": "dog_shepherd",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Chó Béc",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 388,
+   "mats": 3,
+   "wind": "none",
+   "size": [
+    1.09,
+    0.72,
+    0.27
+   ],
+   "parts": [
+    "bob_0.03",
+    "sway_0.07"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.784,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "key": "animal/dog_mastiff/mac_dinh",
+   "node": "animal__dog_mastiff__mac_dinh",
+   "kind": "animal",
+   "id": "dog_mastiff",
+   "state": "mac_dinh",
+   "group": "animal",
+   "label": "Chó Ngao",
+   "region": null,
+   "tags": [],
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 500,
+   "mats": 2,
+   "wind": "none",
+   "size": [
+    0.97,
+    0.67,
+    0.37
+   ],
+   "parts": [
+    "bob_0.03",
+    "sway_0.07"
+   ],
+   "anchors": [
+    {
+     "name": "slot_product",
+     "pos": [
+      0.0,
+      0.77,
+      -0.0
+     ]
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "errors": []
+}
