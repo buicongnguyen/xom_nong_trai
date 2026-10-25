@@ -13,6 +13,7 @@ export function installFireflyBatch(farm) {
   function clear() {
     if (mesh) { flies.group.remove(mesh); mesh.dispose(); geometry.dispose(); material.dispose(); }
     mesh = geometry = material = opacity = null;
+    viewDepth.clear(); ordered = [];
     for (const fly of flies.flies) if (fly.sprite.parent !== flies.group) flies.group.add(fly.sprite);
   }
   function rebuild() {
