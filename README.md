@@ -85,3 +85,9 @@ node scripts/frontend-flow-qa.cjs
 Reports from these scripts go into ignored `.local/review-qa/`. `npm run build:pages` also applies the guarded, repeatable fixes to the preserved compiled client.
 
 Reference client and artwork: Xóm Nông Trại. The local server and configuration are independently implemented.
+
+## Renderer performance review
+
+`npm run qa:render` runs isolated mobile renderer checks against a running Pages preview (default port 4198). It requires Playwright; set `XNT_PLAYWRIGHT_MODULE` and `XNT_CHROME_PATH` for existing installations, `XNT_QA_URL` for another deployment, and `XNT_PERF_DESKTOP=1` for desktop. Reports and comparison images go into `.local/review-qa/`. The harness counts WebGL submissions including shadows and WEBGL_multi_draw, compares frozen images and null controls, tests quality changes, and checks texture disposal. It uses a disposable browser profile.
+
+The review adapts Claude’s shared `smooth-dense-scenes` skill, also used by `3D_game_scene`, to this client’s Three.js r186. Existing scenery batching is retained. Fireflies now share one instanced draw; postprocessing teardown disposes all passes and both composer targets. Changes are guarded by `scripts/patch-client.mjs`.

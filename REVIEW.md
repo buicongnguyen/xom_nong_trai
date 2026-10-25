@@ -44,3 +44,12 @@ The published application is an independent single-player recreation. The public
 - Actual map and factory UI checks pass: selecting Cần Thơ updates the HUD and survives reload; hiring worker 2 starts two parallel jobs; speeding up the second row completes only its product. Two-tab wallet/storage synchronization and all eight guarded menu actions pass. Original client configuration/API schemas and local asset references pass validation. Visual evidence is stored in `reference/qa/frontend-2026-10-13/`.
 
 Existing player saves are retained and migrated. Existing tabs must be refreshed to use the corrected runtime; an already-open old version still has its old unload handler.
+
+## Renderer review — 2026-10-25
+
+Applied the measure/attribute/optimize/compare workflow from Claude’s shared `smooth-dense-scenes` skill. The farm already batches scenery, culls flora, adapts quality, and throttles shadows. Two concrete fixes were justified:
+
+- Nighttime fireflies: 14 separate sprite draws become one camera-facing instanced draw, retaining simulation, transparency order, glow texture and quality settings. Controlled mobile and desktop frames each save 13 WebGL submissions with unchanged triangle counts.
+- Composer teardown: dispose every postprocessing pass and both composer render targets. Previously one texture remained allocated per teardown. Nine high/medium/low create/dispose cycles now return to the original texture count.
+
+The reusable `scripts/render-performance-qa.cjs` captures raw WebGL and multi-draw calls, interleaved timing samples and null controls, frozen screenshot comparisons, quality rebuilds and disposal. Checks use a four-times CPU slowdown and fresh isolated farms. Tiny one-level pixel changes also occur in unchanged controls; comparisons tolerate at most two color levels. Timing varies on the shared desktop GPU, so these results establish reduced rendering work and corrected resource cleanup, not a guaranteed FPS increase on physical phones.

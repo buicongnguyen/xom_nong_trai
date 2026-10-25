@@ -31,3 +31,19 @@ replaceOnce('openModal:(t=!1)=>e({open:!0,autoTriggered:t})',
   'openModal:(t=!1)=>globalThis.__xntLocalEdition?(t?void 0:globalThis.dispatchEvent(new Event("xnt:online-unavailable"))):e({open:!0,autoTriggered:t})');
 await writeFile(mainFile, source);
 console.log('Local account UI: suppress automatic online signup; explain manual requests.');
+
+const rendererFile = fileURLToPath(new URL('../public/assets/ThreeRenderer-BZa7j59T.js', import.meta.url));
+source = await readFile(rendererFile, 'utf8');
+const fireflyImport = 'import{installFireflyBatch as xntInstallFireflyBatch}from"./render-optimizations.mjs";';
+if (!source.includes(fireflyImport)) source = fireflyImport + source;
+replaceOnce('this.setupPowerSavingWatch();',
+  'this.setupPowerSavingWatch();this.localFireflyBatch=xntInstallFireflyBatch(this);');
+await writeFile(rendererFile, source);
+
+const frameFile = fileURLToPath(new URL('../public/assets/framePacing-v0NaHLk2.js', import.meta.url));
+source = await readFile(frameFile, 'utf8');
+const disposeImport = 'import{disposeComposer as xntDisposeComposer}from"./render-optimizations.mjs";';
+if (!source.includes(disposeImport)) source = disposeImport + source;
+replaceOnce('dispose:()=>{null==d||d.dispose(),f.dispose(),u.dispose()}', 'dispose:()=>{xntDisposeComposer(c)}');
+await writeFile(frameFile, source);
+console.log('Renderer: instance firefly glows and release all composer passes and targets.');

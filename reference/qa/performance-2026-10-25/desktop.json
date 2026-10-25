@@ -1,0 +1,1248 @@
+{
+  "visuals": {
+    "control": {
+      "pixels": 1440000,
+      "changed": 0,
+      "over2": 0,
+      "maxDelta": 0
+    },
+    "change": {
+      "pixels": 1440000,
+      "changed": 0,
+      "over2": 0,
+      "maxDelta": 0
+    },
+    "optimizedControl": {
+      "pixels": 1440000,
+      "changed": 0,
+      "over2": 0,
+      "maxDelta": 0
+    }
+  },
+  "pairs": [
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.200000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.600000023841858
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6.700000047683716
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6.300000071525574
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 9.100000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 9.100000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7.700000047683716
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6.900000095367432
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 8.899999976158142
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 8.299999952316284
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 8.899999976158142
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 10.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 12.099999904632568
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 11.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 11.399999976158142
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 9.700000047683716
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 12.600000023841858
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 10.300000071525574
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 10.299999952316284
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 10.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 10
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 9
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.800000071525574
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 8.5
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 7.899999976158142
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 8.599999904632568
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 9.100000023841858
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.599999904632568
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.5
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.200000047683716
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.799999952316284
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6.100000023841858
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6.399999976158142
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6.399999976158142
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.200000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.399999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.300000071525574
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.800000071525574
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.5
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.600000023841858
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.5
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.799999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.5
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.600000023841858
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.399999976158142
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.300000071525574
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.900000095367432
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.899999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.799999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.599999904632568
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 7
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6.600000023841858
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.5
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.5
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.100000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.200000047683716
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.100000023841858
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.599999904632568
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.100000023841858
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.200000047683716
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.799999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.300000071525574
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.299999952316284
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.700000047683716
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.5
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 5.200000047683716
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.899999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.899999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.200000047683716
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 6.700000047683716
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.699999928474426
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.100000023841858
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.599999904632568
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.399999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.799999952316284
+        }
+      ],
+      "after": [
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.5
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.699999928474426
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.800000071525574
+        },
+        {
+          "calls": 110,
+          "triangles": 190677,
+          "ms": 4.600000023841858
+        }
+      ]
+    }
+  ],
+  "nullPairs": [
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.799999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.400000095367432
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 9.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 9.600000023841858
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.400000095367432
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 9.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.199999928474426
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.199999928474426
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.5
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7.899999976158142
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 14.899999976158142
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.699999928474426
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 9.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.699999928474426
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 12.400000095367432
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 12.699999928474426
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.5
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 8.199999928474426
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.399999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.099999904632568
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.300000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.099999904632568
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.399999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.5
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.899999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.5
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.799999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.400000095367432
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.699999928474426
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.5
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.899999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.400000095367432
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.399999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.100000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.100000023841858
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.200000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.199999928474426
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.799999952316284
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.300000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.300000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.399999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.799999952316284
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.699999928474426
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.399999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.599999904632568
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.100000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.400000095367432
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.5
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.600000023841858
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.799999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.899999976158142
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.800000071525574
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.200000047683716
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.899999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.799999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.700000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7.700000047683716
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7.399999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6.200000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 7
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 6
+        }
+      ]
+    },
+    {
+      "before": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.299999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.200000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.399999976158142
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.5
+        }
+      ],
+      "after": [
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.799999952316284
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5.200000047683716
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 4.600000023841858
+        },
+        {
+          "calls": 123,
+          "triangles": 190677,
+          "ms": 5
+        }
+      ]
+    }
+  ],
+  "memory": [
+    {
+      "tier": "high",
+      "cycle": 0,
+      "before": 74,
+      "loaded": 87,
+      "disposed": 74,
+      "cleaned": 74,
+      "leakedTextures": 0
+    },
+    {
+      "tier": "high",
+      "cycle": 1,
+      "before": 74,
+      "loaded": 87,
+      "disposed": 74,
+      "cleaned": 74,
+      "leakedTextures": 0
+    },
+    {
+      "tier": "high",
+      "cycle": 2,
+      "before": 74,
+      "loaded": 87,
+      "disposed": 74,
+      "cleaned": 74,
+      "leakedTextures": 0
+    },
+    {
+      "tier": "medium",
+      "cycle": 0,
+      "before": 74,
+      "loaded": 87,
+      "disposed": 74,
+      "cleaned": 74,
+      "leakedTextures": 0
+    },
+    {
+      "tier": "medium",
+      "cycle": 1,
+      "before": 74,
+      "loaded": 87,
+      "disposed": 74,
+      "cleaned": 74,
+      "leakedTextures": 0
+    },
+    {
+      "tier": "medium",
+      "cycle": 2,
+      "before": 74,
+      "loaded": 87,
+      "disposed": 74,
+      "cleaned": 74,
+      "leakedTextures": 0
+    },
+    {
+      "tier": "low",
+      "cycle": 0,
+      "before": 74,
+      "loaded": 86,
+      "disposed": 74,
+      "cleaned": 74,
+      "leakedTextures": 0
+    },
+    {
+      "tier": "low",
+      "cycle": 1,
+      "before": 74,
+      "loaded": 86,
+      "disposed": 74,
+      "cleaned": 74,
+      "leakedTextures": 0
+    },
+    {
+      "tier": "low",
+      "cycle": 2,
+      "before": 74,
+      "loaded": 86,
+      "disposed": 74,
+      "cleaned": 74,
+      "leakedTextures": 0
+    }
+  ],
+  "lifecycle": [
+    {
+      "tier": "medium",
+      "flies": 14,
+      "instances": 14,
+      "spriteChildren": 0
+    },
+    {
+      "tier": "low",
+      "flies": 8,
+      "instances": 8,
+      "spriteChildren": 0
+    },
+    {
+      "tier": "lite",
+      "flies": 8,
+      "instances": 8,
+      "spriteChildren": 0
+    },
+    {
+      "tier": "high",
+      "flies": 14,
+      "instances": 14,
+      "spriteChildren": 0
+    }
+  ],
+  "freed": true,
+  "remainingFireflyChildren": 0,
+  "quality": "high",
+  "dpr": 1,
+  "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4080 SUPER (0x00002702) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "multiDraw": true,
+  "errors": [],
+  "target": "http://127.0.0.1:4198/xom_nong_trai/",
+  "passed": true
+}
