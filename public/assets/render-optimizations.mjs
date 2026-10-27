@@ -1,3 +1,4 @@
+import { flushInstanceMatrix, markChangedRange } from './cpu-optimizations.mjs';
 // Adapted from smooth-dense-scenes: instance repeated geometry with the same look.
 // Keep the original firefly motion/flicker data; draw the glow quads together.
 import { bd as InstancedMesh, bg as MeshBasicMaterial, be as PlaneGeometry, bi as Matrix4 } from './index-Gy4nOY45.js';
@@ -66,13 +67,18 @@ export function installFireflyBatch(farm) {
       viewDepth.set(fly, m[2] * p.x + m[6] * p.y + m[10] * p.z + m[14]);
     }
     ordered.sort((a, b) => viewDepth.get(a) - viewDepth.get(b));
+    let opacityStart = Infinity, opacityEnd = 0;
     ordered.forEach((fly, index) => {
       fly.sprite.updateMatrix();
       mesh.setMatrixAt(index, fly.sprite.matrix);
-      opacity.setX(index, fly.material.opacity);
+      const value = Math.fround(fly.material.opacity);
+      if (opacity.array[index] !== value) {
+        opacity.setX(index, value); opacityStart = Math.min(opacityStart, index); opacityEnd = index + 1;
+      }
     });
-    mesh.instanceMatrix.needsUpdate = true;
-    opacity.needsUpdate = true;
+    flushInstanceMatrix(mesh);
+    if (!farm.localWorkCache?.control.enabled) { opacity.clearUpdateRanges(); opacity.needsUpdate = true; }
+    else if (opacityEnd > opacityStart) markChangedRange(opacity, opacityStart, opacityEnd - opacityStart);
   }
   const originalRebuild = flies.rebuild, originalUpdate = flies.update, originalDispose = flies.dispose;
   flies.rebuild = function(...args) { clear(); originalRebuild.apply(this, args); rebuild(); };

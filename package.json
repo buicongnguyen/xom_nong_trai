@@ -8,9 +8,10 @@
     "start": "node server.mjs",
     "dev": "node --watch server.mjs",
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check server.mjs && node --check src/backend.mjs && node --check src/tutorial.mjs && node --check browser/pages-entry.mjs && node --check public/assets/local-ui.mjs && node --check scripts/patch-client.mjs && node --check scripts/build-pages.mjs && node --check public/assets/render-optimizations.mjs && node --check scripts/render-performance-qa.cjs",
+    "check": "node --check server.mjs && node --check src/backend.mjs && node --check src/tutorial.mjs && node --check browser/pages-entry.mjs && node --check public/assets/local-ui.mjs && node --check scripts/patch-client.mjs && node --check scripts/build-pages.mjs && node --check public/assets/render-optimizations.mjs && node --check scripts/render-performance-qa.cjs && node --check public/assets/cpu-optimizations.mjs && node --check scripts/cpu-performance-qa.cjs && node --check scripts/performance-correctness.mjs && node --check scripts/performance-controls-qa.cjs",
     "build:pages": "node scripts/patch-client.mjs && node scripts/build-pages.mjs",
-    "qa:render": "node scripts/render-performance-qa.cjs"
+    "qa:render": "node scripts/render-performance-qa.cjs",
+    "qa:cpu": "node scripts/cpu-performance-qa.cjs"
   },
   "engines": {
     "node": ">=22"

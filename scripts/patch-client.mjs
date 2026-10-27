@@ -38,6 +38,14 @@ const fireflyImport = 'import{installFireflyBatch as xntInstallFireflyBatch}from
 if (!source.includes(fireflyImport)) source = fireflyImport + source;
 replaceOnce('this.setupPowerSavingWatch();',
   'this.setupPowerSavingWatch();this.localFireflyBatch=xntInstallFireflyBatch(this);');
+const workImport = 'import{installFarmWorkCache as xntInstallWorkCache,flushInstanceMatrix as xntFlushInstanceMatrix}from"./cpu-optimizations.mjs";';
+if (!source.includes(workImport)) source = workImport + source;
+replaceOnce('this.localFireflyBatch=xntInstallFireflyBatch(this);',
+  'this.localFireflyBatch=xntInstallFireflyBatch(this);this.localWorkCache=xntInstallWorkCache(this);');
+// These seven writers belong to map_life; other instance producers stay unchanged.
+for (const mesh of ['t.mesh', 'k', 'C', 'U', 'Z', 'K', 'J']) {
+  replaceOnce(mesh + '.instanceMatrix.needsUpdate=!0', 'xntFlushInstanceMatrix(' + mesh + ')');
+}
 await writeFile(rendererFile, source);
 
 const frameFile = fileURLToPath(new URL('../public/assets/framePacing-v0NaHLk2.js', import.meta.url));
